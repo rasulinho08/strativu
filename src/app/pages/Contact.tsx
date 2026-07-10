@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import { motion, useInView } from "motion/react";
 import { ArrowRight, Mail, MapPin, Clock, CheckCircle2, ArrowUpRight } from "lucide-react";
+import { useForm, ValidationError } from '@formspree/react';
 
 /* ─── Scroll-reveal wrapper ─── */
 function Reveal({
@@ -64,14 +65,9 @@ const INFO_ITEMS = [
 ];
 
 export default function Contact() {
-  const [submitted, setSubmitted] = useState(false);
+  const [state, handleSubmit] = useForm("xvzjezqa");
   const [activeType, setActiveType] = useState(INQUIRY_TYPES[0]);
   const [focused, setFocused] = useState<string | null>(null);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
 
   return (
     <div
@@ -199,7 +195,7 @@ export default function Contact() {
           {/* ── Right: Form ── */}
           <div className="lg:col-span-3">
             <Reveal direction="right">
-              {submitted ? (
+              {state.succeeded ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -216,7 +212,7 @@ export default function Contact() {
                     Thank you for reaching out. We'll review your inquiry and get back to you within 24 hours.
                   </p>
                   <button
-                    onClick={() => setSubmitted(false)}
+                    onClick={() => window.location.reload()}
                     className="text-sm font-semibold text-accent hover:text-accent/80 transition-colors"
                   >
                     Send another message
@@ -245,6 +241,7 @@ export default function Contact() {
                           </label>
                           <input
                             id={field.id}
+                            name={field.id}
                             type={field.type}
                             placeholder={field.placeholder}
                             required
@@ -270,6 +267,7 @@ export default function Contact() {
                       </label>
                       <input
                         id="company"
+                        name="company"
                         type="text"
                         placeholder="Acme Corp"
                         onFocus={() => setFocused("company")}
@@ -287,6 +285,7 @@ export default function Contact() {
                       <label className="text-[11px] font-bold tracking-[0.2em] uppercase text-muted-foreground mb-3 block">
                         Inquiry Type
                       </label>
+                      <input type="hidden" name="inquiryType" value={activeType} />
                       <div className="flex flex-wrap gap-2">
                         {INQUIRY_TYPES.map((type) => (
                           <button
@@ -315,6 +314,7 @@ export default function Contact() {
                       </label>
                       <select
                         id="budget"
+                        name="budget"
                         onFocus={() => setFocused("budget")}
                         onBlur={() => setFocused(null)}
                         className={`w-full bg-background border px-5 py-3.5 rounded-xl text-foreground text-sm outline-none transition-all duration-200 appearance-none cursor-pointer ${
@@ -341,6 +341,7 @@ export default function Contact() {
                       </label>
                       <textarea
                         id="message"
+                        name="message"
                         rows={5}
                         required
                         placeholder="Tell us about what you're building, the challenges you're facing, and what success looks like..."
@@ -357,11 +358,12 @@ export default function Contact() {
                     {/* Submit */}
                     <motion.button
                       type="submit"
+                      disabled={state.submitting}
                       whileHover={{ scale: 1.01 }}
                       whileTap={{ scale: 0.99 }}
-                      className="w-full bg-[#0A0F2E] text-white py-4 rounded-xl font-bold text-[15px] flex items-center justify-center gap-3 hover:bg-accent hover:text-[#0A0F2E] transition-all duration-300 shadow-xl shadow-[#0A0F2E]/20 group"
+                      className="w-full bg-[#0A0F2E] text-white py-4 rounded-xl font-bold text-[15px] flex items-center justify-center gap-3 hover:bg-accent hover:text-[#0A0F2E] transition-all duration-300 shadow-xl shadow-[#0A0F2E]/20 group disabled:opacity-70 disabled:cursor-not-allowed"
                     >
-                      Send Inquiry
+                      {state.submitting ? "Sending..." : "Send Inquiry"}
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </motion.button>
 
