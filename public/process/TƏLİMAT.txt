@@ -1,0 +1,11 @@
+Bu qovluq "İş Prosesimiz" (How We Work) bölməsindəki 4 addımın şəkillərini dəyişdirməyiniz üçündür.
+
+Mən sizin üçün bura yüksək keyfiyyətli, real mühəndislik/İT atmosferinə uyğun şəkillər (1.jpg, 2.jpg, 3.jpg, 4.jpg) qoydum. Amma əgər öz şəkillərinizi istifadə etmək istəsəniz, qayda çox sadədir:
+
+Öz şəkillərinizi bu qovluğa kopyalayın və adlarını belə qoyun:
+1-ci mərhələ (Discovery) üçün: 1.jpg
+2-ci mərhələ (Architecture) üçün: 2.jpg
+3-cü mərhələ (Development) üçün: 3.jpg
+4-cü mərhələ (Optimization) üçün: 4.jpg
+
+Köhnə şəkilləri silib yenilərini atdığınız an saytda avtomatik görünəcək!

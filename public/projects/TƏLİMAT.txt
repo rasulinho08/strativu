@@ -1,0 +1,11 @@
+Bu qovluq layihə şəkillərini əlavə etməyiniz üçündür.
+
+1. "UniAz Platform" şəkli üçün:
+- Şəklinizi bura kopyalayın
+- Adını "uniaz.png" qoyun (əgər şəkliniz JPG formatındadırsa, kodda .png yerinə .jpg yazmağınız və ya şəklin formatını .png etməyiniz lazımdır).
+
+2. "GRC Strativu" şəkli üçün:
+- Şəklinizi bura kopyalayın
+- Adını "grc.png" qoyun.
+
+Qeyd: Şəkilləri bura atdığınız an saytda avtomatik olaraq (kodda dəyişiklik etmədən) görsənəcək!

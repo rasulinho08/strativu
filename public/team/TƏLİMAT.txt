@@ -1,0 +1,19 @@
+Bu qovluq komanda üzvlərinin şəkillərini əlavə etməyiniz üçündür.
+
+1. "Daryanur" şəkli üçün:
+- Şəklinizi bura kopyalayın
+- Adını "daryanur.png" qoyun.
+
+2. "Nihad" şəkli üçün:
+- Şəklinizi bura kopyalayın
+- Adını "nihad.png" qoyun.
+
+3. "Rəsul" şəkli üçün:
+- Şəklinizi bura kopyalayın
+- Adını "rasul.png" qoyun.
+
+4. "Turan" şəkli üçün:
+- Şəklinizi bura kopyalayın
+- Adını "turan.png" qoyun.
+
+Qeyd: Şəkilləri bura atdığınız an "About Us" (Haqqımızda) səhifəsindəki komanda bölməsində hərf kvadratları avtomatik olaraq bu şəkillərlə əvəz olunacaq!
