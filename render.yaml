@@ -3,8 +3,8 @@ services:
     name: safeai-backend
     runtime: python
     rootDir: backend
-    buildCommand: python3 -m pip install -r requirements.txt
-    startCommand: python3 -m uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    buildCommand: python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+    startCommand: .venv/bin/python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.15
