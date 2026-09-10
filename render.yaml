@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: safeai-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.15
+      - key: SESSION_TTL_SECONDS
+        value: "3600"
+      - key: MAX_FILE_SIZE_MB
+        value: "25"
+      - key: DEFAULT_PROVIDER
+        value: openai
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
