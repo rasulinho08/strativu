@@ -8,10 +8,12 @@ class Settings(BaseSettings):
 
     openai_api_key: str | None = None
     anthropic_api_key: str | None = None
+    gemini_api_key: str | None = None
 
     default_provider: str = "openai"
     default_openai_model: str = "gpt-4o-mini"
     default_anthropic_model: str = "claude-3-5-sonnet-20241022"
+    default_gemini_model: str = "gemini-2.5-flash"
 
     session_ttl_seconds: int = 3600
 

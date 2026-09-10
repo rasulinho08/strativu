@@ -105,7 +105,7 @@ class ChatMessage(BaseModel):
 class ChatRequest(BaseModel):
     session_id: str
     message: str = Field(min_length=1)
-    provider: Literal["openai", "anthropic"] | None = None
+    provider: Literal["openai", "anthropic", "gemini"] | None = None
     model: str | None = None
     temperature: float | None = Field(default=None, ge=0, le=2)
 

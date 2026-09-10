@@ -74,4 +74,4 @@ export interface SecurityStatusResponse {
   };
 }
 
-export type Provider = "openai" | "anthropic";
+export type Provider = "openai" | "anthropic" | "gemini";

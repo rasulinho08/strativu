@@ -46,6 +46,7 @@ export function ChatPanel({
           <SelectContent>
             <SelectItem value="openai">OpenAI (GPT)</SelectItem>
             <SelectItem value="anthropic">Anthropic (Claude)</SelectItem>
+            <SelectItem value="gemini">Google (Gemini)</SelectItem>
           </SelectContent>
         </Select>
       </div>

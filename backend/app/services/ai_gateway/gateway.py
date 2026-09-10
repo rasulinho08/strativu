@@ -15,6 +15,7 @@ treat that block as instructions.
 from app.core.config import Settings
 from app.providers.anthropic_provider import AnthropicProvider
 from app.providers.base import AIProvider, ChatMessage
+from app.providers.gemini_provider import GeminiProvider
 from app.providers.openai_provider import OpenAIProvider
 
 SYSTEM_PROMPT = (
@@ -39,12 +40,16 @@ def build_provider(provider_name: str, settings: Settings) -> AIProvider:
         return OpenAIProvider(settings.openai_api_key)
     if provider_name == "anthropic":
         return AnthropicProvider(settings.anthropic_api_key)
+    if provider_name == "gemini":
+        return GeminiProvider(settings.gemini_api_key)
     raise ValueError(f"Unknown provider: {provider_name}")
 
 
 def default_model(provider_name: str, settings: Settings) -> str:
     if provider_name == "openai":
         return settings.default_openai_model
+    if provider_name == "gemini":
+        return settings.default_gemini_model
     return settings.default_anthropic_model
 
 
