@@ -1,388 +1,209 @@
-import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router";
-import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, Mail, MapPin, ArrowUpRight, ArrowUp, Plus, Minus } from "lucide-react";
+import { useEffect, useState, type ReactNode } from "react";
+import { Link, NavLink, useLocation } from "react-router";
+import { AnimatePresence, motion } from "motion/react";
+import { Menu, X } from "lucide-react";
+import { Logo } from "../site/Logo";
+import { Btn, Container } from "../site/primitives";
 import { ThemeToggle } from "../theme-toggle";
+import { site } from "../../data/site";
+import { frameworks } from "../../data/coverage";
 
-const FAQ_DATA = [
+const NAV = [
+  { label: "Platform", to: "/platform" },
+  { label: "Coverage", to: "/coverage" },
+  { label: "Company", to: "/company/about" },
+  { label: "Changelog", to: "/changelog" },
+];
+
+const FOOTER = [
   {
-    q: "What is your typical engagement duration?",
-    a: "Our standard engagements run between 3 to 12 months, depending on the complexity of the systems we are architecting.",
+    title: "Platform",
+    links: [
+      { label: "Overview", to: "/platform" },
+      { label: "GRC", to: "/platform/grc" },
+      { label: "Architecture", to: "/platform/architecture" },
+      { label: "Early access", to: "/early-access" },
+    ],
   },
   {
-    q: "Do you integrate with our existing engineering team?",
-    a: "Yes. We embed directly into your workflows, repositories, and communication channels. We act as an elite extension of your team.",
+    title: "Coverage",
+    links: frameworks.slice(0, 6).map((f) => ({ label: f.id.split(" (")[0], to: `/coverage/${f.slug}` })).concat([{ label: "All frameworks", to: "/coverage" }]),
   },
   {
-    q: "Who retains the intellectual property?",
-    a: "You do. Upon completion and payment, 100% of the IP, code, and infrastructure definitions are transferred to your organization.",
+    title: "Company",
+    links: [
+      { label: "About", to: "/company/about" },
+      { label: "Contact", to: "/company/contact" },
+      { label: "Changelog", to: "/changelog" },
+      { label: "Trust", to: "/trust" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { label: "Status", href: site.company.statusPage },
+      { label: "LinkedIn", href: site.company.linkedin },
+      { label: "GitHub", href: site.company.github },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { label: "Privacy", to: "/legal/privacy" },
+      { label: "Terms", to: "/legal/terms" },
+      { label: "DPA", to: "/legal/dpa" },
+    ],
   },
 ];
 
-const NAV_LINKS = [
-  { label: "Home", href: "/" },
-  { label: "Work", href: "/work" },
-  { label: "About Us", href: "/about" },
-];
-
-/* ─── Strativu SVG Logo Mark ─── */
-function LogoMark({ size = 36, animated = false }: { size?: number; animated?: boolean }) {
-  const variants = animated
-    ? {
-        hidden: { opacity: 0, scale: 0.6, rotate: -20 },
-        visible: { opacity: 1, scale: 1, rotate: 0, transition: { duration: 0.5, ease: "easeOut" } },
-      }
-    : {};
-
-  return (
-    <motion.div
-      animate={{ rotate: 360 }}
-      transition={{ repeat: Infinity, duration: 12, ease: "linear" }}
-      className="inline-flex origin-center"
-    >
-      <svg width={size} height={size} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        {/* Top-left dark block */}
-        <motion.polygon
-          points="10,10 60,10 45,35 10,35"
-          fill="#0A0F2E"
-          className="dark:fill-white"
-          variants={animated ? { hidden: { opacity: 0, x: -20, y: -20 }, visible: { opacity: 1, x: 0, y: 0, transition: { delay: 0, duration: 0.5 } } } : {}}
-        />
-        {/* Top-right cyan block */}
-        <motion.polygon
-          points="60,10 90,10 90,40 55,40"
-          fill="#00D4FF"
-          variants={animated ? { hidden: { opacity: 0, x: 20, y: -20 }, visible: { opacity: 1, x: 0, y: 0, transition: { delay: 0.1, duration: 0.5 } } } : {}}
-        />
-        {/* Middle-left cyan block */}
-        <motion.polygon
-          points="10,60 45,60 30,85 10,85"
-          fill="#00D4FF"
-          variants={animated ? { hidden: { opacity: 0, x: -20, y: 20 }, visible: { opacity: 1, x: 0, y: 0, transition: { delay: 0.2, duration: 0.5 } } } : {}}
-        />
-        {/* Bottom-right dark block */}
-        <motion.polygon
-          points="40,65 90,65 90,90 40,90"
-          fill="#0A0F2E"
-          className="dark:fill-white"
-          variants={animated ? { hidden: { opacity: 0, x: 20, y: 20 }, visible: { opacity: 1, x: 0, y: 0, transition: { delay: 0.3, duration: 0.5 } } } : {}}
-        />
-        {/* Center connector */}
-        <motion.polygon
-          points="45,35 55,40 55,60 45,60"
-          fill="#0A0F2E"
-          className="dark:fill-white"
-          variants={animated ? { hidden: { opacity: 0, scale: 0 }, visible: { opacity: 1, scale: 1, transition: { delay: 0.35, duration: 0.4 } } } : {}}
-        />
-      </svg>
-    </motion.div>
-  );
-}
-
-function Logo({ isHome, scrolled }: { isHome: boolean; scrolled: boolean }) {
-  return (
-    <Link to="/" className="flex items-center gap-3.5 group" aria-label="Strativu Home">
-      <div className="group-hover:scale-105 transition-transform duration-300">
-        <LogoMark size={56} />
-      </div>
-      <div className="flex flex-col leading-none">
-        <span className="font-bold text-[28px] tracking-tight text-foreground transition-colors duration-500">Strativu</span>
-        <span className="text-[12px] font-semibold text-accent tracking-[0.25em] uppercase mt-0.5">Engineering Elite</span>
-      </div>
-    </Link>
-  );
-}
-
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: ReactNode }) {
   const location = useLocation();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [isFaqOpen, setIsFaqOpen] = useState(false);
-  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
-
   const isHome = location.pathname === "/";
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 30);
+    const onScroll = () => setScrolled(window.scrollY > 80);
+    onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   useEffect(() => {
     setOpen(false);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [location.pathname]);
+    if (!location.hash) window.scrollTo({ top: 0, behavior: "auto" });
+  }, [location.pathname, location.hash]);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  useEffect(() => {
+    if (!location.hash) return;
+    const el = document.getElementById(location.hash.slice(1));
+    if (el) setTimeout(() => el.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
+  }, [location.hash, location.pathname]);
+
+  const solid = scrolled || !isHome || open;
 
   return (
-    <div
-      className="min-h-screen bg-background text-foreground antialiased selection:bg-accent/30 selection:text-foreground"
-      style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
-    >
-      {/* ─── Navbar ─── */}
-      <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
-            ? "bg-background/90 backdrop-blur-xl border-b border-border/60 py-3 shadow-sm"
-            : isHome
-            ? "bg-transparent py-5"
-            : "bg-background/95 backdrop-blur-md border-b border-border/40 py-4"
+    <div className="min-h-screen flex flex-col bg-ground text-ink">
+      <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-surface focus:px-3 focus:py-2 focus:rounded-[var(--radius)] focus:border focus:border-line">
+        Skip to content
+      </a>
+
+      {/* ─── Header: transparent over hero, solid after 80px ─── */}
+      <header
+        className={`fixed top-0 inset-x-0 z-50 transition-[background-color,border-color,height] duration-200 border-b ${
+          solid ? "bg-ground/90 backdrop-blur-md border-line h-14" : "bg-transparent border-transparent h-[68px]"
         }`}
-        role="navigation"
-        aria-label="Main navigation"
+        style={{ transitionTimingFunction: "var(--ease)" }}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
-          <Logo isHome={isHome} scrolled={scrolled} />
+        <Container className="h-full flex items-center justify-between gap-6">
+          <Logo />
 
-          {/* Desktop nav */}
-          <div className="hidden lg:flex items-center gap-1 ml-auto mr-8">
-            {NAV_LINKS.map((link) => {
-              const active = location.pathname === link.href;
-              return (
-                <Link
-                  key={link.label}
-                  to={link.href}
-                  className={`relative px-4 py-2 text-[14px] font-medium tracking-wide transition-colors duration-200 rounded-lg ${
-                    active
-                      ? "text-foreground"
-                      : "text-muted-foreground hover:text-foreground hover:bg-secondary/50"
-                  }`}
-                >
-                  {active && (
-                    <motion.span
-                      layoutId="nav-indicator"
-                      className="absolute inset-0 bg-secondary rounded-lg"
-                      style={{ zIndex: -1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 30 }}
-                    />
-                  )}
-                  {link.label}
-                </Link>
-              );
-            })}
-          </div>
+          <nav aria-label="Primary" className="hidden lg:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
+            {NAV.map((n) => (
+              <NavLink
+                key={n.to}
+                to={n.to}
+                className={({ isActive }) =>
+                  `px-3 py-1.5 text-[14px] rounded-[var(--radius)] transition-colors duration-150 ${isActive ? "text-ink font-medium" : "text-ink-2 hover:text-ink"}`
+                }
+              >
+                {n.label}
+              </NavLink>
+            ))}
+          </nav>
 
-          <div className="hidden lg:flex items-center gap-3">
-            <ThemeToggle />
-            <Link
-              to="/contact"
-              className={`group flex items-center gap-2 px-5 py-2.5 rounded-full text-[13px] font-semibold transition-all duration-300 ${
-                isHome && !scrolled
-                  ? "bg-white text-[#0A0F2E] hover:bg-accent hover:text-[#0A0F2E]"
-                  : "bg-primary text-primary-foreground hover:bg-primary/85"
-              } shadow-lg`}
-            >
-              Get Started
-              <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+          <div className="hidden lg:flex items-center gap-2">
+            <Link to="/company/contact" className="px-3 py-1.5 text-[14px] text-ink-2 hover:text-ink transition-colors duration-150">
+              Contact
             </Link>
+            <ThemeToggle className="text-ink-2 hover:text-ink hover:bg-surface-2" />
+            <Btn to="/early-access" className="ml-1">Request early access</Btn>
           </div>
 
-          <div className="flex items-center gap-2 lg:hidden">
-            <ThemeToggle />
+          <div className="flex lg:hidden items-center gap-1">
+            <ThemeToggle className="text-ink-2 hover:text-ink hover:bg-surface-2" />
             <button
-              className="p-2 -mr-2 transition-colors text-foreground"
-              onClick={() => setOpen(!open)}
-              aria-label="Toggle menu"
+              className="p-2 -mr-2 text-ink rounded-[var(--radius)] hover:bg-surface-2 transition-colors"
+              onClick={() => setOpen((v) => !v)}
+              aria-expanded={open}
+              aria-controls="mobile-nav"
+              aria-label={open ? "Close menu" : "Open menu"}
             >
-              {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {open ? <X className="w-5 h-5" strokeWidth={1.75} /> : <Menu className="w-5 h-5" strokeWidth={1.75} />}
             </button>
           </div>
-        </div>
+        </Container>
 
-        {/* Mobile menu */}
         <AnimatePresence>
           {open && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.25 }}
-              className="absolute top-full left-0 right-0 bg-background/98 backdrop-blur-xl border-b border-border p-6 lg:hidden shadow-2xl"
+            <motion.nav
+              id="mobile-nav"
+              aria-label="Mobile"
+              initial={{ opacity: 0, y: -6 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -6 }}
+              transition={{ duration: 0.18 }}
+              className="lg:hidden absolute top-full inset-x-0 bg-ground border-b border-line"
             >
-              <div className="flex flex-col gap-1">
-                {NAV_LINKS.map((link) => (
-                  <Link
-                    key={link.label}
-                    to={link.href}
-                    className={`px-4 py-3 text-lg font-semibold rounded-xl transition-colors ${
-                      location.pathname === link.href
-                        ? "bg-secondary text-foreground"
-                        : "text-muted-foreground hover:bg-secondary hover:text-foreground"
-                    }`}
+              <Container className="py-4 flex flex-col">
+                {NAV.concat([{ label: "Contact", to: "/company/contact" }]).map((n) => (
+                  <NavLink
+                    key={n.to}
+                    to={n.to}
+                    className={({ isActive }) => `py-3 text-[17px] border-b border-line-soft ${isActive ? "text-ink font-medium" : "text-ink-2"}`}
                   >
-                    {link.label}
-                  </Link>
+                    {n.label}
+                  </NavLink>
                 ))}
-                <Link
-                  to="/contact"
-                  className="mt-4 bg-primary text-primary-foreground text-center py-3.5 rounded-xl font-bold text-sm tracking-wide"
-                >
-                  Get Started
-                </Link>
-              </div>
-            </motion.div>
+                <Btn to="/early-access" size="lg" className="mt-4">Request early access</Btn>
+              </Container>
+            </motion.nav>
           )}
         </AnimatePresence>
-      </nav>
+      </header>
 
-      {/* ─── Main content ─── */}
-      <main>{children}</main>
+      <main id="main" className="flex-1">{children}</main>
 
-      {/* ─── Footer ─── */}
-      <footer className="bg-[#0A0F2E] text-white py-20 px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            {/* Brand */}
-            <div className="col-span-1 lg:col-span-1">
-              <div className="flex items-center gap-2.5 mb-6">
-                <LogoMark size={32} />
-                <div className="flex flex-col leading-none">
-                  <span className="font-bold text-white text-[17px] tracking-tight">Strativu</span>
-                  <span className="text-[9px] font-semibold text-accent tracking-[0.25em] uppercase mt-0.5">Engineering Elite</span>
-                </div>
+      {/* ─── Footer: five columns now, structured to grow ─── */}
+      <footer className="border-t border-line bg-surface">
+        <Container className="py-16 md:py-20">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.4fr_repeat(5,1fr)] gap-x-6 gap-y-10">
+            <div className="col-span-2 md:col-span-3 lg:col-span-1">
+              <Logo />
+              <p className="mt-4 text-[14px] text-ink-2 max-w-[28ch]">{site.tagline}</p>
+              <p className="mt-4 mono-label normal-case tracking-[0.04em]">{site.status.label} · {site.status.detail}</p>
+            </div>
+            {FOOTER.map((col) => (
+              <div key={col.title}>
+                <h4 className="mono-label mb-4">{col.title}</h4>
+                <ul className="space-y-2.5">
+                  {col.links.map((l) => (
+                    <li key={l.label}>
+                      {"to" in l && l.to ? (
+                        <Link to={l.to} className="text-[14px] text-ink-2 hover:text-ink transition-colors duration-150">{l.label}</Link>
+                      ) : (
+                        <a href={(l as any).href} target="_blank" rel="noreferrer" className="text-[14px] text-ink-2 hover:text-ink transition-colors duration-150">{l.label}</a>
+                      )}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <p className="text-white/50 leading-relaxed text-sm max-w-xs">
-                Elite software engineering studio partnering with global leaders to build the future of digital infrastructure.
-              </p>
-            </div>
-
-            {/* Navigation */}
-            <div>
-              <h4 className="font-semibold mb-6 text-[11px] uppercase tracking-[0.2em] text-accent">Navigation</h4>
-              <ul className="space-y-3 text-sm text-white/50">
-                {NAV_LINKS.map((link) => (
-                  <li key={link.label}>
-                    <Link to={link.href} className="hover:text-white transition-colors">{link.label}</Link>
-                  </li>
-                ))}
-                <li>
-                  <Link to="/contact" className="hover:text-white transition-colors">Contact</Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Services */}
-            <div>
-              <h4 className="font-semibold mb-6 text-[11px] uppercase tracking-[0.2em] text-accent">Services</h4>
-              <ul className="space-y-3 text-sm text-white/50">
-                <li>Cloud Architecture</li>
-                <li>AI &amp; ML Engineering</li>
-                <li>Platform Engineering</li>
-              </ul>
-            </div>
-
-            {/* Support & Contact */}
-            <div>
-              <h4 className="font-semibold mb-6 text-[11px] uppercase tracking-[0.2em] text-accent">Connect</h4>
-              <div className="space-y-3 text-sm text-white/50 mb-6">
-                <div className="flex items-center gap-3">
-                  <Mail className="w-4 h-4 text-accent flex-shrink-0" />
-                  <a href="mailto:mamishovrasul028@gmail.com" className="hover:text-white transition-colors">mamishovrasul028@gmail.com</a>
-                </div>
-                <div className="flex items-center gap-3">
-                  <MapPin className="w-4 h-4 text-accent flex-shrink-0" />
-                  <span>Azerbaijan, Baku</span>
-                </div>
-              </div>
-              <h4 className="font-semibold mb-3 text-[11px] uppercase tracking-[0.2em] text-accent mt-6">Support</h4>
-              <ul className="space-y-3 text-sm text-white/50">
-                <li>
-                  <button onClick={() => setIsFaqOpen(true)} className="hover:text-white transition-colors">FAQ</button>
-                </li>
-              </ul>
-            </div>
+            ))}
           </div>
 
-          <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-[11px] text-white/30 font-medium tracking-widest uppercase">
-              © {new Date().getFullYear()} Strativu Studio. Excellence by Design.
+          <div className="mt-14 pt-6 border-t border-line-soft flex flex-col md:flex-row md:items-center justify-between gap-3 font-mono text-[11px] text-ink-3">
+            <p>
+              © {new Date().getFullYear()} {site.company.legalName} · {site.company.jurisdiction} · {site.company.registrationNo}
             </p>
-            <div className="flex gap-6 text-[11px] text-white/30 font-medium tracking-widest uppercase">
-              <a href="#" className="hover:text-white/70 transition-colors">Privacy</a>
-              <a href="#" className="hover:text-white/70 transition-colors">Terms</a>
-            </div>
+            <p className="flex items-center gap-4">
+              <a href={`mailto:${site.company.email}`} className="hover:text-ink transition-colors">{site.company.email}</a>
+              <a href={site.company.statusPage} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 hover:text-ink transition-colors">
+                <span className="w-1.5 h-1.5 rounded-full bg-ok" aria-hidden /> All systems normal
+              </a>
+            </p>
           </div>
-        </div>
+        </Container>
       </footer>
-
-      {/* ─── Scroll to Top Button ─── */}
-      <AnimatePresence>
-        {scrolled && (
-          <motion.button
-            initial={{ opacity: 0, scale: 0.8, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.8, y: 20 }}
-            onClick={scrollToTop}
-            className="fixed bottom-6 right-6 z-40 p-3 bg-accent text-[#0A0F2E] rounded-full shadow-xl hover:bg-white hover:scale-110 transition-all duration-300"
-            aria-label="Scroll to top"
-          >
-            <ArrowUp className="w-5 h-5" />
-          </motion.button>
-        )}
-      </AnimatePresence>
-
-      {/* ─── FAQ Modal ─── */}
-      <AnimatePresence>
-        {isFaqOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm"
-          >
-            <motion.div
-              initial={{ scale: 0.95, y: 20 }}
-              animate={{ scale: 1, y: 0 }}
-              exit={{ scale: 0.95, y: 20 }}
-              className="w-full max-w-2xl bg-card border border-border rounded-2xl shadow-2xl overflow-hidden relative flex flex-col max-h-[90vh]"
-            >
-              <div className="flex justify-between items-center p-6 border-b border-border/50">
-                <div>
-                  <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-accent mb-1 block">Support</span>
-                  <h3 className="text-2xl font-bold text-foreground tracking-tight">FAQ</h3>
-                </div>
-                <button
-                  onClick={() => setIsFaqOpen(false)}
-                  className="p-2 bg-secondary rounded-full text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  <X className="w-5 h-5" />
-                </button>
-              </div>
-
-              <div className="p-6 overflow-y-auto">
-                <div className="space-y-4">
-                  {FAQ_DATA.map((faq, i) => {
-                    const isOpen = openFaqIndex === i;
-                    return (
-                      <div key={i} className="border border-border/60 rounded-2xl bg-background overflow-hidden">
-                        <button
-                          onClick={() => setOpenFaqIndex(isOpen ? null : i)}
-                          className="w-full flex items-center justify-between p-5 text-left hover:bg-secondary/50 transition-colors"
-                        >
-                          <span className="font-bold text-foreground text-[15px]">{faq.q}</span>
-                          {isOpen ? <Minus className="w-4 h-4 text-accent flex-shrink-0 ml-4" /> : <Plus className="w-4 h-4 text-accent flex-shrink-0 ml-4" />}
-                        </button>
-                        <div
-                          className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
-                        >
-                          <div className="overflow-hidden">
-                            <div className="p-5 pt-0 text-muted-foreground text-sm leading-relaxed">
-                              {faq.a}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 }
