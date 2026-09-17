@@ -2,30 +2,30 @@
 
 /*
   Strativu design tokens.
-  One brand hue (deep green), a neutral ramp biased toward it, three semantic colours.
+  One brand hue (Strativu blue, from the logo), a neutral ramp biased toward it, three semantic colours.
   Single radius (6px), two elevation layers (hairline border + one soft shadow).
 */
 :root {
   --font-size: 17px;
 
-  --ground: #F3F4F1;
+  --ground: #F3F5F8;
   --surface: #FFFFFF;
-  --surface-2: #E9EBE6;
-  --line: #D5D9D2;
-  --line-soft: #E3E6E0;
-  --ink: #161A18;
-  --ink-2: #4B534E;
-  --ink-3: #78817B;
+  --surface-2: #E8ECF1;
+  --line: #D3D9E1;
+  --line-soft: #E1E6EC;
+  --ink: #14181F;
+  --ink-2: #4A5461;
+  --ink-3: #76808C;
 
-  --brand: #12564A;
-  --brand-ink: #0C463C;
-  --brand-soft: #DCE8E2;
-  --brand-line: #A8C5B9;
-  --on-brand: #F3F4F1;
+  --brand: #0B5FD1;
+  --brand-ink: #0A4CAB;
+  --brand-soft: #DDEAFB;
+  --brand-line: #A3C4F0;
+  --on-brand: #F6F9FE;
 
-  --ok: #2F6B4F;
-  --warn: #8C3A2B;
-  --info: #2E5C8A;
+  --ok: #2E7D5B;
+  --warn: #A23E2E;
+  --info: #6B5BD2;
 
   /* shadcn-compatible aliases (kept so ui/* components keep compiling) */
   --background: var(--ground);
@@ -48,10 +48,10 @@
   --input: var(--surface);
   --input-background: var(--surface);
   --switch-background: var(--line);
-  --ring: rgba(18, 86, 74, 0.35);
+  --ring: rgba(11, 95, 209, 0.35);
   --radius: 6px;
 
-  --shadow: 0 1px 2px rgba(22, 26, 24, 0.05), 0 12px 32px -20px rgba(22, 26, 24, 0.25);
+  --shadow: 0 1px 2px rgba(20, 24, 31, 0.05), 0 12px 32px -20px rgba(20, 24, 31, 0.25);
 
   --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-display: var(--font-sans);
@@ -61,26 +61,26 @@
 }
 
 .dark {
-  --ground: #0F1413;
-  --surface: #151A19;
-  --surface-2: #1C2321;
-  --line: #2A3330;
-  --line-soft: #222A28;
-  --ink: #E9EDE9;
-  --ink-2: #A3ADA7;
-  --ink-3: #78837D;
+  --ground: #0D1117;
+  --surface: #13181F;
+  --surface-2: #1A2029;
+  --line: #29323D;
+  --line-soft: #212932;
+  --ink: #E8ECF1;
+  --ink-2: #A4AEB9;
+  --ink-3: #79838F;
 
-  --brand: #63C3A8;
-  --brand-ink: #8AD6BE;
-  --brand-soft: #172B26;
-  --brand-line: #2E4E45;
-  --on-brand: #0F1413;
+  --brand: #3DB4FF;
+  --brand-ink: #7CCBFF;
+  --brand-soft: #12283F;
+  --brand-line: #24507A;
+  --on-brand: #0D1117;
 
   --ok: #7CC29A;
-  --warn: #D98873;
-  --info: #7FA9D6;
+  --warn: #E0907C;
+  --info: #B3A6FF;
 
-  --ring: rgba(99, 195, 168, 0.35);
+  --ring: rgba(61, 180, 255, 0.35);
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 36px -22px rgba(0, 0, 0, 0.8);
 }
 

@@ -13,9 +13,12 @@ export const site = {
     detail: "Early access opening Q1 2027",
   },
 
-  /** Logo: public/logo.svg (və ya .png) atın və yolu bura yazın. Fayl yoxdursa avtomatik wordmark göstərilir. */
+  /**
+   * Logo. Default: koddakı SVG mark + wordmark (Logo.tsx, göndərdiyiniz loqonun yenidən çəkilişi).
+   * Orijinal vektor faylınız varsa public/logo.svg atın və src: "/logo.svg" yazın.
+   */
   logo: {
-    src: "/logo.svg",
+    src: null as string | null,
     /** Dark tema üçün ayrıca versiya varsa: "/logo-dark.svg". Yoxdursa null qoyun. */
     darkSrc: null as string | null,
     height: 26,
