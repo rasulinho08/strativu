@@ -1,23 +1,18 @@
-import { Moon, Sun } from "lucide-react"
-import { useTheme } from "next-themes"
-import { Button } from "./ui/button"
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
 
-
-export function ThemeToggle({ className }: { className?: string }) {
-  const { theme, setTheme, systemTheme } = useTheme()
-
-  const currentTheme = theme === "system" ? systemTheme : theme
-
+export function ThemeToggle({ className = "" }: { className?: string }) {
+  const { resolvedTheme, setTheme } = useTheme();
+  const isDark = resolvedTheme === "dark";
   return (
-    <Button
-      variant="ghost"
-      size="icon"
-      onClick={() => setTheme(currentTheme === "light" ? "dark" : "light")}
-      className={`rounded-full w-[38px] h-[38px] ${className || "text-foreground hover:bg-secondary/50"}`}
+    <button
+      type="button"
+      onClick={() => setTheme(isDark ? "light" : "dark")}
+      aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
+      className={`relative inline-flex h-[38px] w-[38px] items-center justify-center rounded-full transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${className}`}
     >
-      <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-      <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-      <span className="sr-only">Toggle theme</span>
-    </Button>
-  )
+      <Sun className="h-[18px] w-[18px] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" strokeWidth={1.75} />
+      <Moon className="absolute h-[18px] w-[18px] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" strokeWidth={1.75} />
+    </button>
+  );
 }
