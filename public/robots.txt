@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://strativu.com/sitemap.xml
