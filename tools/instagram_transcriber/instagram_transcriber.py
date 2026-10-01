@@ -18,11 +18,16 @@ Usage (CMD):
 """
 
 import argparse
+import os
 import re
 import sys
 import time
 from datetime import datetime
 from pathlib import Path
+
+# hide harmless Hugging Face notices (symlinks on Windows, HF_TOKEN hint)
+os.environ.setdefault("HF_HUB_DISABLE_SYMLINKS_WARNING", "1")
+os.environ.setdefault("HF_HUB_VERBOSITY", "error")
 
 # ---------------------------------------------------------------- settings --
 DEFAULT_MODEL = "large-v3"   # most accurate; use "medium" or "small" for speed
@@ -34,6 +39,7 @@ BASE_DIR = Path(__file__).resolve().parent
 DOWNLOAD_DIR = BASE_DIR / "downloads"
 TRANSCRIPT_DIR = BASE_DIR / "transcripts"
 SEPARATOR = "=" * 80
+NO_VIDEO = "Photo post (no video) - nothing to transcribe."
 
 URL_RE = re.compile(
     r"https?://(?:www\.)?instagram\.com/(?:[A-Za-z0-9_.]+/)?(?:reels?|p|tv)/([A-Za-z0-9_-]+)",
@@ -84,6 +90,8 @@ def read_links_interactively():
 # --------------------------------------------------------------- download --
 def explain_download_error(message):
     m = message.lower()
+    if "there is no video in this post" in m:
+        return NO_VIDEO
     if "429" in m or "too many requests" in m:
         return "Instagram is rate-limiting requests (HTTP 429). Try again later."
     if "private" in m:
@@ -149,24 +157,28 @@ def download_audio(url, code):
 _model = None
 
 
-def load_model(name):
+def _gpu_available():
+    try:
+        import ctranslate2
+        return ctranslate2.get_cuda_device_count() > 0
+    except Exception:
+        return False
+
+
+def load_model(name, force_cpu=False):
     global _model
     if _model is None:
         from faster_whisper import WhisperModel
-        try:
-            import ctranslate2
-            use_gpu = ctranslate2.get_cuda_device_count() > 0
-        except Exception:
-            use_gpu = False
+        use_gpu = not force_cpu and _gpu_available()
         device, compute = ("cuda", "float16") if use_gpu else ("cpu", "int8")
         print(f"Loading Whisper model '{name}' on {device.upper()} "
-              "(first run downloads it, this can take a few minutes)...")
+              "(first run downloads it once, this can take several minutes)...")
         _model = WhisperModel(name, device=device, compute_type=compute)
+        _model.device_name = device
     return _model
 
 
-def transcribe(path, model_name, language):
-    model = load_model(model_name)
+def _run(model, path, language):
     segments, info = model.transcribe(
         str(path),
         language=None if language == "auto" else language,
@@ -176,6 +188,20 @@ def transcribe(path, model_name, language):
     )
     text = " ".join(s.text.strip() for s in segments).strip()
     return text, info.language
+
+
+def transcribe(path, model_name, language):
+    global _model
+    model = load_model(model_name)
+    try:
+        return _run(model, path, language)
+    except (RuntimeError, OSError) as e:
+        # NVIDIA GPU found but CUDA libraries (cuBLAS/cuDNN) missing: use CPU instead
+        if getattr(model, "device_name", "") != "cuda":
+            raise
+        print(f"   GPU could not be used ({str(e)[:120]}). Switching to CPU...")
+        _model = None
+        return _run(load_model(model_name, force_cpu=True), path, language)
 
 
 # ------------------------------------------------------------------ output --
@@ -191,6 +217,7 @@ def main():
     parser.add_argument("--language", default=DEFAULT_LANGUAGE,
                         help=f"language code such as az, tr, en, ru, or 'auto' (default {DEFAULT_LANGUAGE})")
     parser.add_argument("--keep-audio", action="store_true", help="keep downloaded audio files")
+    parser.add_argument("--cpu", action="store_true", help="never use the GPU")
     args = parser.parse_args()
 
     if args.links_file:
@@ -211,7 +238,9 @@ def main():
         f"Links: {len(links)}\n\n", encoding="utf-8")
 
     print(f"\nFound {len(links)} link(s). Starting...\n")
-    ok, failed = [], []
+    ok, failed, photos = [], [], []
+    if args.cpu:
+        load_model(args.model, force_cpu=True)
 
     for i, (code, url) in enumerate(links, 1):
         print(f"[{i}/{len(links)}] {url}")
@@ -230,7 +259,7 @@ def main():
             ok.append(url)
             print(f"   Saved: {out.name} (language: {lang})")
         except ReelError as e:
-            failed.append((url, str(e)))
+            (photos if str(e) == NO_VIDEO else failed).append((url, str(e)))
             print(f"   SKIPPED: {e}")
             with combined_path.open("a", encoding="utf-8") as f:
                 f.write(block(i, url, f"(Not transcribed: {e})"))
@@ -248,7 +277,8 @@ def main():
         if i < len(links):
             time.sleep(DELAY_BETWEEN_REELS)
 
-    print(f"\n{SEPARATOR}\nDone. Transcribed: {len(ok)}   Skipped: {len(failed)}")
+    print(f"\n{SEPARATOR}\nDone. Transcribed: {len(ok)}   "
+          f"Photo posts (no video): {len(photos)}   Failed: {len(failed)}")
     for url, reason in failed:
         print(f" - {url}\n   {reason}")
     print(f"\nCombined file: {combined_path}")
