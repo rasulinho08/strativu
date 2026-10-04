@@ -1,0 +1,466 @@
+<title>GRC 360 Product Tour</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a fixed 1280×760 replica of the GRC 360 app, scaled to fit, driven by a scripted cursor tour that the viewer can pause and take over. Single committed look (the product's own light UI on a deep navy stage). */
+:root{
+  --stage:#06111c; --stage-fg:#c9d6e3; --stage-dim:#7f93a8;
+  --nav:#0b1a2a; --nav-fg:#d7e0ea; --nav-dim:#8aa0b6;
+  --canvas:#f4f2ee; --card:#ffffff; --line:#e7e3dc; --ink:#1b2430; --muted:#6b7480;
+  --accent:#de6b48; --accent-soft:#fbe9e2; --navy:#1e3a5f;
+  --crit:#c2412d; --crit-bg:#fde4df; --high:#d9480f; --high-bg:#ffe8d9;
+  --med:#a16207; --med-bg:#fdf3d0; --low:#2f7d4f; --low-bg:#dff3e6;
+  --f-ui:"Inter Tight",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  color-scheme:dark;
+}
+html,body{background:var(--stage);color:var(--stage-fg)}
+body{font-family:var(--f-ui);padding-inline:16px;padding-block:28px 40px}
+.wrap{max-width:1280px;margin:0 auto;display:grid;gap:18px}
+.head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px}
+.head h1{margin:0;font-size:clamp(22px,3vw,32px);font-weight:600;letter-spacing:-.01em;color:#fff;text-wrap:balance}
+.head p{margin:4px 0 0;color:var(--stage-dim);max-width:62ch;line-height:1.5}
+.ctrls{display:flex;gap:8px;flex-wrap:wrap}
+.ctrls button{font:500 13px var(--f-ui);border-radius:999px;padding:8px 14px;border:1px solid #23384d;background:#0e2133;color:var(--stage-fg);cursor:pointer}
+.ctrls button:hover{background:#15304a}
+.ctrls button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.ctrls button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.chapters{display:flex;gap:6px;flex-wrap:wrap}
+.chap{font:500 12px var(--f-ui);padding:6px 10px;border-radius:999px;border:1px solid #1d3247;color:var(--stage-dim);cursor:pointer;background:transparent}
+.chap.on{color:#fff;border-color:var(--accent);background:#2a1a14}
+.viewport{position:relative;width:100%;aspect-ratio:1280/760;max-width:100%;border-radius:14px;overflow:hidden;box-shadow:0 30px 80px -20px #000,0 0 0 1px #1a2b3c}
+.app{position:absolute;left:0;top:0;width:1280px;height:760px;transform-origin:0 0;display:grid;grid-template-columns:232px 1fr;background:var(--canvas);color:var(--ink);font-size:13px}
+.caption{min-height:52px;display:flex;align-items:center;gap:12px;color:var(--stage-fg);font-size:15px;line-height:1.45}
+.caption .step{font:500 12px var(--f-mono);color:var(--accent);white-space:nowrap}
+.progress{height:3px;background:#122436;border-radius:3px;overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:var(--accent);transition:width .25s linear}
+
+/* sidebar */
+.side{background:var(--nav);color:var(--nav-fg);display:flex;flex-direction:column}
+.brand{height:58px;display:flex;align-items:center;gap:10px;padding:0 18px;border-bottom:1px solid #ffffff14;font-weight:700;letter-spacing:.02em}
+.brand b{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#f08a62,#d65a35);display:grid;place-items:center;font-size:11px;color:#fff}
+.brand span{font-size:15px}.brand small{font:500 10px var(--f-mono);color:var(--nav-dim);margin-left:auto}
+.nav{padding:12px 10px;display:grid;gap:2px;overflow:hidden}
+.ni{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:999px;color:var(--nav-fg);cursor:pointer;font-size:13px;border:0;background:none;text-align:left;font-family:inherit}
+.ni svg{width:16px;height:16px;flex:none;stroke:currentColor;fill:none;stroke-width:1.8}
+.ni:hover{background:#ffffff0d}
+.ni.on{background:#fff;color:var(--accent);font-weight:600}
+.ni .cnt{margin-left:auto;font:500 10px var(--f-mono);color:var(--nav-dim)}
+.ni.on .cnt{color:var(--accent)}
+.sub{display:grid;gap:1px;padding:2px 0 4px 38px}
+.sub[hidden]{display:none}
+.sub div{font-size:12px;color:var(--nav-dim);padding:3px 0}
+.sub div.on{color:#f3a183}
+.me{margin-top:auto;padding:14px 18px;border-top:1px solid #ffffff14;display:flex;gap:10px;align-items:center;font-size:12px}
+.me i{width:28px;height:28px;border-radius:50%;background:#2d4560;display:grid;place-items:center;font-style:normal;font-size:11px}
+.me small{display:block;color:var(--nav-dim)}
+
+/* main */
+.main{display:flex;flex-direction:column;min-width:0}
+.top{height:58px;display:flex;align-items:center;gap:14px;padding:0 24px}
+.search{flex:1;max-width:520px;height:36px;border-radius:999px;background:var(--card);border:1px solid var(--line);display:flex;align-items:center;padding:0 14px;color:var(--muted);gap:8px}
+.bell{width:36px;height:36px;border-radius:50%;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;position:relative}
+.bell::after{content:"";position:absolute;top:8px;right:9px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.user{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 14px 4px 4px;font-size:12px}
+.user i{width:28px;height:28px;border-radius:50%;background:#d9dde2}
+.user small{display:block;color:var(--muted);font-size:11px}
+.page{flex:1;padding:6px 24px 24px;position:relative;overflow:hidden}
+.view{position:absolute;inset:6px 24px 24px;opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s;pointer-events:none;display:flex;flex-direction:column;gap:14px}
+.view.on{opacity:1;transform:none;pointer-events:auto}
+.ttl{display:flex;align-items:center;justify-content:space-between}
+.ttl h2{margin:0;font-size:20px;font-weight:600;letter-spacing:-.01em}
+.ttl .bc{font:500 11px var(--f-mono);color:var(--muted);margin-bottom:2px}
+.btn{font:600 12px var(--f-ui);padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.btn.dark{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn.acc{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px}
+.pill{font:600 11px var(--f-ui);padding:2px 9px;border-radius:999px;white-space:nowrap}
+.p-crit{background:var(--crit-bg);color:var(--crit)}.p-high{background:var(--high-bg);color:var(--high)}
+.p-med{background:var(--med-bg);color:var(--med)}.p-low{background:var(--low-bg);color:var(--low)}
+.p-grey{background:#eef0f2;color:#58616b}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+
+/* command centre */
+.tasks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.tcol{padding:14px 16px}
+.tcol h3{margin:0 0 8px;font-size:14px;display:flex;justify-content:space-between;align-items:center}
+.tcol h3 b{width:22px;height:22px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:11px}
+.task{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-top:1px solid var(--line)}
+.task div{font-size:12.5px;font-weight:500}.task small{display:block;color:var(--muted);font-weight:400;margin-top:2px}
+.task.done div{text-decoration:line-through;color:var(--muted)}
+.duo{display:grid;grid-template-columns:1.35fr 1fr;gap:14px;flex:1;min-height:0}
+.panel{padding:14px 18px;display:flex;flex-direction:column;gap:8px}
+.panel h3{margin:0;font-size:14px}.panel .sub2{color:var(--muted);font-size:12px;margin-top:-4px}
+.heat{display:grid;grid-template-columns:76px repeat(5,1fr);gap:4px;font-size:11px}
+.heat .hx{text-align:center;color:var(--muted);padding-bottom:2px}
+.heat .hy{color:var(--muted);display:flex;align-items:center;justify-content:flex-end;padding-right:6px}
+.cell{height:32px;border-radius:6px;display:grid;place-items:center;font:600 12px var(--f-mono);cursor:pointer;transition:transform .15s,box-shadow .15s}
+.cell:hover,.cell.hl{transform:scale(1.06);box-shadow:0 0 0 2px var(--ink)}
+.fwrow{display:grid;grid-template-columns:96px 1fr 40px 74px;align-items:center;gap:10px;padding:6px 0;border-top:1px solid var(--line);font-size:12px}
+.bar{height:7px;border-radius:7px;background:#eeebe6;overflow:hidden}.bar i{display:block;height:100%;border-radius:7px;background:var(--navy);width:0;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+
+/* controls mapping */
+.mapwrap{flex:1;display:grid;grid-template-columns:330px 1fr 300px;gap:0;position:relative;padding:18px}
+.mapwrap svg.links{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.ctl{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px;cursor:pointer;background:var(--card);transition:border-color .2s,box-shadow .2s;position:relative;z-index:1}
+.ctl.on{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.ctl b{font:500 11px var(--f-mono);color:var(--muted)}.ctl div{font-weight:600;margin:2px 0 6px}
+.ctl small{color:var(--muted)}
+.reqs{display:grid;gap:8px;align-content:start;z-index:1}
+.req{border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:var(--card);opacity:.45;transition:opacity .3s,border-color .3s}
+.req.on{opacity:1;border-color:var(--navy)}
+.req b{font:600 11px var(--f-mono);color:var(--navy)}.req span{display:block;font-size:12px;color:var(--muted)}
+.fwtag{display:inline-block;font:600 10px var(--f-ui);padding:1px 7px;border-radius:5px;background:#e9eef5;color:var(--navy);margin-right:6px}
+.overlap{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);background:var(--ink);color:#fff;border-radius:999px;padding:8px 16px;font-size:12px;opacity:0;transition:opacity .3s;z-index:2}
+.overlap.on{opacity:1}
+
+/* risk */
+.rgrid{display:grid;grid-template-columns:1fr 360px;gap:14px;flex:1;min-height:0}
+.bigheat{display:grid;grid-template-columns:90px repeat(5,1fr);gap:6px}
+.bigheat .cell{height:62px;font-size:16px}
+.drawer{padding:18px;display:flex;flex-direction:column;gap:10px;transform:translateX(30px);opacity:0;transition:all .35s}
+.drawer.on{transform:none;opacity:1}
+.drawer h3{margin:0;font-size:16px}
+.kv{display:grid;grid-template-columns:120px 1fr;gap:6px 10px;font-size:12px}.kv dt{color:var(--muted)}.kv dd{margin:0;font-weight:500}
+.score{display:flex;align-items:baseline;gap:6px}.score b{font:600 34px var(--f-mono);color:var(--crit)}
+
+/* evidence */
+.integ{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ig{padding:14px;display:grid;gap:6px}
+.ig .lg{width:34px;height:34px;border-radius:8px;display:grid;place-items:center;color:#fff;font:700 11px var(--f-ui)}
+.ig .st{font-size:11px;color:var(--low);font-weight:600}
+.ig.sync .st{color:var(--accent)}
+.ig.sync .lg{animation:pulse 1s infinite}
+@keyframes pulse{50%{transform:scale(.88)}}
+.evlist{padding:6px 18px;flex:1;overflow:hidden}
+.ev{display:grid;grid-template-columns:150px 1fr 120px 150px 90px;gap:10px;align-items:center;padding:10px 0;border-top:1px solid var(--line);font-size:12px}
+.ev:first-child{border-top:0}
+.ev.new{animation:slidein .5s ease-out}
+@keyframes slidein{from{opacity:0;transform:translateY(-8px);background:var(--accent-soft)}to{opacity:1}}
+.hash{font:500 11px var(--f-mono);color:var(--muted)}
+
+/* audit */
+.chain{display:grid;gap:0;padding:8px 18px;flex:1}
+.blk{display:grid;grid-template-columns:150px 1fr 220px;gap:14px;align-items:center;padding:11px 0;border-top:1px dashed var(--line);font-size:12px;position:relative}
+.blk:first-child{border-top:0}
+.blk .who b{display:block;font-weight:600}.blk .who span{color:var(--muted)}
+.diff span{font:500 11px var(--f-mono);padding:1px 5px;border-radius:4px}
+.diff .rm{background:var(--crit-bg);color:var(--crit);text-decoration:line-through}.diff .ad{background:var(--low-bg);color:var(--low)}
+.verify{display:flex;align-items:center;gap:10px;padding:12px 18px;border-top:1px solid var(--line);font-size:12px}
+.verify .ok{color:var(--low);font-weight:600;opacity:0;transition:opacity .3s}.verify .ok.on{opacity:1}
+.blk.chk::after{content:"✓";position:absolute;right:-6px;color:var(--low);font-weight:700}
+
+/* report */
+.rep{display:grid;grid-template-columns:1fr 1fr;gap:14px;flex:1}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.kpi{padding:14px 16px}.kpi small{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em}.kpi b{display:block;font:600 26px var(--f-mono);margin-top:4px}
+.toast{position:absolute;right:24px;bottom:24px;background:var(--ink);color:#fff;border-radius:10px;padding:12px 16px;font-size:12.5px;opacity:0;transform:translateY(10px);transition:all .3s;z-index:5;max-width:340px}
+.toast.on{opacity:1;transform:none}
+
+/* cursor */
+.cursor{position:absolute;left:0;top:0;width:22px;height:22px;z-index:20;pointer-events:none;transition:transform .7s cubic-bezier(.45,.05,.25,1);filter:drop-shadow(0 2px 3px #0006)}
+.ripple{position:absolute;width:34px;height:34px;border-radius:50%;border:2px solid var(--accent);z-index:19;pointer-events:none;transform:translate(-50%,-50%) scale(.2);opacity:0}
+.ripple.go{animation:rip .5s ease-out}
+@keyframes rip{0%{opacity:1;transform:translate(-50%,-50%) scale(.2)}100%{opacity:0;transform:translate(-50%,-50%) scale(1.6)}}
+.note{font-size:12px;color:var(--stage-dim);line-height:1.5}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+  <div class="head">
+    <div>
+      <h1>GRC 360 — how it works</h1>
+      <p>A guided, clickable walk through the product: tasks, cross-framework controls, risk scoring, automated evidence and the audit trail. Press pause at any time and click around yourself.</p>
+    </div>
+    <div class="ctrls">
+      <button class="primary" id="play" type="button">Pause tour</button>
+      <button id="restart" type="button">Restart</button>
+    </div>
+  </div>
+  <div class="chapters" id="chapters"></div>
+  <div class="progress"><i id="prog"></i></div>
+
+  <div class="viewport" id="vp">
+    <div class="app" id="app">
+      <aside class="side">
+        <div class="brand"><b>360</b><span>GRC 360</span><small>demo</small></div>
+        <nav class="nav" id="nav"></nav>
+        <div class="me"><i>AM</i><div>Alex Meian<small>Compliance lead</small></div></div>
+      </aside>
+      <section class="main">
+        <div class="top">
+          <div class="search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search controls, risks, vendors…</div>
+          <div class="bell"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1b2430" stroke-width="1.8"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10 21h4"/></svg></div>
+          <div class="user"><i></i><div>Alex Meian<small>Compliance lead</small></div></div>
+        </div>
+        <div class="page" id="page">
+
+          <!-- 1 COMMAND CENTRE -->
+          <div class="view" data-v="cc">
+            <div class="ttl"><div><div class="bc">COMMAND CENTER</div><h2>Good morning, Alex</h2></div><button class="btn dark" type="button">+ New task</button></div>
+            <div class="tasks">
+              <div class="card tcol"><h3>Expired tasks <b>3</b></h3>
+                <div class="task"><div>Review Q2 audit report<small>Alice Smith · Compliance</small></div><span class="pill p-crit">Critical</span></div>
+                <div class="task"><div>Renew AWS licence<small>John Doe · Operations</small></div><span class="pill p-high">High</span></div>
+                <div class="task"><div>Update data privacy policy<small>Alice Smith · Legal</small></div><span class="pill p-med">Medium</span></div>
+              </div>
+              <div class="card tcol"><h3>Today <b id="todayN">3</b></h3>
+                <div class="task" id="t-vendor"><div>Update vendor contracts<small>Bob Jones · Third party</small></div><span class="pill p-high">High</span></div>
+                <div class="task"><div>Review penetration test<small>Bob Jones · Security</small></div><span class="pill p-high">High</span></div>
+                <div class="task"><div>Approve access review<small>Jane Roe · IT</small></div><span class="pill p-med">Medium</span></div>
+              </div>
+              <div class="card tcol"><h3>Upcoming <b>3</b></h3>
+                <div class="task"><div>Quarterly risk assessment<small>Charlie Davis · Risk</small></div><span class="pill p-med">Medium</span></div>
+                <div class="task"><div>SOC 2 pre-audit check<small>Alice Smith · Compliance</small></div><span class="pill p-crit">Critical</span></div>
+                <div class="task"><div>Disaster recovery drill<small>Bob Jones · Operations</small></div><span class="pill p-crit">Critical</span></div>
+              </div>
+            </div>
+            <div class="duo">
+              <div class="card panel"><h3>Asset risks</h3><div class="sub2">Impact × likelihood, last 30 days</div><div class="heat" id="miniheat"></div></div>
+              <div class="card panel"><h3>Compliance &amp; audit status</h3><div class="sub2">Readiness per framework</div><div id="fws"></div></div>
+            </div>
+          </div>
+
+          <!-- 2 CONTROLS -->
+          <div class="view" data-v="ctl">
+            <div class="ttl"><div><div class="bc">CONTROL CENTER › CONTROLS</div><h2>One control, many frameworks</h2></div><div style="display:flex;gap:8px"><button class="btn" type="button">Import CSV</button><button class="btn dark" type="button">+ Add control</button></div></div>
+            <div class="card mapwrap" id="mapwrap">
+              <svg class="links" id="links"></svg>
+              <div id="ctls">
+                <div class="ctl" data-c="0"><b>CTL-014</b><div>Multi-factor authentication</div><small>Owner: IT Security · Evidence: Okta, AWS IAM</small></div>
+                <div class="ctl" data-c="1"><b>CTL-022</b><div>Quarterly access review</div><small>Owner: IT · Evidence: access review export</small></div>
+                <div class="ctl" data-c="2"><b>CTL-037</b><div>Encryption at rest</div><small>Owner: Platform · Evidence: AWS KMS, S3</small></div>
+                <div class="ctl" data-c="3"><b>CTL-051</b><div>Vendor due diligence</div><small>Owner: Procurement · Evidence: vendor file</small></div>
+              </div>
+              <div></div>
+              <div class="reqs" id="reqs"></div>
+              <div class="overlap" id="overlap"></div>
+            </div>
+          </div>
+
+          <!-- 3 RISK -->
+          <div class="view" data-v="risk">
+            <div class="ttl"><div><div class="bc">RISK MANAGEMENT › ASSET RISKS</div><h2>Risk heat map</h2></div><div style="display:flex;gap:8px"><button class="btn" type="button">Last 30 days</button><button class="btn dark" type="button">+ Add risk</button></div></div>
+            <div class="rgrid">
+              <div class="card panel"><div class="sub2" style="margin:0">Click a cell to open the risks in it</div><div class="bigheat" id="bigheat"></div></div>
+              <div class="card drawer" id="drawer">
+                <div class="bc">RISK-0042 · ASSET RISK</div>
+                <h3>Cloud storage misconfiguration</h3>
+                <div class="score"><b>20</b><span style="color:var(--muted)">/ 25 · Critical × Likely</span></div>
+                <dl class="kv">
+                  <dt>Asset</dt><dd>AWS S3 buckets (prod)</dd>
+                  <dt>Owner</dt><dd>Platform team</dd>
+                  <dt>Treatment</dt><dd>Mitigate</dd>
+                  <dt>Linked controls</dt><dd>CTL-037 Encryption at rest<br>CTL-014 MFA</dd>
+                  <dt>Next review</dt><dd class="mono">2026-11-01</dd>
+                </dl>
+                <button class="btn acc" type="button" id="mitig">Create mitigation task</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 EVIDENCE -->
+          <div class="view" data-v="ev">
+            <div class="ttl"><div><div class="bc">INTEGRATIONS &amp; AUTOMATION</div><h2>Evidence that collects itself</h2></div><button class="btn acc" type="button" id="syncbtn">Sync now</button></div>
+            <div class="integ">
+              <div class="card ig" data-i="aws"><div class="lg" style="background:#e8730c">AWS</div><b>Amazon Web Services</b><div class="st">Connected · 184 checks</div></div>
+              <div class="card ig" data-i="okta"><div class="lg" style="background:#3b4bd8">OK</div><b>Okta</b><div class="st">Connected · 45 checks</div></div>
+              <div class="card ig" data-i="gh"><div class="lg" style="background:#1b2430">GH</div><b>GitHub</b><div class="st">Connected · 52 checks</div></div>
+              <div class="card ig" data-i="jira"><div class="lg" style="background:#1f6feb">JR</div><b>Jira</b><div class="st">Connected · tickets</div></div>
+            </div>
+            <div class="card evlist" id="evlist">
+              <div class="ev" style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em"><span>Collected</span><span>Evidence</span><span>Source</span><span>Control</span><span>Result</span></div>
+              <div class="ev"><span class="mono">2026-10-04 06:00</span><span>Branch protection on main</span><span>GitHub</span><span>CTL-061 Change mgmt</span><span class="pill p-low">Pass</span></div>
+              <div class="ev"><span class="mono">2026-10-04 06:00</span><span>Access keys older than 90 days</span><span>AWS IAM</span><span>CTL-022 Access review</span><span class="pill p-low">Pass</span></div>
+              <div class="ev"><span class="mono">2026-10-03 06:00</span><span>Users without MFA</span><span>Okta</span><span>CTL-014 MFA</span><span class="pill p-low">Pass</span></div>
+            </div>
+          </div>
+
+          <!-- 5 AUDIT -->
+          <div class="view" data-v="aud">
+            <div class="ttl"><div><div class="bc">SETTINGS › SYSTEM LOG</div><h2>Tamper-evident audit trail</h2></div><button class="btn dark" type="button" id="verifybtn">Verify chain</button></div>
+            <div class="card" style="display:flex;flex-direction:column;flex:1">
+              <div class="chain" id="chain"></div>
+              <div class="verify"><span class="hash" id="vstat">Each entry stores the hash of the one before it. Editing history breaks the chain.</span><span class="ok" id="vok">✓ 6 of 6 entries verified · chain intact</span></div>
+            </div>
+          </div>
+
+          <!-- 6 REPORT -->
+          <div class="view" data-v="rep">
+            <div class="ttl"><div><div class="bc">COMPLIANCE HUB › AUDIT READINESS</div><h2>ISO/IEC 27001:2022 readiness</h2></div><button class="btn acc" type="button" id="exportbtn">Export for auditor</button></div>
+            <div class="kpis">
+              <div class="card kpi"><small>Annex A controls</small><b>93</b></div>
+              <div class="card kpi"><small>Implemented</small><b id="k1">71</b></div>
+              <div class="card kpi"><small>Evidence current</small><b>88%</b></div>
+              <div class="card kpi"><small>Open findings</small><b style="color:var(--crit)">4</b></div>
+            </div>
+            <div class="rep">
+              <div class="card panel"><h3>By theme</h3><div id="themes"></div></div>
+              <div class="card panel"><h3>Open audit findings</h3>
+                <div class="task"><div>Unpatched server finding<small>Internal · due 2026-10-16</small></div><span class="pill p-crit">Open</span></div>
+                <div class="task"><div>Missing firewall policy review<small>External · due 2026-10-21</small></div><span class="pill p-med">In progress</span></div>
+                <div class="task"><div>SQL injection in customer portal<small>Pentest · due 2026-10-09</small></div><span class="pill p-crit">Open</span></div>
+                <div class="task done"><div>Outdated TLS on payment gateway<small>Pentest · closed 2026-09-30</small></div><span class="pill p-low">Closed</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toast" id="toast"></div>
+        </div>
+      </section>
+      <svg class="cursor" id="cursor" viewBox="0 0 24 24"><path d="M3 2l7.5 19 2.6-7.6L21 10.8z" fill="#fff" stroke="#111" stroke-width="1.4" stroke-linejoin="round"/></svg>
+      <div class="ripple" id="ripple"></div>
+    </div>
+  </div>
+
+  <div class="caption"><span class="step" id="stepn">1 / 6</span><span id="cap"></span></div>
+  <p class="note">Demo data only. Screens are a faithful re-creation of the GRC 360 development build; layouts may change before launch.</p>
+</div>
+
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const app=$("#app"), vp=$("#vp");
+function fit(){app.style.transform=`scale(${vp.clientWidth/1280})`}
+addEventListener("resize",fit);fit();
+
+/* nav */
+const ICON={grid:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+ doc:'<path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/>',users:'<circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-6 7-6s7 2 7 6"/>',
+ bld:'<path d="M4 21V5l8-3v19M12 9h8v12"/>',box:'<path d="M3 7l9-4 9 4-9 4zM3 7v10l9 4 9-4V7"/>',
+ shield:'<path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="m9 12 2 2 4-4"/>',alert:'<path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M12 8v4M12 16h.01"/>',
+ badge:'<circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/>',ops:'<circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M6 9v3a6 6 0 0 0 6 6h3"/>',
+ cog:'<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/>',scale:'<path d="M12 3v18M5 21h14M4 8h16M4 8l-2 6h6zM20 8l-2 6h6z"/>',plug:'<path d="M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0zM12 18v4"/>'};
+const NAV=[["Command Center","grid","cc"],["Governance Hub","doc"],["Organization Hub","users"],["Third Parties","bld"],["Asset Management","box"],
+ ["Control Center","shield","ctl",["Controls","Policies & Standards","Exceptions","Continuity & Recovery"]],
+ ["Risk Management","alert","risk",["Asset Risks","Third Party Risks","Operational Risks","Risk Exceptions"]],
+ ["Compliance Hub","badge","rep",["Frameworks","Assessments","Obligations","Audit Findings"]],["Operations Center","ops"],
+ ["Settings","cog","aud",["Authentication","System Health","System Log"]],["Trust Center","scale"],["Integrations & Automation","plug","ev"]];
+const nav=$("#nav");
+NAV.forEach(([l,ic,v,subs])=>{const b=document.createElement("button");b.type="button";b.className="ni";b.dataset.go=v||"";
+ b.innerHTML=`<svg viewBox="0 0 24 24">${ICON[ic]}</svg>${l}`;nav.appendChild(b);
+ if(subs){const s=document.createElement("div");s.className="sub";s.hidden=true;s.dataset.for=v;
+  s.innerHTML=subs.map((x,i)=>`<div class="${i==({ctl:0,risk:0,rep:3,aud:2}[v])?'on':''}">${x}</div>`).join("");nav.appendChild(s)}
+ b.onclick=()=>{if(v){userTook();show(v)}else toast(`${l} is part of the full product. This tour covers the core flow.`)}});
+
+/* heat maps */
+const LV=["Rare","Unlikely","Possible","Likely","Almost certain"],IM=["Critical","Major","Moderate","Minor","Negligible"];
+const M=[[2,3,5,3,1],[3,5,10,7,2],[4,10,15,12,4],[1,3,8,4,2],[1,1,2,2,3]];
+function heatColor(r,c){const s=(5-r)*(c+1);return s>=15?"#f6c9c0":s>=10?"#fbd9cc":s>=6?"#fdecc8":s>=3?"#fbf3dc":"#dff3e6"}
+function buildHeat(el,big){el.innerHTML='<div></div>'+LV.map(l=>`<div class="hx">${l}</div>`).join("")+
+ IM.map((im,r)=>`<div class="hy">${im}</div>`+M[r].map((n,c)=>`<div class="cell" data-r="${r}" data-c="${c}" style="background:${heatColor(r,c)}">${n}</div>`).join("")).join("")}
+buildHeat($("#miniheat"));buildHeat($("#bigheat"),1);
+$$("#bigheat .cell").forEach(c=>c.onclick=()=>{userTook();$$("#bigheat .cell").forEach(x=>x.classList.remove("hl"));c.classList.add("hl");$("#drawer").classList.add("on")});
+
+const FW=[["ISO 27001","65","On going","p-med"],["SOC 2 Type II","100","Completed","p-low"],["GDPR","40","Delayed","p-high"],["PCI DSS","25","At risk","p-crit"],["AZ Law 998-IIIQ","30","Mapping","p-grey"]];
+$("#fws").innerHTML=FW.map(f=>`<div class="fwrow"><span>${f[0]}</span><div class="bar"><i data-w="${f[1]}"></i></div><span class="mono">${f[1]}%</span><span class="pill ${f[3]}">${f[2]}</span></div>`).join("");
+const TH=[["Organisational (37)",78],["People (8)",88],["Physical (14)",71],["Technological (34)",69]];
+$("#themes").innerHTML=TH.map(f=>`<div class="fwrow" style="grid-template-columns:150px 1fr 40px"><span>${f[0]}</span><div class="bar"><i data-w="${f[1]}" style="background:var(--accent)"></i></div><span class="mono">${f[1]}%</span></div>`).join("");
+function grow(scope){$$(`${scope} .bar i`).forEach(i=>{i.style.width=0;requestAnimationFrame(()=>requestAnimationFrame(()=>i.style.width=i.dataset.w+"%"))})}
+
+/* control mapping */
+const REQ=[["ISO 27001","A.5.17","Authentication information"],["ISO 27001","A.8.5","Secure authentication"],["SOC 2","CC6.1","Logical access security"],
+ ["NIST CSF","PR.AA-03","Users are authenticated"],["PCI DSS","8.4.2","MFA for access to CDE"],["ISO 27001","A.5.18","Access rights"],["SOC 2","CC6.2","User registration & removal"],
+ ["ISO 27001","A.8.24","Use of cryptography"],["GDPR","Art. 32","Security of processing"],["ISO 27001","A.5.19","Supplier relationships"],["DORA","Art. 28","ICT third-party risk"]];
+const MAP=[[0,1,2,3,4],[5,6,2],[7,8,2],[9,10,8]];
+$("#reqs").innerHTML=REQ.map((r,i)=>`<div class="req" data-q="${i}"><span class="fwtag">${r[0]}</span><b>${r[1]}</b><span>${r[2]}</span></div>`).join("");
+function mapCtl(i){
+ $$(".ctl").forEach(c=>c.classList.toggle("on",+c.dataset.c===i));
+ $$(".req").forEach(q=>q.classList.toggle("on",MAP[i].includes(+q.dataset.q)));
+ const wrap=$("#mapwrap").getBoundingClientRect(),s=vp.clientWidth/1280,svg=$("#links");
+ const a=$(`.ctl[data-c="${i}"]`).getBoundingClientRect();
+ const x1=(a.right-wrap.left)/s,y1=(a.top+a.height/2-wrap.top)/s;
+ svg.innerHTML=MAP[i].map((q,k)=>{const b=$(`.req[data-q="${q}"]`).getBoundingClientRect();const x2=(b.left-wrap.left)/s,y2=(b.top+b.height/2-wrap.top)/s;
+  const len=Math.hypot(x2-x1,y2-y1)*1.3;
+  return `<path d="M${x1} ${y1} C ${x1+120} ${y1}, ${x2-120} ${y2}, ${x2} ${y2}" stroke="#de6b48" stroke-width="1.8" fill="none" stroke-dasharray="${len}" stroke-dashoffset="${len}"><animate attributeName="stroke-dashoffset" to="0" dur=".6s" begin="${k*0.12}s" fill="freeze"/></path><circle cx="${x2}" cy="${y2}" r="3.5" fill="#de6b48"/>`}).join("");
+ const fws=new Set(MAP[i].map(q=>REQ[q][0]));
+ $("#overlap").textContent=`1 control → ${MAP[i].length} requirements in ${fws.size} frameworks. Evidence collected once, reused everywhere.`;
+ $("#overlap").classList.add("on");
+}
+$$(".ctl").forEach(c=>c.onclick=()=>{userTook();mapCtl(+c.dataset.c)});
+
+/* evidence sync */
+let evN=0;const NEWEV=[["Public S3 buckets","AWS","CTL-037 Encryption","Pass","p-low"],["Admin accounts without MFA","Okta","CTL-014 MFA","1 found","p-crit"]];
+function sync(){
+ $$(".ig").forEach(g=>{g.classList.add("sync");g.querySelector(".st").dataset.t=g.querySelector(".st").textContent;g.querySelector(".st").textContent="Syncing…"});
+ setTimeout(()=>{$$(".ig").forEach(g=>{g.classList.remove("sync");g.querySelector(".st").textContent=g.querySelector(".st").dataset.t});
+  NEWEV.forEach((e,k)=>setTimeout(()=>{const d=document.createElement("div");d.className="ev new";
+   d.innerHTML=`<span class="mono">2026-10-04 09:1${evN++%10}</span><span>${e[0]}</span><span>${e[1]}</span><span>${e[2]}</span><span class="pill ${e[4]}">${e[3]}</span>`;
+   $("#evlist").children[0].after(d);if($("#evlist").children.length>6)$("#evlist").lastElementChild.remove()},k*450));
+  setTimeout(()=>toast("Okta found 1 admin without MFA. A Jira ticket was opened and CTL-014 is flagged for review."),1100)},1400)}
+$("#syncbtn").onclick=()=>{userTook();sync()};
+
+/* audit chain */
+const CH=[["09:14:02","Alex Meian","Control CTL-014",'status <span class="rm">Partial</span> → <span class="ad">Effective</span>',"a91f…3c07"],
+ ["09:12:47","Okta collector","Evidence EV-3312",'result <span class="ad">1 admin without MFA</span>',"5be2…91da"],
+ ["09:05:31","Bob Jones","Risk RISK-0042",'treatment <span class="rm">Accept</span> → <span class="ad">Mitigate</span>',"0c7d…e455"],
+ ["08:58:10","Alice Smith","Policy POL-007",'version <span class="rm">2.0</span> → <span class="ad">2.1</span>',"e310…7b2a"],
+ ["08:41:55","AWS collector","Evidence EV-3309",'result <span class="ad">Pass</span>',"77f4…0b19"],
+ ["08:30:00","System","Task T-221",'created <span class="ad">Quarterly risk assessment</span>',"19aa…c6e0"]];
+$("#chain").innerHTML=CH.map(c=>`<div class="blk"><div class="who"><b>${c[1]}</b><span class="mono">2026-10-04 ${c[0]}</span></div><div><span style="font-weight:600">${c[2]}</span> · <span class="diff">${c[3]}</span></div><div class="hash">sha256 ${c[4]}</div></div>`).join("");
+function verify(){$("#vok").classList.remove("on");$$(".blk").forEach(b=>b.classList.remove("chk"));$$(".blk").forEach((b,i)=>setTimeout(()=>b.classList.add("chk"),200+i*220));setTimeout(()=>$("#vok").classList.add("on"),200+CH.length*220)}
+$("#verifybtn").onclick=()=>{userTook();verify()};
+const exportPack=()=>toast("Auditor pack ready: Statement of Applicability, 93 controls with evidence links, and the signed audit log.");
+const mitigate=()=>toast("Task created: “Mitigate RISK-0042” assigned to Platform team, due 2026-10-18.");
+$("#exportbtn").onclick=()=>{userTook();exportPack()};
+$("#mitig").onclick=()=>{userTook();mitigate()};
+
+let tt;function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("on"),3200)}
+
+/* views */
+function show(v){
+ $$(".view").forEach(x=>x.classList.toggle("on",x.dataset.v===v));
+ $$(".ni").forEach(n=>n.classList.toggle("on",n.dataset.go===v));
+ $$(".sub").forEach(s=>s.hidden=s.dataset.for!==v);
+ if(v==="cc")grow('[data-v="cc"]');if(v==="rep")grow('[data-v="rep"]');
+ if(v!=="ctl"){$("#links").innerHTML="";$("#overlap").classList.remove("on");$$(".ctl,.req").forEach(x=>x.classList.remove("on"))}
+ if(v!=="risk"){$("#drawer").classList.remove("on");$$("#bigheat .cell").forEach(x=>x.classList.remove("hl"))}
+}
+
+/* cursor */
+const cur=$("#cursor"),rip=$("#ripple");let cx=640,cy=380;
+function moveTo(el){const a=el.getBoundingClientRect(),o=app.getBoundingClientRect(),s=vp.clientWidth/1280;
+ cx=(a.left-o.left+a.width/2)/s;cy=(a.top-o.top+a.height/2)/s;cur.style.transform=`translate(${cx-3}px,${cy-2}px)`}
+function click(){rip.style.left=cx+"px";rip.style.top=cy+"px";rip.classList.remove("go");void rip.offsetWidth;rip.classList.add("go")}
+
+/* tour */
+const navBtn=v=>$(`.ni[data-go="${v}"]`);
+const STEPS=[
+ {v:"cc",cap:"Command Center: every owner sees overdue, today's and upcoming tasks, plus live risk and audit status, on one screen.",
+  acts:[[()=>navBtn("cc"),1],[()=>$("#t-vendor"),0,()=>{$("#t-vendor").classList.add("done");$("#todayN").textContent="2";toast("Task completed. Reminder cancelled and logged.")}],[()=>$("#miniheat .cell[data-r='0'][data-c='3']"),0]]},
+ {v:"ctl",cap:"Control Center: write a control once and map it to ISO 27001, SOC 2, NIST, PCI DSS and GDPR at the same time.",
+  acts:[[()=>navBtn("ctl"),1],[()=>$('.ctl[data-c="0"]'),0,()=>mapCtl(0)],[()=>$('.ctl[data-c="2"]'),0,()=>mapCtl(2)]]},
+ {v:"risk",cap:"Risk Management: risks are scored on a 5×5 impact × likelihood matrix and linked to the controls that reduce them.",
+  acts:[[()=>navBtn("risk"),1],[()=>$("#bigheat .cell[data-r='0'][data-c='3']"),0,()=>{$("#bigheat .cell[data-r='0'][data-c='3']").classList.add("hl");$("#drawer").classList.add("on")}],[()=>$("#mitig"),0,mitigate]]},
+ {v:"ev",cap:"Integrations: collectors pull evidence from AWS, Okta and GitHub on a schedule. A failed check opens a ticket on its own.",
+  acts:[[()=>navBtn("ev"),1],[()=>$("#syncbtn"),0,sync],[()=>$("#evlist"),0]]},
+ {v:"aud",cap:"System log: every change is recorded with who, when and what changed, in a hash chain that shows if history was edited.",
+  acts:[[()=>navBtn("aud"),1],[()=>$("#verifybtn"),0,verify]]},
+ {v:"rep",cap:"Compliance Hub: audit readiness per framework, open findings, and a one-click pack for the auditor.",
+  acts:[[()=>navBtn("rep"),1],[()=>$("#exportbtn"),0,exportPack]]},
+];
+const chapters=$("#chapters");
+STEPS.forEach((s,i)=>{const b=document.createElement("button");b.type="button";b.className="chap";
+ b.textContent=["Tasks","Controls","Risk","Evidence","Audit trail","Readiness"][i];b.onclick=()=>{stopTour();runStep(i,true)};chapters.appendChild(b)});
+
+let playing=true,gen=0,cur_i=0;
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+async function runStep(i,manual){
+ const g=++gen;cur_i=i;const s=STEPS[i];
+ $$(".chap").forEach((c,k)=>c.classList.toggle("on",k===i));
+ $("#cap").textContent=s.cap;$("#stepn").textContent=`${i+1} / ${STEPS.length}`;
+ $("#prog").style.width=((i+1)/STEPS.length*100)+"%";
+ for(const [get,isNav,fn] of s.acts){
+  const el=get();if(!el)continue;moveTo(el);await wait(800);if(g!==gen)return;
+  click();if(isNav)show(s.v);if(fn)fn();await wait(isNav?900:1900);if(g!==gen)return;
+ }
+ await wait(1600);if(g!==gen||!playing||manual)return;
+ runStep((i+1)%STEPS.length);
+}
+function stopTour(){playing=false;$("#play").textContent="Play tour"}
+function userTook(){if(playing){playing=false;gen++;$("#play").textContent="Play tour"}}
+$("#play").onclick=()=>{if(playing){stopTour();gen++}else{playing=true;$("#play").textContent="Pause tour";runStep(cur_i)}};
+$("#restart").onclick=()=>{playing=true;$("#play").textContent="Pause tour";
+ $("#t-vendor").classList.remove("done");$("#todayN").textContent="3";runStep(0)};
+show("cc");cur.style.transform="translate(640px,380px)";
+setTimeout(()=>runStep(0),700);
+</script>
