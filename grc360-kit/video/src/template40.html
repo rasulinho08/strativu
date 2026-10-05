@@ -1,0 +1,262 @@
+<title>GRC360 Product Film</title>
+<meta name="description" content="A 40-second walkthrough of the real GRC360 app: command center, assets, risk, compliance and audit trail.">
+<style>
+/* Layout: one fixed 1920×1080 stage scaled to fit, driven by seek(t) over 0–40 s. Dark teal stage; inside the frame only real GRC360 screenshots, with cursor, camera and highlight overlays. */
+@font-face{font-family:"Geist";src:url(data:font/woff2;base64,__GEIST__) format("woff2");font-weight:100 900;font-display:block}
+@font-face{font-family:"Geist Mono";src:url(data:font/woff2;base64,__GEISTMONO__) format("woff2");font-weight:100 900;font-display:block}
+:root{
+  --deep:#041a23; --teal:#1d93b1; --teal-lt:#7fd0e3; --orange:#f07a2e;
+  --f:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --fm:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  color-scheme:dark;
+}
+html,body{background:var(--deep);color:#e6f1f5;margin:0}
+body{font-family:var(--f);padding-inline:16px;padding-block:20px 28px}
+.shell{max-width:1440px;margin:0 auto;display:grid;gap:12px}
+.viewport{position:relative;width:100%;aspect-ratio:16/9;max-width:100%;overflow:hidden;border-radius:12px;background:var(--deep);box-shadow:0 0 0 1px #0f3445}
+#stage{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;overflow:hidden;
+  background:radial-gradient(1200px 700px at 18% 0%,#0d4a60 0%,transparent 60%),radial-gradient(900px 600px at 100% 100%,#0a3446 0%,transparent 60%),linear-gradient(160deg,#062a3a,#041a23 70%);
+  font-family:var(--f);color:#e6f1f5;font-variant-numeric:tabular-nums}
+#stage *{box-sizing:border-box}
+.layer{position:absolute;inset:0}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.bar button{font:500 13px var(--f);border-radius:999px;padding:8px 14px;border:1px solid #1b4558;background:#0a2c3b;color:#d8eef4;cursor:pointer}
+.bar button:hover{background:#0f3a4d}
+.bar button:focus-visible,.bar input:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.bar button.on{border-color:var(--teal);color:#fff;background:#0f4357}
+.bar .time{font:500 12px var(--fm);color:#8fb3c1;min-width:92px}
+.bar input[type=range]{flex:1;min-width:160px;accent-color:var(--teal)}
+.chaps{display:flex;gap:6px;flex-wrap:wrap}
+.chaps button{font:500 12px var(--f);padding:6px 10px;border-radius:999px;border:1px solid #163d4e;background:transparent;color:#8fb3c1;cursor:pointer}
+.chaps button.on{color:#fff;border-color:var(--orange)}
+.note{font-size:12px;color:#6f93a2;margin:0}
+
+/* problem */
+.win{position:absolute;background:#fff;color:#1d2430;border-radius:10px;box-shadow:0 18px 50px -12px #000a,0 0 0 1px #0002;font-size:13px}
+.win .wt{height:30px;display:flex;align-items:center;gap:8px;padding:0 10px;background:#eef1f4;border-bottom:1px solid #dde2e8;font-weight:600;font-size:12.5px;white-space:nowrap;border-radius:10px 10px 0 0}
+.win .wt i{width:16px;height:16px;border-radius:3px;flex:none}
+.win>div:last-of-type{border-radius:0 0 10px 10px;overflow:hidden}
+.xl i{background:#1d7044}.ml i{background:#2f6fd6}.fd i{background:#d9a33a}
+.grid{display:grid;font:12px var(--fm)}
+.grid span{border-right:1px solid #e3e7ec;border-bottom:1px solid #e3e7ec;padding:5px 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.grid .h{background:#f4f6f8;font-weight:600;color:#556}.grid .r{background:#fde2de;color:#b42318}.grid .y{background:#fff3c4}
+.tag{position:absolute;font:700 12px var(--f);padding:5px 10px;border-radius:6px;background:#c23b2e;color:#fff;white-space:nowrap;box-shadow:0 6px 16px -6px #000a}
+.tag.amber{background:#d98c13}
+.sticky{position:absolute;background:#fde68a;color:#3d3200;font:600 18px var(--f);padding:16px 18px;width:210px;box-shadow:0 14px 30px -10px #000a;border-radius:2px}
+.headline{position:absolute;left:0;right:0;bottom:120px;text-align:center;font-size:54px;font-weight:600;letter-spacing:-.02em;line-height:1.15;color:#fff;padding:0 220px;text-wrap:balance}
+.headline span{display:inline-block;opacity:0}
+
+/* intro */
+#intro .lock{position:absolute;left:50%;top:44%;width:560px;transform:translate(-50%,-50%)}
+#intro .tagline{position:absolute;left:0;right:0;top:64%;text-align:center;font-size:40px;font-weight:500;letter-spacing:-.01em;color:#cfe8f0}
+#intro .tagline b{color:#fff;font-weight:700}
+#intro .glow{position:absolute;left:50%;top:44%;width:900px;height:900px;transform:translate(-50%,-50%);background:radial-gradient(circle,#1d93b155 0%,transparent 60%)}
+
+/* captions */
+.cap{position:absolute;left:130px;top:40px;display:flex;align-items:baseline;gap:18px;opacity:0}
+.cap .k{font:600 14px var(--fm);letter-spacing:.14em;color:var(--orange);text-transform:uppercase}
+.cap .l{font-size:30px;font-weight:600;color:#fff;letter-spacing:-.01em}
+.brandmini{position:absolute;right:130px;top:34px;height:52px;opacity:0}
+
+/* frame with real screenshots */
+#frame{position:absolute;left:128px;top:118px;width:1664px;height:936px;border-radius:14px;overflow:hidden;background:#f3f1ec;
+  box-shadow:0 40px 120px -30px #000c,0 0 0 1px #ffffff1a;transform-origin:50% 40%}
+#cam{position:absolute;left:0;top:0;width:1664px;height:936px;transform-origin:0 0}
+#cam img{position:absolute;left:0;top:0;width:1664px;height:936px;opacity:0;visibility:hidden}
+.hl{position:absolute;border:3px solid var(--orange);border-radius:10px;box-shadow:0 0 0 6px #f07a2e2e,0 0 30px #f07a2e55;opacity:0;visibility:hidden;z-index:5}
+.hl span{position:absolute;left:-3px;bottom:calc(100% + 8px);white-space:nowrap;font:600 15px var(--f);color:#fff;background:#0f2a37;border:1px solid #f07a2e88;padding:6px 12px;border-radius:8px;box-shadow:0 10px 24px -10px #000a}
+.hl span:empty{display:none}
+.hl b{position:absolute;left:-16px;top:50%;transform:translate(-100%,-50%);width:34px;height:34px;border-radius:50%;background:var(--orange);color:#fff;font:700 16px var(--f);display:grid;place-items:center;box-shadow:0 6px 14px -6px #000a}
+#cur{position:absolute;left:0;top:0;width:34px;height:34px;z-index:20;pointer-events:none;filter:drop-shadow(0 4px 6px #0006);opacity:0;transform-origin:6px 4px}
+#rip{position:absolute;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;border:3px solid var(--orange);z-index:19;opacity:0;pointer-events:none}
+
+/* chain overlay */
+#chain{position:absolute;left:50%;top:948px;transform:translateX(-50%);display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:18px;
+  background:#0a2532ee;border:1px solid #1d93b155;box-shadow:0 24px 60px -20px #000c;opacity:0;visibility:hidden;z-index:30;white-space:nowrap}
+.cs{display:flex;flex-direction:column;gap:3px;padding:8px 16px;border-radius:12px;border:1.5px solid #2a4b5a;opacity:.35;min-width:150px}
+.cs i{font:700 12px var(--fm);letter-spacing:.14em;text-transform:uppercase;font-style:normal;color:var(--teal-lt)}
+.cs span{font-size:18px;font-weight:600;color:#fff}
+.cs.on{border-color:var(--orange);background:#f07a2e1f;opacity:1}
+.ca{width:26px;height:2px;background:#4b6b79;position:relative}.ca::after{content:"";position:absolute;right:-1px;top:-5px;border:6px solid transparent;border-left:8px solid #4b6b79;border-right:0}
+
+/* outro */
+.mod{position:absolute;width:250px;height:88px;border-radius:16px;background:#0b3446cc;border:1px solid #1d93b155;display:flex;align-items:center;gap:14px;padding:0 18px;font-size:17px;font-weight:600;color:#e6f4f8;opacity:0}
+.mod svg{width:26px;height:26px;fill:none;stroke:#5cc3dc;stroke-width:1.8;flex:none;stroke-linecap:round;stroke-linejoin:round}
+#outro .lock2{position:absolute;left:50%;top:41%;width:440px;transform:translate(-50%,-50%);opacity:0}
+#outro .l1{position:absolute;left:0;right:0;top:57%;text-align:center;font-size:52px;font-weight:650;letter-spacing:-.02em;color:#fff;opacity:0}
+#outro .l2{position:absolute;left:0;right:0;top:65.5%;text-align:center;font:500 22px var(--fm);letter-spacing:.24em;color:#7fc9dc;text-transform:uppercase;opacity:0}
+#outro .l3{position:absolute;left:0;right:0;top:73%;text-align:center;font-size:24px;font-weight:600;color:var(--orange);opacity:0}
+#fade{position:absolute;inset:0;background:var(--deep);opacity:0;pointer-events:none;z-index:60}
+</style>
+
+<div class="shell">
+  <div class="viewport" id="vp">
+    <div id="stage">
+      <div class="layer" id="problem"><div id="wins"></div><div class="headline" id="hl"></div></div>
+      <div class="layer" id="intro">
+        <div class="glow" id="glow"></div>
+        <img class="lock" id="lock" src="data:image/png;base64,__LOGO_WHITE__" alt="GRC360">
+        <div class="tagline" id="tag">Governance. Risk. Compliance. <b>— Unified.</b></div>
+      </div>
+      <div class="cap" id="cap"><span class="k" id="capk"></span><span class="l" id="capl"></span></div>
+      <img class="brandmini" id="bmini" src="data:image/png;base64,__LOGO_WHITE__" alt="">
+      <div id="frame">
+        <div id="cam">
+          __IMGS__
+          <div id="hls"></div>
+          <div id="rip"></div>
+          <svg id="cur" viewBox="0 0 24 24"><path d="M4 2.5l7.6 19 2.7-7.7 7.7-2.8z" fill="#fff" stroke="#0b1620" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+      <div id="chain"></div>
+      <div class="layer" id="outro">
+        <div id="mods"></div>
+        <img class="lock2" id="lock2" src="data:image/png;base64,__LOGO_WHITE__" alt="GRC360">
+        <div class="l1" id="o1">One platform. Complete control.</div>
+        <div class="l2" id="o2">Governance • Risk • Compliance</div>
+        <div class="l3" id="o3">__SITE__</div>
+      </div>
+      <div id="fade"></div>
+    </div>
+  </div>
+  <div class="bar">
+    <button type="button" id="pp" class="on">Pause</button>
+    <button type="button" id="snd">Sound on</button>
+    <button type="button" id="rs0">Restart</button>
+    <input type="range" id="scrub" min="0" max="40" step="0.05" value="0" aria-label="Timeline">
+    <span class="time" id="tm">0:00 / 0:40</span>
+  </div>
+  <div class="chaps" id="chaps"></div>
+  <p class="note">Screens are the real GRC360 app (October 2026 build) with demo data. Highlights and the chain bar are video annotations.</p>
+  <audio id="aud" preload="auto" src="data:audio/mpeg;base64,__AUDIO__"></audio>
+</div>
+
+<script>
+(function(){
+const TL=__TL__, M=__META__, DUR=TL.dur;
+const S=document.getElementById('stage'), VP=document.getElementById('vp');
+const $=s=>S.querySelector(s), $$=s=>[...S.querySelectorAll(s)];
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eo=x=>1-Math.pow(1-x,3);
+const back=x=>{const c=1.5;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const lin=(t,a,b)=>cl((t-a)/(b-a)), pe=(t,a,b)=>eio(lin(t,a,b)), po=(t,a,b)=>eo(lin(t,a,b));
+const vis=(t,a,b,c=1e9,d=1e9)=>Math.min(pe(t,a,b),1-pe(t,c,d));
+const lerp=(a,b,k)=>a+(b-a)*k;
+function st(el,o,tf){el.style.opacity=o.toFixed(3);el.style.visibility=o<=0.002?'hidden':'visible';if(tf!==undefined)el.style.transform=tf}
+const K=1664/1600, W=1664, H=936;
+
+/* problem */
+const sheet=(rows,cols)=>`<div class="grid" style="grid-template-columns:${cols}">${rows.map(r=>r.map(c=>{const m=c.match(/^([hry])\|(.*)$/);return m?`<span class="${m[1]}">${m[2]}</span>`:`<span>${c}</span>`}).join('')).join('')}</div>`;
+const WN=[
+ {x:150,y:110,w:520,r:-4,cls:'xl',t:'Risk_Register_v7_FINAL(2).xlsx',b:sheet([['h|ID','h|Risk','h|Owner','h|Score'],['R-01','Data breach','?','r|#REF!'],['R-02','Vendor outage','J. Smith','12'],['R-03','Phishing','y|TBD','16'],['R-04','Data breach','IT','r|#N/A'],['R-05','Ransomware','','20']],'52px 1fr 92px 70px'),tag:['Duplicate',360,-14]},
+ {x:1240,y:90,w:540,r:3,cls:'xl',t:'Controls_2026_copy.xlsx',b:sheet([['h|Ctrl','h|Framework','h|Status','h|Evidence'],['C-14','ISO 27001','y|Partial?','r|missing'],['C-22','SOC 2','Done','screenshot.png'],['C-31','ISO / GDPR','y|?','r|missing'],['C-37','—','Done','see email']],'60px 1fr 96px 120px'),tag:['Outdated',380,-14,'amber']},
+ {x:700,y:250,w:470,r:1.5,cls:'ml',t:'RE: RE: FW: audit evidence??',b:`<div style="padding:14px 16px;font-size:14px;line-height:1.5;color:#333"><b>From:</b> Auditor<br>Hi, we still haven’t received the MFA evidence for Q3. Can someone confirm who owns the customer database and which policy version is current?<br><span style="color:#999">— sent 4 days ago</span></div>`,tag:['3 reminders',330,-14]},
+ {x:120,y:470,w:470,r:3,cls:'xl',t:'Assets_list (3).xlsx',b:sheet([['h|Asset','h|Dept','h|Critical?'],['Customer DB','IT?','y|yes / no'],['Payment GW','Finance','Yes'],['Laptops','r|—','r|?'],['AWS prod','IT','y|High?']],'1fr 90px 110px')},
+ {x:1310,y:470,w:440,r:-3,cls:'fd',t:'Evidence_Q3 (final) / copy',b:`<div style="padding:12px 16px;font:13px var(--fm);line-height:1.9;color:#334">📄 mfa_screenshot_old.png<br>📄 mfa_screenshot_NEW.png<br>📄 policy_v2.3.docx<br>📄 policy_v2.4_draft(1).docx</div>`,tag:['Which one?',270,-14,'amber']},
+];
+$('#wins').innerHTML=WN.map((w,i)=>`<div class="win ${w.cls}" id="w${i}" style="left:${w.x}px;top:${w.y}px;width:${w.w}px"><div class="wt"><i></i>${w.t}</div>${w.b}${w.tag?`<span class="tag ${w.tag[3]||''}" style="left:${w.tag[1]}px;top:${w.tag[2]}px">${w.tag[0]}</span>`:''}</div>`).join('')+
+ `<div class="sticky" id="w5" style="left:760px;top:600px">Who owns the customer DB??<br><span style="font-weight:500;font-size:15px">Audit in 9 days</span></div>`;
+$('#hl').innerHTML="Managing Governance, Risk and Compliance across multiple systems shouldn’t be this complicated.".split(' ').map(w=>`<span>${w}</span>`).join(' ');
+
+/* outro modules (the 12 real sidebar modules) */
+const IC={grid:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+ doc:'<path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h7M9 17h5"/>',users:'<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-5.5 6.5-5.5s6.5 2 6.5 5.5"/>',
+ bld:'<path d="M4 21V5l8-3v19M12 9h8v12"/>',box:'<path d="M3 7l9-4 9 4-9 4zM3 7v10l9 4 9-4V7M12 11v10"/>',shield:'<path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="m9 12 2 2 4-4"/>',
+ alert:'<path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M12 8v4M12 16h.01"/>',badge:'<circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/>',
+ ops:'<circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M6 9v3a6 6 0 0 0 6 6h3"/>',cog:'<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>',
+ scale:'<path d="M12 3v18M6 21h12M4 7h16M4 7l-2.5 6h5zM20 7l-2.5 6h5z"/>',plug:'<path d="M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0zM12 18v4"/>'};
+const MODS=[["Command Center","grid"],["Governance Hub","doc"],["Organization Hub","users"],["Third Parties","bld"],["Asset Management","box"],["Control Center","shield"],["Risk Management","alert"],["Compliance Hub","badge"],["Operations Center","ops"],["Trust Center","scale"],["Integrations & Automation","plug"],["Settings","cog"]];
+const MPOS=[];for(let i=0;i<6;i++){MPOS.push([150+(i%2?40:0),150+i*130]);MPOS.push([1520-(i%2?40:0),150+i*130]);}
+$('#mods').innerHTML=MODS.map(([l,i],n)=>`<div class="mod" id="m${n}" style="left:${MPOS[n][0]}px;top:${MPOS[n][1]}px"><svg viewBox="0 0 24 24">${IC[i]}</svg>${l}</div>`).join('');
+
+/* highlights + chain */
+$('#hls').innerHTML=TL.highlights.map((h,i)=>`<div class="hl" id="h${i}" style="left:${h[3]*K-6}px;top:${h[4]*K-6}px;width:${h[5]*K+12}px;height:${h[6]*K+12}px"><span>${h[7]}</span></div>`).join('')+
+ TL.chain.steps.map((c,i)=>`<div class="hl" id="hc${i}" style="left:${c[1]*K-6}px;top:${c[2]*K-6}px;width:${c[3]*K+12}px;height:${c[4]*K+12}px"><b>${i+1}</b></div>`).join('');
+$('#chain').innerHTML=TL.chain.steps.map((c,i)=>(i?'<span class="ca"></span>':'')+`<div class="cs" id="cs${i}"><i>${i+1} · ${c[5]}</i><span>${c[6]}</span></div>`).join('');
+
+/* states */
+const imgs={};$$('#cam img').forEach(im=>imgs[im.dataset.k]=im);
+const STS=TL.states.map(s=>({k:s[0],t:s[1],ty:s[2],d:s[2]==='scroll'?0.45:s[2]==='modal'?0.26:0.24}));
+
+/* cursor */
+const P=k=>typeof k==='string'?[M[k][0],M[k][1]]:k;
+function cursorAt(t){let pos=[800,520];for(const [a,b,k] of TL.moves){const to=P(k);if(t>=b){pos=to;continue}if(t>=a){const e=eio(lin(t,a,b));pos=[lerp(pos[0],to[0],e),lerp(pos[1],to[1],e)]}break}return pos}
+function camAt(t){let c=[1,800,450];for(const [a,b,z,x,y] of TL.camera){if(t>=b){c=[z,x,y];continue}if(t>=a){const e=eio(lin(t,a,b));c=[lerp(c[0],z,e),lerp(c[1],x,e),lerp(c[2],y,e)]}break}return c}
+
+let lastCap=-1;
+function seek(t){
+  // problem 0–3.5
+  const pv=1-pe(t,3.2,3.6);st($('#problem'),pv);
+  if(pv>0){
+    for(let i=0;i<6;i++){const el=$('#w'+i);const a=0.05+i*0.14;const k=back(lin(t,a,a+0.45));const coll=pe(t,2.55,3.3);
+      const w=WN[i]||{x:760,y:600,w:210,r:-5};const bx=w.x+w.w/2,by=w.y+130;
+      el.style.opacity=(cl(k*1.4)*(1-pe(t,2.95,3.3))).toFixed(3);
+      el.style.transform=`translate(${(960-bx)*coll}px,${(520-by)*coll+Math.sin(t*1.6+i)*6}px) rotate(${w.r*(1+0.6*coll)+Math.sin(t*1.1+i*2)*0.7}deg) scale(${(0.6+0.4*k)*(1-0.78*coll)})`}
+    $$('#hl span').forEach((s,i)=>{const a=0.3+i*0.075;s.style.opacity=(pe(t,a,a+0.3)*(1-pe(t,2.75,3.2))).toFixed(3);s.style.transform=`translateY(${(1-po(t,a,a+0.3))*14}px)`});
+  }
+  // intro 3.5–6
+  const iv=vis(t,3.4,3.8,5.1,5.7);st($('#intro'),iv);
+  if(iv>0){const k=back(lin(t,3.5,4.3));$('#lock').style.transform=`translate(-50%,-50%) scale(${0.5+0.5*k}) translateY(${-pe(t,5.0,5.7)*60}px)`;$('#lock').style.opacity=cl(lin(t,3.5,3.85));
+    $('#glow').style.opacity=(pe(t,3.5,4.4)*0.9).toFixed(3);st($('#tag'),pe(t,4.2,4.8),`translateY(${(1-po(t,4.2,4.9))*18}px)`)}
+  // frame
+  const fv=t<36?pe(t,5.0,5.9):1-pe(t,36.2,36.9);const fs=t<36?lerp(0.62,1,po(t,5.0,6.3)):lerp(1,0.72,pe(t,36.2,36.9));
+  st($('#frame'),fv,`translateY(${t<36?(1-po(t,5,6.3))*80:0}px) scale(${fs})`);
+  st($('#bmini'),vis(t,6.2,6.8,36.2,36.7));
+  // captions
+  const ci=TL.captions.findIndex(c=>t>=c[0]&&t<c[1]);
+  if(ci!==lastCap){lastCap=ci;if(ci>=0){$('#capk').textContent=TL.captions[ci][2];$('#capl').textContent=TL.captions[ci][3]}}
+  if(ci>=0){const c=TL.captions[ci];st($('#cap'),vis(t,c[0]+0.1,c[0]+0.55,c[1]-0.35,c[1]-0.02),`translateY(${(1-po(t,c[0]+0.1,c[0]+0.6))*10}px)`)}else st($('#cap'),0);
+  // screenshots
+  let cur=0;STS.forEach((s,i)=>{if(t>=s.t)cur=i});
+  const A=STS[cur],B=cur>0?STS[cur-1]:null;const k=lin(t,A.t,A.t+A.d);const ke=eio(k);
+  for(const key in imgs){const im=imgs[key];
+    if(key===A.k){im.style.zIndex=2;const dy=A.ty==='scroll'?(1-ke)*70:0;st(im,cur===0?1:ke,`translateY(${dy}px)`)}
+    else if(B&&key===B.k&&k<1){im.style.zIndex=1;const dy=A.ty==='scroll'?-ke*70:0;st(im,1,`translateY(${dy}px)`)}
+    else st(im,0)}
+  // camera
+  const [z,cx,cy]=camAt(t);let tx=W/2-cx*K*z,ty=H/2-cy*K*z;tx=cl(tx,W-W*z,0);ty=cl(ty,H-H*z,0);
+  $('#cam').style.transform=`translate(${tx.toFixed(2)}px,${ty.toFixed(2)}px) scale(${z.toFixed(4)})`;
+  // highlights
+  TL.highlights.forEach((h,i)=>{const o=vis(t,h[0],h[0]+0.25,h[1]-0.2,h[1]);const sc=1+(1-po(t,h[0],h[0]+0.35))*0.04;st($('#h'+i),o,`scale(${sc})`)});
+  const ch=TL.chain;const chv=vis(t,ch.show[0],ch.show[0]+0.35,ch.show[1]-0.3,ch.show[1]);
+  st($('#chain'),chv,`translateX(-50%) translateY(${(1-po(t,ch.show[0],ch.show[0]+0.45))*30}px)`);
+  ch.steps.forEach((c,i)=>{$('#cs'+i).classList.toggle('on',t>=c[0]);st($('#hc'+i),vis(t,c[0],c[0]+0.25,ch.show[1]-0.3,ch.show[1]),`scale(${1+(1-po(t,c[0],c[0]+0.35))*0.04})`)});
+  // cursor
+  const cvis=vis(t,6.4,6.8,35.9,36.3);const [x,y]=cursorAt(t);
+  let press=0;for(const c of TL.clicks){const d=t-c;if(d>=0&&d<0.22)press=Math.sin(d/0.22*Math.PI)}
+  st($('#cur'),cvis,`translate(${x*K-6}px,${y*K-4}px) scale(${(1-0.15*press)/z})`);
+  let rp=-1;for(const c of TL.clicks){const d=t-c;if(d>=0&&d<0.5)rp=d/0.5}
+  const rip=$('#rip');if(rp>=0&&cvis>0){rip.style.opacity=(1-rp).toFixed(3);rip.style.visibility='visible';rip.style.transform=`translate(${x*K}px,${y*K}px) scale(${(0.3+rp*1.1)/z})`}else{rip.style.opacity=0;rip.style.visibility='hidden'}
+  // outro 36.3–40
+  const ov=pe(t,36.4,36.9);st($('#outro'),t<36.3?0:ov);
+  if(t>=36.3){MODS.forEach((m,i)=>{const a=36.5+i*0.06;const e=$('#m'+i);const kk=back(lin(t,a,a+0.55));const [mx,my]=MPOS[i];
+      e.style.opacity=cl(lin(t,a,a+0.3)).toFixed(3);e.style.transform=`translate(${(835-mx)*(1-kk)*0.6}px,${(496-my)*(1-kk)*0.6}px) scale(${0.7+0.3*kk})`});
+    st($('#lock2'),pe(t,37.0,37.5),`translate(-50%,-50%) scale(${0.85+0.15*back(lin(t,37.0,37.7))})`);
+    st($('#o1'),pe(t,37.5,38.0),`translateY(${(1-po(t,37.5,38.1))*16}px)`);st($('#o2'),pe(t,37.9,38.4));st($('#o3'),pe(t,38.2,38.7))}
+  st($('#fade'),Math.max(1-pe(t,0,0.3),pe(t,39.6,40)));
+}
+window.__seek=seek;
+
+/* player */
+let scale=1;function fit(){scale=VP.clientWidth/1920;S.style.transform=`scale(${scale})`}fit();
+const scrub=document.getElementById('scrub'),tm=document.getElementById('tm'),ppb=document.getElementById('pp'),sb=document.getElementById('snd'),aud=document.getElementById('aud');
+const fmt=s=>`${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
+let playing=!window.__capture,cur=0,last=null,sound=false;
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){playing=false;cur=19.9}
+const CH=[[0,'Problem'],[3.5,'GRC360'],[6.2,'Command Center'],[10.6,'Assets'],[17.1,'Risk'],[25.1,'Compliance'],[33.3,'Audit trail'],[36.3,'Finale']];
+const chaps=document.getElementById('chaps');
+CH.forEach(([s,l])=>{const b=document.createElement('button');b.type='button';b.textContent=l;b.onclick=()=>{cur=s;syncAudio();draw()};chaps.appendChild(b)});
+function syncAudio(){if(!sound)return;try{aud.currentTime=cur;if(playing)aud.play().catch(()=>{});else aud.pause()}catch(e){}}
+function draw(){seek(cur);scrub.value=cur;tm.textContent=`${fmt(cur)} / 0:40`;let ci=0;CH.forEach(([s],i)=>{if(cur>=s)ci=i});[...chaps.children].forEach((b,i)=>b.classList.toggle('on',i===ci))}
+function loop(ts){if(playing){if(last!==null){cur+=(ts-last)/1000;if(cur>=DUR){cur=0;syncAudio()}}last=ts;
+  if(sound&&!aud.paused&&Math.abs(aud.currentTime-cur)>0.15)cur=aud.currentTime;draw()}else last=null;requestAnimationFrame(loop)}
+ppb.onclick=()=>{playing=!playing;ppb.textContent=playing?'Pause':'Play';ppb.classList.toggle('on',playing);syncAudio()};
+if(!playing){ppb.textContent='Play';ppb.classList.remove('on')}
+sb.onclick=()=>{sound=!sound;sb.textContent=sound?'Sound off':'Sound on';sb.classList.toggle('on',sound);if(sound)syncAudio();else aud.pause()};
+document.getElementById('rs0').onclick=()=>{cur=0;playing=true;ppb.textContent='Pause';ppb.classList.add('on');syncAudio();draw()};
+scrub.oninput=()=>{cur=+scrub.value;syncAudio();draw()};
+addEventListener('resize',()=>{fit();draw()});
+draw();if(!window.__capture)requestAnimationFrame(loop);
+})();
+</script>
