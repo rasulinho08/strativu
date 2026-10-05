@@ -1,76 +1,151 @@
-# GRC 360 — sayt üçün materiallar
+# GRC 360: sayt üçün materiallar
 
-Mənbə: `grc-front-end` (Next.js 16, əsas məhsul), `caspianLexGRC/caspian-admin` (köhnə prototip), `strativu` (sayt), backend `caspianlex-grc-9g2x.onrender.com/api/v1` (frontend bu ünvana proxy edir; backend kodu bu repolarda yoxdur).
+**Mənbə (son versiya):**
+- Frontend: `Strativuco/GRC_Frontend_Code`, `main` branch-i, 2026-10-04.
+- Backend: `Strativuco/GRC_Backend_Code`, `develop` branch-i, 2026-10-04.
 
-## 1. Modullar (kodda olan, sidebar-dan)
+Hər iki tərəfi lokalda qaldırdım (Postgres + Spring Boot + Next.js), demo hesabla daxil olub ekranları özüm çəkdim.
 
-Kodda **12 əsas modul, 31 alt ekran** var. Kodda "15 modul" yoxdur. 15 desəniz, sayt yazısını 12-yə düzəltmək lazımdır, ya da aşağıdakı 3 "əlavə"ni ayrıca modul kimi saymaq olar.
+---
 
-| # | Modul | Nə edir | Alt ekranlar |
+## 1. Modullar
+
+Məhsulda **12 modul** və onların içində **31 ekran** var (`src/shared/config/navigation.ts`). Kodda "15 modul" yoxdur. Saytda ya **12** yazın, ya da aşağıdakı B variantını istifadə edin: orada 15 real ekran ayrıca bacarıq kimi göstərilib.
+
+### A. Məhsuldakı 12 modul (sidebar)
+
+| # | Modul | Nə edir | İçindəki ekranlar |
 |---|---|---|---|
-| 1 | Command Center | Gecikmiş / bugünkü / gələcək tapşırıqlar, risk heat map-ləri, framework üzrə audit statusu | — |
-| 2 | Governance Hub | Coverage, məqsədlər (objectives), problemlərin izlənməsi | Coverage, Issues, Objectives |
-| 3 | Organization Hub | İstifadəçilər, departamentlər, rollar və icazələr | Users, Departments, Roles |
-| 4 | Third Parties | Vendor reyestri və xidmət müqavilələri (SLA) | Vendors, Service Agreements |
-| 5 | Asset Management | Aktiv reyestri və data axınlarının xəritəsi | Assets, Data Movement |
-| 6 | Control Center | Kontrollar, siyasət və standartlar, istisnalar, BCP/DR | Controls, Policies & Standards, Exceptions, Continuity & Recovery |
-| 7 | Risk Management | Aktiv, üçüncü tərəf və əməliyyat riskləri, 5×5 skorlama | Asset / Third-Party / Operational Risks, Risk Exceptions |
-| 8 | Compliance Hub | Framework paketləri, qiymətləndirmələr, öhdəliklər, audit tapıntıları | Frameworks, Assessments, Obligations, Compliance Exceptions, Audit Findings |
-| 9 | Operations Center | Layihələr və insidentlər | Projects, Incidents |
-| 10 | Trust Center | Müştərilər üçün açıq səhifə: sertifikatlar, kontrollar, subprocessor-lar, sənədlər | public səhifə |
-| 11 | Integrations & Automation | AWS, Azure, GCP, Okta, GitHub, Jira, Slack, CrowdStrike… + avtomatik workflow-lar | Integrations, Workflows |
-| 12 | Settings | Autentifikasiya (SSO/MFA), sistem sağlamlığı, yeniləmələr, sistem jurnalı | Authentication, About, System Health, Updates, System Log |
+| 1 | **Command Center** | Gecikmiş, bugünkü və gələcək tapşırıqları, aktiv/biznes/üçüncü tərəf risk heat map-lərini və uyğunluq statusunu bir ekranda göstərir | — |
+| 2 | **Governance Hub** | Strateji məqsədləri, problemləri və siyasət–kontrol əhatəsini idarə edir | Coverage, Issues, Objectives (+ Audits) |
+| 3 | **Organization Hub** | İstifadəçilər, departamentlər, qruplar; hər modul və hər əməliyyat üzrə icazələr | Users, Departments, Groups |
+| 4 | **Third Parties** | Vendor reyestri, müqavilələr və onların bitmə xəbərdarlıqları | Vendors, Service Agreements |
+| 5 | **Asset Management** | Aktiv reyestri, data axınları, GDPR sualları | Assets (+ Reviews), Data Flows |
+| 6 | **Control Center** | Kontrollar, onların auditləri və texniki xidməti; siyasətlər; istisnalar; davamlılıq planları | Controls, Policies & Standards, Policy Exceptions, Continuity Plans |
+| 7 | **Risk Management** | 5×5 ehtimal × təsir skorlaması, risk iştahı həddləri, müalicə planı, dövri icmal | Asset Risks, Third Party Risks, Business Risks, Risk Exceptions |
+| 8 | **Compliance Hub** | Framework paketləri və tələbləri, uyğunluq analizi, öhdəliklər, audit tapıntıları | Compliance Packages, Compliance Analysis, Obligations, Compliance Exceptions, External Audit Findings |
+| 9 | **Operations Center** | Təhlükəsizlik layihələri (tapşırıq, xərc) və insidentlər (mərhələlərlə) | Projects, Security Incidents |
+| 10 | **Trust Center** | Müştəriyə açıq təhlükəsizlik səhifəsi: tətbiq olunan təcrübələr, data emalı, sertifikat yol xəritəsi | — |
+| 11 | **Integrations & Automation** | LDAP, OAuth/SAML SSO, CSV import/export, REST API, bildirişlər | — |
+| 12 | **Settings** | Autentifikasiya, sistem sağlamlığı, yeniləmələr, sistem jurnalı, sessiyalar | Authentication, About, System Health, Updates, System Log, Clear Data |
 
-Köhnə prototipdə (caspian-admin) olub, yenisinə hələ keçməyənlər — 15-ə tamamlamaq üçün namizədlər: **Evidence** (sübut kitabxanası), **Reports** (hesabatlar), **Account Reviews** (giriş icmalları). Bunları yazmaq istəyirsinizsə, əvvəl yeni frontend-ə əlavə olunmalıdır.
+### B. Modul xəritəsi üçün 15 bacarıq (hamısı məhsulda real ekrandır)
 
-## 2. Screenshot-lar (demo data, profil menyusu bağlı)
+1. **Command Center**: tapşırıqlar və risk heat map-ləri bir ekranda
+2. **Risk Register**: aktiv, biznes və üçüncü tərəf riskləri, 5×5 skorlama
+3. **Risk Exceptions**: qəbul edilmiş risklər, bitmə tarixi ilə
+4. **Control Library**: kontrollar, audit və texniki xidmət cədvəlləri ilə
+5. **Policy Management**: siyasət və standartlar, versiya və icmal tarixi ilə
+6. **Compliance Packages**: framework-lər və onların tələbləri (ISO, SOC 2, NIST, GDPR…)
+7. **Compliance Analysis**: tələb üzrə uyğunluq boşluqları
+8. **Obligations**: hüquqi və müqavilə öhdəlikləri
+9. **Audit Findings**: xarici audit tapıntıları, sahib və son tarix ilə
+10. **Asset Inventory**: aktivlər və data axınları (GDPR)
+11. **Vendor Management**: vendorlar və xidmət müqavilələri
+12. **Business Continuity**: davamlılıq planları, testlər və auditlər
+13. **Incident Management**: təhlükəsizlik insidentləri, mərhələlərlə
+14. **Governance**: məqsədlər, problemlər, əhatə analizi
+15. **Trust Center**: müştərilər üçün açıq təhlükəsizlik səhifəsi
 
-`screenshots/` qovluğunda, 2400×1500:
-1. `01-command-center.png` — tapşırıqlar + asset risk heat map
-2. `02-frameworks.png` — framework paketləri (CMMC, ISO 27001, NIST CSF, PCI DSS, SOC 2)
-3. `03-asset-risks.png` — risk reyestri, skor və treatment ilə
-4. `04-audit-findings.png` — audit tapıntıları
-5. `05-integrations.png` — inteqrasiyalar və avtomatik evidence
-6. `06-trust-center.png` — açıq Trust Center səhifəsi
+(İstəsəniz 15-ci yerə Trust Center əvəzinə **Access & Identity** yaza bilərsiniz: rollar, LDAP, SSO.)
 
-Qeyd: audit findings ekranında bir neçə təsvir azərbaycanca yazılıb ("Xarici pentest…"). İngiliscə sayt üçün demo datanı düzəltmək lazımdır.
+---
+
+## 2. Screenshot-lar
+
+`screenshots/` qovluğunda, 3200×2000 (2x). Hamısı demo data ilə çəkilib, profil menyusu bağlıdır:
+
+1. `01-command-center.png`: tapşırıqlar və asset risk heat map
+2. `02-asset-risks.png`: risk reyestri
+3. `03-controls.png`: kontrol siyahısı
+4. `04-compliance-packages.png`: framework paketləri (ISO 27001, SOC 2, NIST, GDPR, PCI DSS, AZ qanunu)
+5. `05-audit-findings.png`: audit tapıntıları
+6. `06-trust-center.png`: Trust Center
+7. `07-policies-standards.png`: siyasətlər (ehtiyat şəkil)
+
+Demo datanı API ilə özüm yüklədim: adlar, risklər, vendorlar və s. uydurmadır, real müştəri datası yoxdur. Framework paketlərinə yalnız bir neçə nümunə tələb əlavə etmişəm (bax: 5-ci bənd).
+
+---
 
 ## 3. Loqo
 
-**GRC 360-ın ayrıca loqosu yoxdur.** Tətbiqdə sadəcə narıncı kvadrat + "GRC" yazısı var. Strativu loqosu var (`public/brand/logo-full.png`, `logo-mark.png`, `logo-mark.svg`). Ya Strativu mark-ı istifadə edin, ya da GRC 360 üçün loqo hazırlatmaq lazımdır.
+`logo/` qovluğunda, məhsulun özündən götürülüb (`public/brand/`):
+- `grc360-logo.png`: tam loqo (işarə + "GRC 360°"), 640×357, şəffaf fon
+- `grc360-mark.png`: yalnız işarə, 256×256, şəffaf fon
 
-## 4. Fərqi nədir (kodda olanlara əsasən)
+SVG və ya böyük ölçülü versiya repoda yoxdur. 640px vebdə kiçik loqo üçün bəs edir, böyük hero üçün dizaynerdən SVG istəyin.
 
-1. **Bir kontrol, çox framework.** Kontrol bir dəfə yazılır, ISO 27001, SOC 2, NIST, PCI DSS tələblərinə eyni anda bağlanır.
-2. **Evidence özü yığılır.** AWS, Okta, GitHub və s. kollektorlar cədvəl üzrə yoxlayır; uğursuz yoxlama Jira tiketi və Slack xəbərdarlığı açır.
-3. **Hər şey bir yerdə.** Risk, aktiv, vendor, kontrol, audit və insident eyni sistemdə bir-birinə bağlıdır; Excel faylları arasında qaçmaq yoxdur.
-4. **Açıq Trust Center.** Müştərilər sertifikatları və təhlükəsizlik vəziyyətini özü görür, sorğu anketlərinə daha az vaxt gedir.
-5. **Azərbaycan qanunvericiliyi.** Fərdi məlumatlar haqqında Qanun (998-IIIQ) xəritələnir (sayt datasında "in progress").
+---
 
-Saytdakı "hash-chained audit trail" (changelog 2026-08-29) frontend-də hələ görünmür; System Log ekranı var, amma hash zənciri backend-dədirsə, onu təsdiqləyin.
+## 4. Fərqi nədir (kodda yoxlanılıb)
 
-## 5. Rəqəmlər — yalnız doğru olanlar
+1. **Hər şey bir-birinə bağlıdır.** Risk birbaşa onu azaldan kontrola, siyasətə, aktivə, layihəyə və framework tələbinə bağlanır. Excel-də bu əlaqələr əl ilə saxlanılır və qırılır.
+2. **Risk iştahı və skorlama.** 5×5 matris, təşkilatın öz həddləri (threshold matrix) və qalıq risk hesablanır.
+3. **Avtomatik xəbərdarlıqlar.** Müqavilə bitməsi (həftə qalmış və bitmək üzrə), məqsəd auditinin vaxtı, gecikmiş hədəflər, istisnaların bitməsi planlaşdırılmış işlərlə izlənir.
+4. **Azərbaycan dilində interfeys və yerli qanun.** UI tam AZ/EN-dir (3 200 sətirlik tərcümə faylı). AZ Fərdi Məlumatlar Qanunu ayrıca paket kimi yüklənə bilir.
+5. **Bulud və ya öz serverinizdə.** Multi-tenant SaaS, həm də Docker ilə on-premise quraşdırma; LDAP/Active Directory, OAuth və SAML SSO.
 
-Kodda yoxlanıla bilən:
-- **12 modul, 31 ekran** hazır (frontend).
-- **5 framework paketi** sistemdə: CMMC, ISO 27001:2022, NIST CSF 2.0, PCI DSS v4.0, SOC 2 Type II.
-- **11 inteqrasiya** kataloqda: AWS, GCP, Azure, Okta, Google Workspace, GitHub, Jira, Slack, Datadog, BambooHR, CrowdStrike.
+---
 
-Diqqət — bunları saytda yazmayın, seed (nümunə) datadır:
-- Framework item sayları (CMMC 110, ISO 114, NIST 108, PCI 84, SOC 2 66). ISO 27001:2022-də əslində 93 Annex A kontrolu var; 114 köhnə 2013 versiyasının rəqəmidir.
-- "522 auto-monitored controls", "9 active integrations", Trust Center-dəki "99.99% uptime", "98/100 security score" — hamısı hardcoded demo rəqəmlərdir.
+## 5. Rəqəmlər: yalnız doğru olanlar
+
+**Saytda yazmaq olar (kodda var):**
+- **12 modul, 31 ekran**
+- **600+ API endpoint**, **120+ məlumat modeli** (backend)
+- **1 200+ backend faylı, 550 test faylı**; frontend-də 80+ test faylı
+- **2 dil**: Azərbaycan və İngilis
+- **3 giriş üsulu**: LDAP/AD, OAuth SSO, SAML SSO (+ e-poçt/şifrə)
+
+**Yazmayın (hələ doğru deyil):**
+- **"X kontrol/tələb xəritələnib":** framework kataloqu (ISO 27001 Annex A-nın 93 kontrolu və s.) sistemə hazır yüklənmir. Paketlər və tələblər istifadəçi tərəfindən yaradılır və ya CSV ilə import olunur. Hazır kataloq yükləsəniz, sonra rəqəm yazmaq olar.
+- **"N framework dəstəklənir":** hər hansı framework yüklənə bilər, amma hazır gələn yoxdur.
+- **Hazırkı saytda (strativu.com) koda uyğun gəlməyən iddialar:**
+  - **AWS IAM / GitHub evidence kollektorları:** backend-də yoxdur.
+  - **Hash-chained audit trail:** sistem jurnalı var, amma hash zənciri yoxdur.
+  - **Jira inteqrasiyası və e-poçt xülasələri:** məhsulun özündə "planned" kimi göstərilir.
+
+  Bunları saytdan çıxarmaq və ya "planlaşdırılır" kimi yazmaq lazımdır.
+
+---
 
 ## 6. Status və vaxt
 
-- **Hazır:** frontend-də 12 modul; risk və kontrol reyestrləri (changelog 2026-07-03); cross-framework mapping (2026-09-12); AWS IAM və GitHub kollektorları (2026-07-31).
-- **Hazırlanır:** NIST CSF 2.0, GDPR, AZ 998-IIIQ xəritələnməsi; frontend-in qalan ekranlarının backend-ə qoşulması (hazırda yalnız ~9 ekran API çağırır, qalanları mock datadır).
-- **Plan:** early access 2027-ci ilin I rübündə (`site.ts`).
+**Hazırdır:**
+- Bütün 12 modul backend-ə qoşulub.
+- Server-side səhifələmə, CSV import/export.
+- Rollar və icazələr, LDAP/SSO.
+- Trust Center, bildirişlər, sessiya təhlükəsizliyi.
+- Frontend versiyası 0.1.0 (2026-09-04).
 
-## 7. Kimin üçün / deployment
+**İşlənilir:**
+- API müqaviləsinin (OpenAPI) tam sinxronlaşdırılması.
+- CI/CD.
+- Davamlılıq planı auditləri (son commit-lər).
 
-Kodda bu barədə qərar yoxdur. Tövsiyə (təsdiqləyin): banklar və fintech (PCI DSS, DORA), orta və böyük şirkətlər (ISO 27001, SOC 2), dövlət qurumları (AZ qanunu). Kod multi-tenant cloud kimi qurulub (tenantId), indi Render-də işləyir. On-premise hələ yoxdur.
+**Növbədə:**
+- E-poçt xülasələri, Jira.
+- Risk matrisi üçün xüsusi çəki əmsalları.
+- İnsident eskalasiya qaydaları.
 
-## 8. Video və animasiya
+**Pilot və launch:**
+- Plan sənədində "ilk 3 korporativ müştəri ilə pilot" yazılıb, amma konkret tarix yoxdur.
+- Strativu saytında "early access Q1 2027" yazılıb.
 
-- `grc360-screen-tour.mp4` — real tətbiqdən 41 saniyəlik ekran yazısı (1440×900, səssiz, loop üçün uyğun).
-- `grc360-demo.html` — animasiyalı, klikli məhsul turu: kursor özü klikləyir, istənilən vaxt dayandırıb özünüz klikləyə bilərsiniz.
+Tarixi siz təsdiqləyin.
+
+---
+
+## 7. Kimin üçün və necə quraşdırılır
+
+Biznes planına görə (`doc/plan/03-biznes-plan.md`):
+- **Banklar və maliyyə:** Mərkəzi Bank tələbləri, PCI DSS.
+- **Dövlət və kritik infrastruktur.**
+- **Kiçik və orta şirkətlər:** Starter planı, 20 istifadəçiyə qədər.
+
+**Deployment: hər ikisi.** Multi-tenant bulud (SaaS) və Enterprise üçün on-premise / air-gapped. Kodda bunun üçün Docker Compose var: app, Postgres, Redis, MinIO, Nginx, Prometheus, Grafana.
+
+---
+
+## 8. Video və animasiyalı demo
+
+Siz dediyiniz kimi sonraya saxladım. Köhnə versiyadan çəkilmiş video və demo bu qovluqdan silindi.
