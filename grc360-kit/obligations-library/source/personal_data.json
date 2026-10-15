@@ -1,0 +1,768 @@
+{
+  "law": {
+    "title_az": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+    "title_en": "Law of the Republic of Azerbaijan \"On Personal Data\"",
+    "number": "998-IIIQ",
+    "adopted": "2010-05-11",
+    "type": "Qanun",
+    "status_per_source": "Qüvvədədir",
+    "official_publication": "Azərbaycan qəzeti, 06.06.2010, № 121; Azərbaycan Respublikasının Qanunvericilik Toplusu, 30.06.2010, № 06, maddə 480",
+    "registry_register_date": "01.07.2011",
+    "e_qanun_framework_id": 19675,
+    "source_url": "https://e-qanun.az/frameworks/19/f_19675.html",
+    "source_page": "https://e-qanun.az/framework/19675",
+    "source_api": "https://api.e-qanun.az/framework/19675",
+    "source_encoding": "windows-1251 (converted to UTF-8)",
+    "retrieved": "2026-10-15",
+    "last_amendment": "28.06.2024, № 1193-VIQD (dərc: AZƏRTAC 16.07.2024; Qanunvericilik Toplusu 2024, № 7, maddə 769)",
+    "amending_acts": [
+      "20.06.2014 № 995-IVQD",
+      "03.04.2018 № 1066-VQD",
+      "08.07.2022 № 584-VIQD",
+      "23.12.2022 № 754-VIQD",
+      "17.02.2023 № 814-VIQD",
+      "28.06.2024 № 1193-VIQD"
+    ],
+    "supervisory_authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+    "structure": "19 maddə, 5 fəsil"
+  },
+  "obligations": [
+    {
+      "id": "PD-01",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 9.6",
+      "verbatim_az": "9.6. Fərdi məlumatların toplanılması və işlənilməsi yalnız aşağıdakı şərtlərdən biri olduqda həyata keçirilə bilər: 9.6.1. subyekt fərdi məlumatların toplanılmasına və işlənilməsinə öz razılığını verdikdə və ya bu məlumatlar açıq kateqoriyalı olduqda; 9.6.2. fərdi məlumatlar onların toplanılması və işlənilməsi məqsədlərini və üsullarını müəyyən edən qanunvericilik əsasında işlənildikdə; […] 9.6.4. fərdi məlumatların toplanılması və işlənilməsi subyektin həyat və sağlamlığını qorumaq üçün lazım olduqda.",
+      "obligation_az": "Hər emal fəaliyyəti üçün qanuni əsası (razılıq, açıq məlumat, qanun, həyat/sağlamlıq) müəyyənləşdirin və sənədləşdirin.",
+      "obligation_en": "Identify and document a lawful basis (consent, public data, law, vital interest) for every processing activity.",
+      "applies_to": "Fərdi məlumatların mülkiyyətçisi və operatoru (dövlət/yerli özünüidarə orqanları, hüquqi və fiziki şəxslər; şəxsi/ailə ehtiyacları istisna — 3.3)",
+      "type": "Legal",
+      "frequency": "ongoing (hər yeni emal fəaliyyətindən əvvəl)",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Emal fəaliyyətləri reyestrində hər fəaliyyət üçün hüquqi əsas sahəsi",
+        "Yeni layihələrdə məxfilik qiymətləndirməsi (privacy-by-design checklist)",
+        "Hüquq şöbəsinin hüquqi əsası təsdiqləməsi"
+      ],
+      "related_policies": [
+        "Fərdi məlumatların mühafizəsi siyasəti",
+        "Emal fəaliyyətlərinin reyestri proseduru"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-02",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 8.1, 8.2",
+      "verbatim_az": "8.1. Azərbaycan Respublikasının qanunvericiliyi ilə müəyyən olunmuş qaydada fərdi məlumatların məcburi şəkildə toplanılması və işlənilməsi halları istisna olmaqla, hər hansı şəxs barəsində fərdi məlumatların toplanılmasına və işlənilməsinə yalnız subyekt tərəfindən verilmiş yazılı, o cümlədən gücləndirilmiş elektron imzalı elektron sənəd formasında razılıq və ya özünün yazılı təqdim etdiyi məlumatlar əsasında yol verilir. 8.2. Subyektin fərdi məlumatların işlənilməsi üçün yazılı (o cümlədən Elektron Hökumət İnformasiya Sistemi üzərindən) razılığına aşağıdakılar daxil edilməlidir:[3] 8.2.1. subyektin kimliyini müəyyənləşdirməyə imkan verən məlumatlar; 8.2.2. subyektdən razılıq alan mülkiyyətçinin və ya operatorun kimliyini müəyyənləşdirməyə imkan verən məlumatlar; 8.2.3. fərdi məlumatların toplanılması və işlənilməsi məqsədi; 8.2.4. subyekt tərəfindən işlənilməsinə razılıq verilmiş fərdi məlumatların və onların işlənilmə əməliyyatlarının siyahıları; 8.2.5. subyektin razılığının qüvvədə olma dövrü və onun geri götürülməsi şərtləri;",
+      "obligation_az": "Razılığı yazılı (və ya gücləndirilmiş e-imza ilə) alın; formaya 8.2-də tələb olunan bütün elementləri daxil edin.",
+      "obligation_en": "Obtain consent in writing (or with qualified e-signature) and include all elements required by Art. 8.2.",
+      "applies_to": "Fərdi məlumatların mülkiyyətçisi və operatoru (dövlət/yerli özünüidarə orqanları, hüquqi və fiziki şəxslər; şəxsi/ailə ehtiyacları istisna — 3.3)",
+      "type": "Legal",
+      "frequency": "on event (məlumat toplanmazdan əvvəl)",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Standart razılıq forması şablonu (8.2.1–8.2.6 elementləri ilə)",
+        "Razılıq formalarının hüquqi baxışı",
+        "Yetkinlik yaşına çatmayanlar üçün valideyn/qanuni nümayəndə razılığı (8.3)"
+      ],
+      "related_policies": [
+        "Razılığın idarə edilməsi proseduru",
+        "Məxfilik bildirişi (subyektin məlumatlandırılması)"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-03",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 8.4, 8.6",
+      "verbatim_az": "8.4. Subyektdən onun fərdi məlumatlarının toplanılması və işlənilməsi üçün razılığın alınması haqqında sübutun təqdim olunması vəzifəsi mülkiyyətçinin və ya operatorun üzərinə düşür. […] 8.6. Bu Qanunun 3.2-ci maddəsində qeyd edilən hallar, habelə Azərbaycan Respublikasının normativ hüquqi aktları ilə müəyyən olunmuş qaydada fərdi məlumatların məcburi şəkildə toplanılması və işlənilməsi istisna olmaqla, fərdi məlumatların toplanılmasına və işlənilməsinə subyektlərin razılığının alınması və geri çağırılması mərkəzləşdirilmiş qaydada Elektron Hökumət İnformasiya Sistemi üzərindən təmin edilir.",
+      "obligation_az": "Razılığın sübutunu saxlayın; razılığın alınması və geri çağırılmasını Elektron Hökumət İnformasiya Sistemi üzərindən təmin edin.",
+      "obligation_en": "Retain evidence of consent; handle consent collection and withdrawal through the e-Government Information System.",
+      "applies_to": "Fərdi məlumatların mülkiyyətçisi və operatoru (dövlət/yerli özünüidarə orqanları, hüquqi və fiziki şəxslər; şəxsi/ailə ehtiyacları istisna — 3.3)",
+      "type": "Legal",
+      "frequency": "ongoing",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Razılıq jurnalı (kim, nə vaxt, hansı versiya, kanal)",
+        "EHİS (e-gov) razılıq inteqrasiyası və ya prosedur",
+        "Razılıq qeydlərinin saxlanma müddəti"
+      ],
+      "related_policies": [
+        "Razılığın idarə edilməsi proseduru"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-04",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 9.1, 9.2, 9.3, 11.1",
+      "verbatim_az": "Fərdi məlumatlar yalnız qanuni, əvvəlcədən müəyyən olunmuş və bəyan edilmiş məqsədlər üçün toplanılmalı və göstərilmiş məqsədlərə uyğun üsullarla işlənilməlidir. 9.2. Toplanılan və işlənilən fərdi məlumatların həcmi və xarakteri bəyan edilmiş məqsədlərə və mülkiyyətçilərin səlahiyyətlərinə uyğun olmalıdır. 9.3. Fərdi məlumatlar dəqiq, tam olmalı və zərurət yarandıqda təzələnməlidir. […] 11.1. Mülkiyyətçi və ya operator subyektdən yalnız işlənilmə məqsədlərinə nail olmaq üçün zəruri olan fərdi məlumatları almaq hüququna malikdir.",
+      "obligation_az": "Məqsədi əvvəlcədən bəyan edin, yalnız zəruri məlumatları toplayın, məlumatları dəqiq və aktual saxlayın.",
+      "obligation_en": "Declare purposes in advance, collect only necessary data, and keep data accurate and up to date.",
+      "applies_to": "Fərdi məlumatların mülkiyyətçisi və operatoru (dövlət/yerli özünüidarə orqanları, hüquqi və fiziki şəxslər; şəxsi/ailə ehtiyacları istisna — 3.3)",
+      "type": "Legal",
+      "frequency": "ongoing",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Formalarda sahələrin zərurilik baxışı (data minimisation review)",
+        "Məlumat keyfiyyəti/yeniləmə proseduru",
+        "Məqsəd dəyişikliyində yenidən qiymətləndirmə"
+      ],
+      "related_policies": [
+        "Fərdi məlumatların mühafizəsi siyasəti",
+        "Emal fəaliyyətlərinin reyestri proseduru"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-05",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 9.4",
+      "verbatim_az": "9.4. Fərdi məlumatların toplanılması və işlənilməsi məqsədlərinə nail olunduqda və onların saxlanılması zərurəti aradan qalxdıqda həmin məlumatlar təxirə salınmadan məhv edilməlidir.",
+      "obligation_az": "Məqsədə nail olunduqda və saxlanma zərurəti aradan qalxdıqda fərdi məlumatları təxirə salınmadan məhv edin.",
+      "obligation_en": "Destroy personal data without delay once the purpose is achieved and retention is no longer necessary.",
+      "applies_to": "Fərdi məlumatların mülkiyyətçisi və operatoru (dövlət/yerli özünüidarə orqanları, hüquqi və fiziki şəxslər; şəxsi/ailə ehtiyacları istisna — 3.3)",
+      "type": "Legal",
+      "frequency": "on event (məqsəd bitdikdə — təxirə salınmadan) + periodik baxış",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Məlumat kateqoriyaları üzrə saxlanma cədvəli",
+        "Avtomatik silmə/arxivləşdirmə qaydaları",
+        "Məhvetmə aktları (protokol) və təsdiq"
+      ],
+      "related_policies": [
+        "Məlumatların saxlanması və məhv edilməsi siyasəti"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-06",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 9.7, 9.8",
+      "verbatim_az": "9.7. Xüsusi kateqoriyalı məlumatların toplanılmasına və işlənilməsinə, aşağıdakı hallar istisna olmaqla, yol verilmir: 9.7.1. xüsusi kateqoriyalı məlumatların toplanılması və işlənilməsi qanunla müəyyən olunmuş hallarda məcburi xarakter daşıdıqda; 9.7.1-1. subyektin yazılı (o cümlədən Elektron Hökumət İnformasiya Sistemi üzərindən) razılığı olduqda; […] 9.8. Bu Qanunun 9.7-ci maddəsində nəzərdə tutulmuş hallarda xüsusi kateqoriyalı məlumatların toplanılması və işlənilməsi səbəbləri aradan qaldırıldıqda həmin məlumatlara dərhal qadağan qoyulmalı, xüsusi kateqoriyalı məlumatların subyekti həmin məlumatların informasiya sistemində saxlanmasına və ya arxivə verilməsinə razılıq vermədikdə bu məlumatlar təxirə salınmadan məhv edilməlidir.",
+      "obligation_az": "Xüsusi kateqoriyalı məlumatları (irq, din, səhhət, məhkumluq və s.) yalnız 9.7 istisnaları ilə emal edin; əsas aradan qalxdıqda bloklayın/məhv edin.",
+      "obligation_en": "Process special-category data only under Art. 9.7 exceptions; block/destroy it once the ground ceases.",
+      "applies_to": "Fərdi məlumatların mülkiyyətçisi və operatoru (dövlət/yerli özünüidarə orqanları, hüquqi və fiziki şəxslər; şəxsi/ailə ehtiyacları istisna — 3.3)",
+      "type": "Legal",
+      "frequency": "ongoing; on event (əsas aradan qalxdıqda — dərhal)",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Xüsusi kateqoriyalı məlumatların inventarı",
+        "Ayrıca yazılı razılıq forması",
+        "Gücləndirilmiş giriş məhdudiyyəti və şifrələmə"
+      ],
+      "related_policies": [
+        "Xüsusi kateqoriyalı və biometrik məlumatların emalı proseduru",
+        "Məlumatların saxlanması və məhv edilməsi siyasəti"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-07",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 9.5",
+      "verbatim_az": "9.5. Fərdi məlumatların bu Qanunla müəyyən olunmuş toplanılması və işlənilməsi şərtləri insan orqanizminin bioloji xüsusiyyətlərini səciyyələndirən və onun kimliyini birmənalı olaraq müəyyənləşdirməyə imkan verən məlumatların – əl-barmaq və ovuc izləri, üz təsviri, gözün qüzehli və tor qişası, səs fraqmenti və onun akustik parametrləri, dezoksiribonuklein turşusu (DNT) analizinin nəticələri, bədən ölçüləri, bədənin xüsusi əlamətlərinin və fiziki çatışmazlıqlarının təsviri, yazı xətti və imzası, habelə digər biometrik məlumatların toplanılmasına və işlənilməsinə tam həcmdə şamil edilir.",
+      "obligation_az": "Biometrik məlumatlara (barmaq izi, üz təsviri, səs və s.) qanunun bütün emal şərtlərini tam həcmdə tətbiq edin.",
+      "obligation_en": "Apply all processing conditions of the Law in full to biometric data (fingerprints, face images, voice, etc.).",
+      "applies_to": "Fərdi məlumatların mülkiyyətçisi və operatoru (dövlət/yerli özünüidarə orqanları, hüquqi və fiziki şəxslər; şəxsi/ailə ehtiyacları istisna — 3.3)",
+      "type": "Legal",
+      "frequency": "ongoing",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Biometrik sistemlərin (giriş-nəzarət, FaceID, səs qeydi) inventarı",
+        "Biometrik emal üçün ayrıca razılıq və məlumatlandırma",
+        "Biometrik şablonların şifrələnməsi"
+      ],
+      "related_policies": [
+        "Xüsusi kateqoriyalı və biometrik məlumatların emalı proseduru"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-08",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 11.2, 11.3",
+      "verbatim_az": "11.2. Mülkiyyətçi və ya operator fərdi məlumatları toplayarkən subyektə aşağıdakıları mütləq bildirməlidir: 11.2.1. mülkiyyətçinin və ya operatorun kimliyini müəyyənləşdirən məlumatlar; 11.2.2. fərdi məlumatların işlənilmə məqsədi və bu məqsədin hüquqi cəhətdən əsaslandırılması; 11.2.3. toplanılan və işlənilən fərdi məlumatların informasiya sistemində mühafizə səviyyəsi; 11.2.4. informasiya sistemlərinin uyğunluq sertifikatının mövcudluğu və dövlət ekspertizasından keçirilməsi haqqında məlumat; 11.2.5. fərdi məlumatların nəzərdə tutulan istifadəçilərinin, o cümlədən məlumat mübadiləsi aparılması nəzərdə tutulan informasiya sisteminin dairəsi; 11.2.6. subyektin bu Qanunla müəyyən olunmuş hüquqları barədə məlumatlar. 11.3. Fərdi məlumatların təqdim olunması qanunla müəyyən olunmuşdursa, mülkiyyətçi və ya operator subyektə fərdi məlumatların məcburi şəkildə təqdim edilməsindən imtinanın hüquqi nəticələri barədə məlumat verməlidir.",
+      "obligation_az": "Toplama zamanı subyektə kimliyinizi, məqsədi və əsasını, mühafizə səviyyəsini, sertifikat/ekspertiza, alıcıları və hüquqlarını bildirin.",
+      "obligation_en": "At collection, inform subjects of your identity, purpose and basis, protection level, certification/expertise, recipients and rights.",
+      "applies_to": "Fərdi məlumatların mülkiyyətçisi və operatoru (dövlət/yerli özünüidarə orqanları, hüquqi və fiziki şəxslər; şəxsi/ailə ehtiyacları istisna — 3.3)",
+      "type": "Legal",
+      "frequency": "on event (məlumat toplanarkən)",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "11.2.1–11.2.6 elementlərini əhatə edən məxfilik bildirişi",
+        "Bildirişin bütün toplama kanallarında (veb, mobil, kağız) yerləşdirilməsi",
+        "Məcburi məlumatlar üçün imtinanın nəticələri barədə mətn (11.3)"
+      ],
+      "related_policies": [
+        "Məxfilik bildirişi (subyektin məlumatlandırılması)"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-09",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi; mühafizə tələblərinə nəzarətdə təhlükəsizlik orqanları da iştirak edə bilər (5.9-cu maddə: tələblər 'müvafiq icra hakimiyyəti orqanı' tərəfindən müəyyən olunur) (yoxlanmalı)",
+      "article": "Maddə 5.8, 5.5, 10.1",
+      "verbatim_az": "5.8. Mülkiyyətçi və ya operator fərdi məlumatların mühafizəsinin (o cümlədən təsadüfi və icazəsiz məhv edilməsinin, itirilməsinin, qanunsuz müdaxilənin, dəyişdirilməsinin və digər halların qarşısının alınmasının) təmin edilməsinə zəmanət verən texniki-təşkilati tədbirlər görməlidir. […] Fərdi məlumatların mühafizəsi mülkiyyətçilər və operatorlar tərəfindən təmin olunmalıdır. […] 10.1. Fərdi məlumatların toplanılması və işlənilməsi zamanı mülkiyyətçinin vəzifələri fərdi məlumatların toplanılmasının və işlənilməsinin qanuniliyini və təhlükəsizliyini təmin etməkdən ibarətdir.",
+      "obligation_az": "Fərdi məlumatları itki, icazəsiz giriş, dəyişdirilmə və məhvdən qorumaq üçün texniki-təşkilati tədbirlər görün.",
+      "obligation_en": "Implement technical and organisational measures protecting personal data against loss, unauthorised access, alteration and destruction.",
+      "applies_to": "Fərdi məlumatların mülkiyyətçisi və operatoru (dövlət/yerli özünüidarə orqanları, hüquqi və fiziki şəxslər; şəxsi/ailə ehtiyacları istisna — 3.3)",
+      "type": "Legal",
+      "frequency": "ongoing",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Rol əsaslı giriş nəzarəti və ən az imtiyaz prinsipi",
+        "Saxlanmada və ötürmədə şifrələmə",
+        "Ehtiyat nüsxə və bərpa testləri",
+        "İllik risk qiymətləndirməsi və zəiflik skanı",
+        "Nazirlər Kabinetinin 'Fərdi məlumatların mühafizəsinə dair Tələblər'inə uyğunluq yoxlaması (5.9)"
+      ],
+      "related_policies": [
+        "İnformasiya təhlükəsizliyi siyasəti",
+        "Girişə nəzarət və audit jurnalı proseduru",
+        "Fərdi məlumat insidentlərinə cavab proseduru"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-10",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 5.5",
+      "verbatim_az": "Fərdi məlumatların toplanılması, işlənilməsi və mühafizəsi sahəsində fəaliyyət göstərən fiziki şəxslər fəaliyyət müddətində və işdən çıxdıqdan sonra həmin məlumatların yayılmaması barədə yazılı iltizam verməlidirlər.",
+      "obligation_az": "Fərdi məlumatlarla işləyən hər əməkdaşdan işdən çıxdıqdan sonra da qüvvədə olan yazılı məxfilik öhdəliyi alın.",
+      "obligation_en": "Obtain a written non-disclosure undertaking, surviving termination, from every staff member handling personal data.",
+      "applies_to": "Mülkiyyətçi və operator (onların fərdi məlumatlarla işləyən əməkdaşları — fiziki şəxslər)",
+      "type": "Legal",
+      "frequency": "on event (işə qəbul / vəzifəyə təyinat zamanı)",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "İşə qəbul paketində məxfilik öhdəliyi forması",
+        "HR sistemində imzalanmış öhdəliklərin uçotu",
+        "İllik məxfilik təlimi"
+      ],
+      "related_policies": [
+        "Əməkdaşların məxfilik öhdəliyi",
+        "İnformasiya təhlükəsizliyi siyasəti"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-11",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 12.1, 12.4, 12.6",
+      "verbatim_az": "12.1. Mülkiyyətçi və ya operator ödənişsiz olaraq subyektə onun haqqında məlumatları təqdim etməli, eləcə də bu Qanunun 7.1-ci maddəsində göstərilmiş hüquqlarını təmin etməlidir. […] 12.4. Mülkiyyətçi və ya operator subyektin verdiyi sorğuya daxil olduğu gündən ən geci 7 iş günü keçənədək cavab verməlidir, bununla bağlı üçüncü şəxsə müraciət etmək zərurəti yarandıqda sorğunun icra müddəti daha 7 iş günü uzadıla bilər. […] 12.6. Mülkiyyətçi və ya operator subyektin sorğusunun icrasından qanunvericiliklə müəyyən edilmiş əsaslarla imtina etdikdə subyektə sorğusunun alındığı gündən 5 iş günü keçənədək əsaslandırılmış cavab verməlidir.",
+      "obligation_az": "Subyekt sorğularına ödənişsiz, 7 iş günü (zərurətdə +7) ərzində cavab verin; imtinanı 5 iş günü ərzində əsaslandırın.",
+      "obligation_en": "Answer data-subject requests free of charge within 7 working days (+7 if needed); justify refusals within 5 working days.",
+      "applies_to": "Fərdi məlumatların mülkiyyətçisi və operatoru (dövlət/yerli özünüidarə orqanları, hüquqi və fiziki şəxslər; şəxsi/ailə ehtiyacları istisna — 3.3)",
+      "type": "Legal",
+      "frequency": "on event: müraciətdən sonra 7 iş günü (üçüncü şəxsə müraciət zərurətində +7 iş günü); imtina — 5 iş günü",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Sorğuların qeydiyyatı jurnalı və SLA izləməsi",
+        "Şəxsiyyətin yoxlanması (7.5: kağız ərizə + şəxsiyyət sənədi və ya gücləndirilmiş e-imza)",
+        "Cavabda digər şəxslərin məlumatlarının çıxarılması (12.3)",
+        "Standart cavab/imtina şablonları"
+      ],
+      "related_policies": [
+        "Subyekt sorğularına baxılma proseduru"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-12",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 12.5",
+      "verbatim_az": "12.5. Mülkiyyətçi və ya operator subyektin sorğusu əsasında fərdi məlumatlarla əlaqədar zəruri tədbirlər (məlumatın dəqiqləşdirilməsi, məlumatın toplanılmasına və işlənilməsinə qadağan qoyulması və s.) görməli, həmin tədbirlər barəsində əvvəllər bu subyektə dair fərdi məlumatların ötürüldüyü üçüncü şəxsə 3 iş günü müddətində məlumat verməlidir.",
+      "obligation_az": "Sorğu əsasında düzəliş/bloklama edin və məlumatı əvvəl ötürdüyünüz üçüncü şəxsləri 3 iş günü ərzində xəbərdar edin.",
+      "obligation_en": "Rectify/block data on request and notify third parties that previously received it within 3 working days.",
+      "applies_to": "Fərdi məlumatların mülkiyyətçisi və operatoru (dövlət/yerli özünüidarə orqanları, hüquqi və fiziki şəxslər; şəxsi/ailə ehtiyacları istisna — 3.3)",
+      "type": "Legal",
+      "frequency": "on event: tədbir görüldükdən sonra 3 iş günü",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Məlumat ötürmələrinin (alıcıların) uçotu",
+        "Alıcılara standart bildiriş şablonu",
+        "Sorğu jurnalında bildiriş tarixinin qeydi"
+      ],
+      "related_policies": [
+        "Subyekt sorğularına baxılma proseduru",
+        "Üçüncü şəxslərə məlumat verilməsi və operatorların idarə edilməsi siyasəti"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-13",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 7.2, 7.3",
+      "verbatim_az": "Subyektin etirazı mülkiyyətçiyə və ya operatora yazılı surətdə təqdim olunmalıdır. Subyektin etirazının əsaslandırılması tələb olunmur. Mülkiyyətçi və ya operator həmin etirazı aldıqda göstərilən fərdi məlumatların toplanılmasını və işlənilməsini dərhal dayandırmalıdır. […] Mülkiyyətçi və ya operator fərdi məlumatların informasiya texnologiyaları vasitəsilə işlənilməsinə qarşı etiraz aldıqda, subyektdən onun barəsində məlumatların digər üsulla işlənilməsinə razılıq almalı və ya fərdi məlumatların işlənilməsini təxirə salmadan dayandırmalıdır.",
+      "obligation_az": "Yazılı etiraz alındıqda (məcburi emal istisna) emalı dərhal dayandırın; avtomatlaşdırılmış qərara etirazda alternativ üsula razılıq alın.",
+      "obligation_en": "On written objection (except mandatory processing) stop processing immediately; for automated decisions obtain consent to another method or stop.",
+      "applies_to": "Fərdi məlumatların mülkiyyətçisi və operatoru (dövlət/yerli özünüidarə orqanları, hüquqi və fiziki şəxslər; şəxsi/ailə ehtiyacları istisna — 3.3)",
+      "type": "Legal",
+      "frequency": "on event: dərhal / təxirə salınmadan",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Etirazların qəbulu və sistemlərdə bloklama bayrağı",
+        "Avtomatlaşdırılmış qərar qəbulu hallarının inventarı",
+        "Manual baxış (human review) alternativi"
+      ],
+      "related_policies": [
+        "Subyekt sorğularına baxılma proseduru",
+        "Razılığın idarə edilməsi proseduru"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-14",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 13.1, 13.3",
+      "verbatim_az": "13.1. Bu Qanunun 8.3-cü maddəsində nəzərdə tutulmuş hallar istisna olmaqla, fərdi məlumatların üçüncü şəxslər tərəfindən mülkiyyətçiyə və ya operatora, eləcə də onlar tərəfindən fərdi məlumatların istənilən üçüncü şəxsə verilməsinə yalnız subyektin yazılı (o cümlədən Elektron Hökumət İnformasiya Sistemi üzərindən) razılığı ilə yol verilir. […] Subyekt tərəfindən fərdi məlumatların verilməsinə dair razılığın geri çağırılması mülkiyyətçiyə, operatora və üçüncü şəxslərə məlum olduğu andan onlar həmin məlumatların verilməsini dərhal dayandırmalıdırlar.",
+      "obligation_az": "Fərdi məlumatları üçüncü şəxslərə yalnız yazılı razılıqla (13.2 istisnaları ilə) verin; razılıq geri çağırıldıqda verilməni dərhal dayandırın.",
+      "obligation_en": "Disclose personal data to third parties only with written consent (Art. 13.2 exceptions); stop immediately upon withdrawal.",
+      "applies_to": "Fərdi məlumatların mülkiyyətçisi və operatoru (dövlət/yerli özünüidarə orqanları, hüquqi və fiziki şəxslər; şəxsi/ailə ehtiyacları istisna — 3.3)",
+      "type": "Legal",
+      "frequency": "on event (hər ötürmədən əvvəl); geri çağırmada — dərhal",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Məlumat paylaşımı təsdiq proseduru",
+        "Paylaşım müqavilələri reyestri",
+        "Razılıq geri çağırıldıqda ötürmələrin avtomatik dayandırılması"
+      ],
+      "related_policies": [
+        "Üçüncü şəxslərə məlumat verilməsi və operatorların idarə edilməsi siyasəti",
+        "Razılığın idarə edilməsi proseduru"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-15",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 14.2, 14.3, 14.4",
+      "verbatim_az": "14.2. Fərdi məlumatların transsərhəd ötürülməsi aşağıdakı hallarda qadağan edilir: 14.2.1. Azərbaycan Respublikasının milli təhlükəsizliyi üçün təhdid yaratdıqda; 14.2.2. fərdi məlumatların ötürüldüyü ölkənin qanunvericiliyi həmin məlumatların Azərbaycan Respublikasının qanunvericiliyi ilə müəyyən edilmiş səviyyədə hüquqi mühafizəsini təmin etmədikdə. 14.3. Subyektin fərdi məlumatların transsərhəd ötürülməsinə razılıq verdiyi, habelə fərdi məlumatların ötürülməsinin subyektin həyat və sağlamlığının qorunması üçün zəruri olduğu hallarda fərdi məlumatların transsərhəd ötürülməsi onların hüquqi mühafizəsi səviyyəsindən asılı olmayaraq həyata keçirilə bilər. 14.4. Fərdi məlumatların transsərhəd ötürülməsi zamanı bu məlumatların təhlükəsizliyi mülkiyyətçi və ya operator tərəfindən təmin edilir.",
+      "obligation_az": "Xaricə ötürmədən əvvəl alıcı ölkənin mühafizə səviyyəsini qiymətləndirin; qeyri-adekvatdırsa razılıq alın; ötürmənin təhlükəsizliyini təmin edin.",
+      "obligation_en": "Before transfers abroad assess the recipient country's protection level; if inadequate obtain consent; secure the transfer.",
+      "applies_to": "Fərdi məlumatların mülkiyyətçisi və operatoru (dövlət/yerli özünüidarə orqanları, hüquqi və fiziki şəxslər; şəxsi/ailə ehtiyacları istisna — 3.3)",
+      "type": "Legal",
+      "frequency": "on event (hər yeni transsərhəd ötürmə / xarici bulud xidməti)",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Transsərhəd ötürmələr reyestri (o cümlədən bulud/SaaS provayderləri)",
+        "Ölkə adekvatlıq qiymətləndirməsi",
+        "Transsərhəd ötürmə üçün ayrıca razılıq",
+        "Ötürmədə şifrələmə və müqavilə öhdəlikləri"
+      ],
+      "related_policies": [
+        "Transsərhəd ötürmə proseduru",
+        "İnformasiya təhlükəsizliyi siyasəti"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-16",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 15.1, 15.2, 15.4, 15.5",
+      "verbatim_az": "15.1. Fərdi məlumatların informasiya sistemləri, o cümlədən bu Qanunun qüvvəyə minməsinə qədər mövcud olan informasiya sistemləri müvafiq icra hakimiyyəti orqanında dövlət qeydiyyatından keçməlidir. […] 15.2. Bu Qanunun 3.2-ci maddəsində nəzərdə tutulmuş hallar istisna olmaqla, fərdi məlumatların informasiya sistemini dövlət qeydiyyatından keçirmədən fərdi məlumatların toplanılmasına və işlənilməsinə yol verilmir. […] 15.4. Fərdi məlumatların informasiya sisteminin dövlət qeydiyyatı mülkiyyətçinin yazılı müraciəti əsasında 1 ay müddətində həyata keçirilir. […] 15.5. Fərdi məlumatların informasiya sisteminin dövlət qeydiyyatından keçirilməsi haqqında müraciətdəki məlumatlarda dəyişiklik olduqda bu barədə 3 iş günü müddətində müvafiq icra hakimiyyəti orqanına yazılı surətdə bildirilməlidir.",
+      "obligation_az": "Fərdi məlumatların informasiya sistemini emaldan əvvəl dövlət qeydiyyatına alın; müraciət məlumatları dəyişdikdə 3 iş günü ərzində bildirin.",
+      "obligation_en": "Register personal-data information systems with the authority before processing; report changes to filed details within 3 working days.",
+      "applies_to": "Fərdi məlumatların informasiya sisteminin mülkiyyətçisi (15.3 istisnaları: dövlət sirri, yalnız işçilər/iş ərazisinə buraxılış üçün sistemlər, orqanın müəyyən etdiyi həddən aşağı sistemlər)",
+      "type": "Legal",
+      "frequency": "one-off (emala başlamazdan əvvəl; qeydiyyat 1 ay çəkir) + on event: dəyişiklikdən sonra 3 iş günü",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "İnformasiya sistemləri inventarı və 15.3 istisnalarına uyğunluq qiymətləndirməsi",
+        "Qeydiyyat müraciəti üçün 15.4.1–15.4.13 məlumat paketi",
+        "Dəyişikliklərin idarə edilməsi prosesində 'qeydiyyat təsiri' yoxlaması"
+      ],
+      "related_policies": [
+        "İnformasiya sistemlərinin qeydiyyatı proseduru",
+        "Emal fəaliyyətlərinin reyestri proseduru"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-17",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 9.12",
+      "verbatim_az": "9.12. İnformasiya sistemlərində və ehtiyatlarında fərdi məlumatların toplanılması, işlənilməsi, sorğuların verilməsi və icrası, ərizələrin qeydiyyatının və baxılmasının nəticələri, habelə informasiya sistemlərinin idarə olunması və mühafizəsi ilə bağlı əməliyyatlar barədə qeydlərin müvafiq nəzarət-audit jurnallarında toplanılması mülkiyyətçi və ya operator tərəfindən təmin olunur.",
+      "obligation_az": "Fərdi məlumatlarla əməliyyatlar, sorğular, ərizələr və sistem idarəetməsi üzrə nəzarət-audit jurnalları aparın.",
+      "obligation_en": "Keep control/audit logs of personal-data operations, requests, applications and system administration.",
+      "applies_to": "Fərdi məlumatların mülkiyyətçisi və operatoru (dövlət/yerli özünüidarə orqanları, hüquqi və fiziki şəxslər; şəxsi/ailə ehtiyacları istisna — 3.3)",
+      "type": "Legal",
+      "frequency": "ongoing",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Mərkəzləşdirilmiş log idarəetməsi (SIEM)",
+        "Logların dəyişdirilməyə qarşı qorunması",
+        "Logların saxlanma müddəti və dövri baxış"
+      ],
+      "related_policies": [
+        "Girişə nəzarət və audit jurnalı proseduru",
+        "Subyekt sorğularına baxılma proseduru"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-18",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 9.9, 10.3",
+      "verbatim_az": "9.9. Mülkiyyətçi fərdi məlumatların toplanılmasını və işlənilməsini müqavilə əsasında, fərdi məlumatların mühafizəsinin təmin olunması şərtilə operatora həvalə etmək və ya özü operator kimi fəaliyyət göstərmək hüququna malikdir. […] 10.3. Operatorun vəzifələri bu Qanunla və Azərbaycan Respublikası qanunvericiliyinin tələblərinə uyğun olaraq operatorla mülkiyyətçi arasında bağlanmış müqavilənin şərtləri ilə müəyyən olunur.",
+      "obligation_az": "Emalı operatora yalnız mühafizə şərtlərini əks etdirən yazılı müqavilə ilə həvalə edin.",
+      "obligation_en": "Outsource processing to an operator only under a written contract that ensures data protection.",
+      "applies_to": "Mülkiyyətçi (emalı həvalə edən) və operator (müqavilə şərtlərini icra edən)",
+      "type": "Legal",
+      "frequency": "on event (operator cəlb edilərkən) + periodik nəzarət",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Standart məlumat emalı müqaviləsi (DPA) şablonu",
+        "Operatorların due diligence yoxlaması",
+        "Operatorlar reyestri və illik audit"
+      ],
+      "related_policies": [
+        "Üçüncü şəxslərə məlumat verilməsi və operatorların idarə edilməsi siyasəti"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-19",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 10.6",
+      "verbatim_az": "10.6. Mülkiyyətçi müvafiq icra hakimiyyəti orqanının bu Qanunla ona həvalə edilmiş vəzifələrinin yerinə yetirilməsinə dair tələblərini icra etməli və bu barədə 7 iş günü müddətində ona məlumat verməlidir.",
+      "obligation_az": "Nəzarət orqanının tələblərini icra edin və icra barədə 7 iş günü ərzində məlumat verin.",
+      "obligation_en": "Comply with the supervisory authority's demands and report on compliance within 7 working days.",
+      "applies_to": "Mülkiyyətçi",
+      "type": "Legal",
+      "frequency": "on event: tələbdən sonra 7 iş günü",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Tənzimləyici sorğuları üçün məsul şəxs/kontakt nöqtəsi",
+        "Sorğuların qeydiyyatı və müddət nəzarəti",
+        "Cavab şablonları və rəhbərlik təsdiqi"
+      ],
+      "related_policies": [
+        "Tənzimləyici orqanla qarşılıqlı əlaqə proseduru"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    },
+    {
+      "id": "PD-20",
+      "category": "PERSONAL_DATA",
+      "law_short": "Fərdi məlumatlar haqqında Qanun",
+      "law_full": "Azərbaycan Respublikasının \"Fərdi məlumatlar haqqında\" Qanunu",
+      "law_ref": "№ 998-IIIQ, 11.05.2010",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (qanunda: 'müvafiq icra hakimiyyəti orqanı'; konkret orqan Prezident fərmanları ilə müəyyən edilir) (yoxlanmalı)",
+      "article": "Maddə 9.14",
+      "verbatim_az": "9.14. Fərdi məlumatların informasiya ehtiyatlarının formalaşdırılması və informasiya sistemlərinin yaradılması, onlara xidmətlərin göstərilməsi yalnız Azərbaycan Respublikasının qanunvericiliyinə uyğun olaraq xüsusi razılıq (lisenziya) əsasında həyata keçirilir.",
+      "obligation_az": "Fərdi məlumat ehtiyatlarının formalaşdırılması, sistemlərin yaradılması və onlara xidmət üçün lisenziya tələbini yoxlayın və təmin edin.",
+      "obligation_en": "Verify and meet any licensing requirement for building personal-data resources/systems or providing services to them.",
+      "applies_to": "Fərdi məlumatların informasiya ehtiyatlarını formalaşdıran, sistemləri yaradan və ya onlara xidmət göstərən şəxslər (o cümlədən IT podratçılar)",
+      "type": "Legal",
+      "frequency": "one-off (fəaliyyətə başlamazdan əvvəl) + müddətli yenilənmə",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Hüquqi baxış: 'Lisenziyalar və icazələr haqqında' Qanunun hazırkı siyahısına qarşı yoxlama",
+        "Podratçılardan lisenziya sübutunun tələb edilməsi"
+      ],
+      "related_policies": [
+        "İnformasiya sistemlərinin qeydiyyatı proseduru",
+        "Üçüncü şəxslərə məlumat verilməsi və operatorların idarə edilməsi siyasəti"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/19/f_19675.html"
+    }
+  ],
+  "policies": [
+    {
+      "name_az": "Fərdi məlumatların mühafizəsi siyasəti",
+      "name_en": "Personal Data Protection Policy",
+      "purpose": "Prinsipləri (qanunçuluq, konfidensiallıq, məqsəd məhdudluğu, minimallaşdırma, dəqiqlik), rolları və məsuliyyətləri müəyyən edən çətir sənəd.",
+      "drivers": [
+        "PD-01",
+        "PD-04",
+        "PD-09"
+      ],
+      "articles": [
+        "4.1",
+        "5.5",
+        "9.1-9.3",
+        "9.6",
+        "10.1",
+        "11.1"
+      ]
+    },
+    {
+      "name_az": "Emal fəaliyyətlərinin reyestri proseduru",
+      "name_en": "Record of Processing Activities Procedure",
+      "purpose": "Hər emal fəaliyyəti üçün məqsəd, hüquqi əsas, kateqoriyalar, alıcılar, saxlanma və sistemləri qeydə almaq (qeydiyyat müraciətinin 15.4 məlumatlarının mənbəyi).",
+      "drivers": [
+        "PD-01",
+        "PD-04",
+        "PD-16"
+      ],
+      "articles": [
+        "9.1",
+        "9.6",
+        "15.4"
+      ]
+    },
+    {
+      "name_az": "Razılığın idarə edilməsi proseduru",
+      "name_en": "Consent Management Procedure",
+      "purpose": "Yazılı/e-imzalı razılığın 8.2 elementləri ilə alınması, EHİS üzərindən idarəsi, sübutun saxlanması və geri çağırmanın icrası.",
+      "drivers": [
+        "PD-02",
+        "PD-03",
+        "PD-13",
+        "PD-14"
+      ],
+      "articles": [
+        "8.1-8.6",
+        "13.1",
+        "13.3"
+      ]
+    },
+    {
+      "name_az": "Məxfilik bildirişi (subyektin məlumatlandırılması)",
+      "name_en": "Privacy Notice",
+      "purpose": "Toplama zamanı 11.2 və 11.3-də tələb olunan məlumatların subyektə təqdim edilməsi.",
+      "drivers": [
+        "PD-08",
+        "PD-02"
+      ],
+      "articles": [
+        "11.2",
+        "11.3"
+      ]
+    },
+    {
+      "name_az": "Subyekt sorğularına baxılma proseduru",
+      "name_en": "Data Subject Request Procedure",
+      "purpose": "Giriş, düzəliş, məhv, qadağa və etiraz sorğularının şəxsiyyət yoxlaması ilə qəbulu və 7/5/3 iş günü müddətlərində icrası.",
+      "drivers": [
+        "PD-11",
+        "PD-12",
+        "PD-13",
+        "PD-17"
+      ],
+      "articles": [
+        "7.1-7.5",
+        "12.1-12.6"
+      ]
+    },
+    {
+      "name_az": "Məlumatların saxlanması və məhv edilməsi siyasəti",
+      "name_en": "Data Retention and Destruction Policy",
+      "purpose": "Saxlanma müddətlərini, məqsəd bitdikdə məhvetmə/arxivləşdirmə və məhvetmə aktlarının qaydasını müəyyən etmək.",
+      "drivers": [
+        "PD-05",
+        "PD-06"
+      ],
+      "articles": [
+        "8.2.6",
+        "9.4",
+        "9.8",
+        "15.6",
+        "5.10"
+      ]
+    },
+    {
+      "name_az": "İnformasiya təhlükəsizliyi siyasəti",
+      "name_en": "Information Security Policy",
+      "purpose": "Fərdi məlumatların mühafizəsi üçün texniki-təşkilati tədbirləri və Nazirlər Kabinetinin mühafizə tələblərinə uyğunluğu təmin etmək.",
+      "drivers": [
+        "PD-09",
+        "PD-10",
+        "PD-15"
+      ],
+      "articles": [
+        "5.2",
+        "5.8",
+        "5.9",
+        "14.4"
+      ]
+    },
+    {
+      "name_az": "Girişə nəzarət və audit jurnalı proseduru",
+      "name_en": "Access Control and Audit Logging Procedure",
+      "purpose": "Fərdi məlumatlara girişin məhdudlaşdırılması və 9.12 üzrə nəzarət-audit jurnallarının aparılması.",
+      "drivers": [
+        "PD-09",
+        "PD-17"
+      ],
+      "articles": [
+        "5.2",
+        "9.12"
+      ]
+    },
+    {
+      "name_az": "Xüsusi kateqoriyalı və biometrik məlumatların emalı proseduru",
+      "name_en": "Special Category and Biometric Data Procedure",
+      "purpose": "Xüsusi kateqoriyalı və biometrik məlumatların yalnız icazə verilən hallarda, gücləndirilmiş mühafizə ilə emalı və əsas aradan qalxdıqda bloklanması/məhvi.",
+      "drivers": [
+        "PD-06",
+        "PD-07"
+      ],
+      "articles": [
+        "2.1.6",
+        "9.5",
+        "9.7",
+        "9.8"
+      ]
+    },
+    {
+      "name_az": "Transsərhəd ötürmə proseduru",
+      "name_en": "Cross-Border Data Transfer Procedure",
+      "purpose": "Xaricə ötürmələrin (o cümlədən xarici bulud xidmətlərinin) adekvatlıq qiymətləndirməsi, razılıq və təhlükəsizlik tədbirləri ilə idarəsi.",
+      "drivers": [
+        "PD-15"
+      ],
+      "articles": [
+        "14.1-14.4",
+        "15.4.13"
+      ]
+    },
+    {
+      "name_az": "Üçüncü şəxslərə məlumat verilməsi və operatorların idarə edilməsi siyasəti",
+      "name_en": "Third-Party Disclosure and Processor Management Policy",
+      "purpose": "Üçüncü şəxslərə verilmənin əsaslarını, operator (podratçı) müqavilələrini, due diligence və alıcılara bildirişləri tənzimləmək.",
+      "drivers": [
+        "PD-12",
+        "PD-14",
+        "PD-18",
+        "PD-20"
+      ],
+      "articles": [
+        "9.9",
+        "10.3",
+        "10.4",
+        "12.5",
+        "13.1-13.3"
+      ]
+    },
+    {
+      "name_az": "İnformasiya sistemlərinin qeydiyyatı proseduru",
+      "name_en": "Information System Registration Procedure",
+      "purpose": "Fərdi məlumatların informasiya sistemlərinin dövlət qeydiyyatı, istisnaların qiymətləndirilməsi, dəyişikliklərin 3 iş günü ərzində bildirilməsi və lisenziya tələblərinin yoxlanması.",
+      "drivers": [
+        "PD-16",
+        "PD-20"
+      ],
+      "articles": [
+        "9.14",
+        "15.1-15.6",
+        "16.1"
+      ]
+    },
+    {
+      "name_az": "Əməkdaşların məxfilik öhdəliyi",
+      "name_en": "Employee Confidentiality Undertaking",
+      "purpose": "Fərdi məlumatlarla işləyən əməkdaşlardan işdən çıxdıqdan sonra da qüvvədə olan yazılı iltizam alınması.",
+      "drivers": [
+        "PD-10"
+      ],
+      "articles": [
+        "5.5"
+      ]
+    },
+    {
+      "name_az": "Tənzimləyici orqanla qarşılıqlı əlaqə proseduru",
+      "name_en": "Regulator Engagement Procedure",
+      "purpose": "Nəzarət orqanının sorğu və tələblərinə vaxtında (7 iş günü) cavab, yoxlamalara hazırlıq.",
+      "drivers": [
+        "PD-19"
+      ],
+      "articles": [
+        "10.6",
+        "17.1",
+        "17.2"
+      ]
+    },
+    {
+      "name_az": "Fərdi məlumat insidentlərinə cavab proseduru",
+      "name_en": "Personal Data Incident Response Procedure",
+      "purpose": "İtki, icazəsiz giriş və ya dəyişdirilmə hallarının aşkarlanması, məhdudlaşdırılması və araşdırılması (qanunda açıq bildiriş öhdəliyi yoxdur — ən yaxşı təcrübə).",
+      "drivers": [
+        "PD-09"
+      ],
+      "articles": [
+        "5.8",
+        "10.1"
+      ]
+    }
+  ],
+  "notes": "Mətn rəsmi Hüquqi İnformasiya Mərkəzinin e-qanun.az portalından (framework 19675, htmlUrl) götürülüb; bütün verbatim_az sitatları skript vasitəsilə həmin mətnə qarşı hərfi-hərfinə yoxlanılıb ('[…]' buraxılmış hissəni göstərir; '[3]' kimi işarələr mənbədəki dəyişiklik qeydləridir). Konsolidə mətndə son dəyişiklik 28.06.2024 № 1193-VIQD-dir; ondan sonrakı dəyişikliklər (əgər varsa) portalda əks olunmayıbsa, burada yoxdur — tətbiqdən əvvəl yoxlanmalı. Qanun nəzarət orqanını yalnız 'müvafiq icra hakimiyyəti orqanı' kimi göstərir. 'Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi' göstəricisi qanunun mətnindən deyil, tətbiq fərmanlarından (4 iyun 2010 № 275 və sonrakı dəyişikliklər) və nazirliyin əsasnaməsindən irəli gələn cari təcrübəyə əsaslanır — (yoxlanmalı). Mühafizə tələblərinə (5.9) nəzarətdə təhlükəsizlik orqanlarının rolu da yoxlanmalıdır. Qanunda GDPR-dəki kimi pozuntu (breach) barədə bildiriş öhdəliyi, DPO təyinatı və ya DPIA tələbi yoxdur; 'Fərdi məlumat insidentlərinə cavab proseduru' ən yaxşı təcrübə kimi əlavə edilib. 9.14 (lisenziya) tələbinin praktiki tətbiqi 'Lisenziyalar və icazələr haqqında' Qanunun hazırkı siyahısına qarşı yoxlanmalıdır. Sertifikatlaşdırma və dövlət ekspertizası (6.0.6, 6.0.8, 7.1.9, 11.2.4) qanunda dövlət tənzimləməsi forması kimi göstərilir, lakin mülkiyyətçiyə birbaşa 'sertifikat almalıdır' öhdəliyi ayrıca maddədə yoxdur; ona görə ayrıca öhdəlik kimi daxil edilməyib (yalnız 11.2.4 üzrə məlumatlandırma). Daxil edilməyən, lakin niş hallarda tətbiq olunan müddəalar: 5.7 (ümumi istifadəli sistemlərə açıq mənbələrdən daxil edilən məlumatlar barədə subyektə bildiriş), 8.5 (açıq kateqoriyanı sübut etmək), 9.13 (elmi/statistik tədqiqatda adsızlaşdırma), 10.5 (əməliyyat-axtarış tədbirlərinə şərait), 15.6 (qeydiyyat ləğv edildikdə məlumatların məhvi), 18.3 (müxtəlif mülkiyyətçilərin sistemlərinin birləşdirilməsinin qadağası). Məsuliyyət (19-cu maddə) ümumi istinad xarakterlidir; konkret cərimələr İnzibati Xətalar Məcəlləsi və Cinayət Məcəlləsində (məs. şəxsi həyatın toxunulmazlığı) müəyyən edilir — risk səviyyələri subyektiv qiymətləndirmədir. Mənbə mətndə qeyd: [9]-cu dəyişiklik qeydi 2018-ci il qanunu ilə 13.2-1-dən 'birbaşa və ya' sözlərinin çıxarıldığını bildirir, lakin konsolidə mətndə bu sözlər hələ də var — portalın redaksiya uyğunsuzluğu (bu kitabxanadakı öhdəliklərə təsir etmir)."
+}

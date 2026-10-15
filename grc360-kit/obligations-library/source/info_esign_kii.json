@@ -1,0 +1,1439 @@
+{
+  "generated": "2026-10-15",
+  "jurisdiction": "AZ",
+  "language": "az/en",
+  "laws": [
+    {
+      "key": "INF",
+      "title_az": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanunu",
+      "number": "460-IQ",
+      "adopted": "1998-04-03",
+      "status": "Qüvvədədir (e-qanun.az)",
+      "source_url": "https://e-qanun.az/framework/3525",
+      "full_text_url": "https://e-qanun.az/frameworks/3/f_3525.html",
+      "official_publication": "AR Qanunvericilik Toplusu, 30.06.1998, № 06, maddə 364",
+      "last_amendment_in_force": "454-VIIQD, 14.07.2026 (AZƏRTAC 10.08.2026; “Azərbaycan” qəzeti 11.08.2026, № 142) — V-II fəsil “İnformasiya infrastrukturunun informasiya təhlükəsizliyi və kibertəhlükəsizliyi” (20-7 – 20-12) əlavə edilib",
+      "other_recent_amendments": [
+        "442-VIIQD, 10.07.2026 (13-3 maddəsi)",
+        "387-VIIQD, 21.04.2026 (13-2.3.9-1, 13-2.7 — AI məzmunu)",
+        "333-VIIQD, 30.12.2025",
+        "1193-VIQD, 28.06.2024",
+        "861-VIQD, 11.04.2023 (KİI)",
+        "539-VIQD, 27.05.2022 (V-I fəsil — KİI)"
+      ],
+      "pending_amendments": [
+        "431-VIIQD, 30.06.2026 — sosial şəbəkə platformalarında yaş məhdudiyyəti (yeni 13-4, 13-5 maddələri); 05.08.2027-dən qüvvəyə minir (e-qanun qeydi)"
+      ],
+      "consolidated_text_saved": "2026-10-14 (e-qanun HTML LastSaved)",
+      "category_note": "Ümumi vəzifələr STATE_STANDARDS; KİI vəzifələri KII_SECURITY (KII-xx)"
+    },
+    {
+      "key": "ES",
+      "title_az": "“Elektron imza və elektron sənəd haqqında” Azərbaycan Respublikasının Qanunu",
+      "number": "602-IIQ",
+      "adopted": "2004-03-09",
+      "status": "Qüvvədədir (e-qanun.az)",
+      "source_url": "https://e-qanun.az/framework/5916",
+      "full_text_url": "https://e-qanun.az/frameworks/5/f_5916.html",
+      "official_publication": "AR Qanunvericilik Toplusu, 31.05.2004, № 05, maddə 310",
+      "last_amendment_in_force": "1048-VIQD, 05.12.2023 (AZƏRTAC 25.12.2023) — 1.1.15 “elektron sənəd” anlayışı yeni redaksiyada",
+      "other_recent_amendments": [
+        "815-VIQD, 17.02.2023",
+        "740-VIQD, 20.12.2022",
+        "1419-VQD, 28.12.2018",
+        "400-VQD, 11.11.2016",
+        "621-IIIQD, 02.06.2008"
+      ],
+      "implementing_acts": [
+        "Prezidentin 26.05.2004 № 65 Fərmanı (səlahiyyətli orqanlar; RİNN) — https://e-qanun.az/framework/5946",
+        "NK-nin 28.01.2006 № 27 Qərarı (e-imza yoxlanma, CA qeydiyyatı/akkreditasiyası, e-sənəd mübadiləsi qaydaları) — https://e-qanun.az/framework/13127"
+      ],
+      "consolidated_text_saved": "2026-02-17 (e-qanun HTML LastSaved)"
+    },
+    {
+      "key": "KII",
+      "title_az": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları”nın təsdiq edilməsi haqqında Azərbaycan Respublikası Nazirlər Kabinetinin Qərarı",
+      "number": "229",
+      "adopted": "2023-07-17",
+      "status": "Qüvvədədir (e-qanun.az)",
+      "source_url": "https://e-qanun.az/framework/54651",
+      "full_text_url": "https://e-qanun.az/frameworks/54/f_54651.html",
+      "cross_check_url": "https://www.azerbaijan-news.az/az/posts/detail/azerbaycan-respublikasinda-kritik-informasiya-infrastrukturunun-tehlukesizliyinin-temin-edilmesi-qaydalarinin-tesdiq-edilmesi-haqqinda-1689799398 (“Azərbaycan” qəzeti, 20.07.2023 ilkin dərc)",
+      "last_amendment_in_force": "NK-nin 02.12.2023 № 431 Qərarı (5.1, 7.5 redaksiyası; yeni 8.4.3-1)",
+      "legal_basis": [
+        "İnformasiya Qanunu V-I fəsil (20-1 – 20-6), 539-VIQD (27.05.2022) və 861-VIQD (11.04.2023) ilə",
+        "Prezidentin 17.04.2021 № 1315 Fərmanı (səlahiyyətli orqan: DTX; dövlət qurumları üçün XRİTDX ilə birgə) — https://e-qanun.az/framework/47253",
+        "Prezidentin 05.07.2022 № 1738 Fərmanı"
+      ],
+      "related_acts_not_fetched": [
+        "NK-nin 17.07.2023 № 230 Qərarı — KİI obyektləri reyestrinin strukturu, yaradılması və aparılması qaydası (https://e-qanun.az/framework/54652)",
+        "NK-nin 29.11.2024 № 501 Qərarı — “Kritik informasiya infrastrukturu obyektlərinin siyahısı” (https://e-qanun.az/framework/58346)"
+      ],
+      "consolidated_text_saved": "2024-02-24 (e-qanun HTML LastSaved)"
+    },
+    {
+      "key": "AUTH",
+      "title_az": "Səlahiyyətli orqanları müəyyən edən aktlar",
+      "number": "—",
+      "adopted": "—",
+      "status": "Qüvvədədir",
+      "source_url": "https://e-qanun.az/framework/3605",
+      "items": [
+        "Prezidentin 19.06.1998 № 729 Fərmanı (konsolidə; 10.08.2026 № 761 Fərmanı ilə) — 13-3: RİNN; KİI: DTX/XRİTDX; Milli CERT, Milli SOC, Rəqəmsal tədqiqat mərkəzi, CERT/SOC reyestri: Milli Kibertəhlükəsizlik Agentliyi qismində RİNN; Dövlət CERT: XRİTDX — https://e-qanun.az/framework/3605",
+        "Prezidentin 10.08.2026 № 761 Fərmanı — https://e-qanun.az/framework/62416",
+        "NK-nin 17.08.2026 № 613s Sərəncamı — https://e-qanun.az/framework/62528"
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "id": "INF-01",
+      "category": "STATE_STANDARDS",
+      "law_short": "İnformasiya Qanunu",
+      "law_full": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 460-IQ, 3 aprel 1998 (son qüvvədə olan dəyişiklik: № 454-VIIQD, 14 iyul 2026)",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Prezidentin 19.06.1998 № 729 Fərmanı, b. 2.3)",
+      "article": "Maddə 13-2.1",
+      "verbatim_az": "İnternet informasiya ehtiyatının və onun domen adının sahibi həmin informasiya ehtiyatının qanunauyğun fəaliyyətini, o cümlədən dövlət dili normalarına riayət edilməsini təmin etməlidir və buna görə şəxsən məsuliyyət daşıyır.",
+      "obligation_az": "Veb-saytın qanunauyğun fəaliyyətini və dövlət dili normalarına riayəti təmin edin; buna görə şəxsən məsuliyyət daşıyırsınız.",
+      "obligation_en": "Ensure the lawful operation of the organisation's website(s), including compliance with state-language (Azerbaijani) norms; the owner is personally liable.",
+      "applies_to": "İnternet informasiya ehtiyatının (veb-sayt) və domen adının sahibi",
+      "type": "Legal",
+      "frequency": "Davamlı (continuous)",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Veb-sayt məzmunu üçün hüquqi/redaksiya təsdiqi prosesi",
+        "Azərbaycan dilində məzmun versiyası və dil yoxlaması",
+        "Domen və sayt sahibliyinin reyestri (owner of record)"
+      ],
+      "related_policies": [
+        "POL-WEB"
+      ],
+      "source_url": "https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "INF-02",
+      "category": "STATE_STANDARDS",
+      "law_short": "İnformasiya Qanunu",
+      "law_full": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 460-IQ, 3 aprel 1998 (son qüvvədə olan dəyişiklik: № 454-VIIQD, 14 iyul 2026)",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Prezidentin 19.06.1998 № 729 Fərmanı, b. 2.3)",
+      "article": "Maddə 13-2.2",
+      "verbatim_az": "İnternet informasiya ehtiyatının və onun domen adının sahibi hüquqi şəxsdirsə adı, təşkilati-hüquqi forması, elektron poçt ünvanı, fiziki şəxsdirsə adı, soyadı və atasının adı və elektron poçt ünvanı həmin saytda aydın oxuna bilən yerdə və formada yerləşdirməlidir.",
+      "obligation_az": "Saytda sahibin adını, təşkilati-hüquqi formasını və e-poçt ünvanını aydın oxunan yerdə yerləşdirin.",
+      "obligation_en": "Publish the website/domain owner's name, legal form and e-mail address in a clearly legible place on the site.",
+      "applies_to": "Hüquqi şəxs olan veb-sayt və domen adı sahibi",
+      "type": "Legal",
+      "frequency": "Daimi; məlumat dəyişdikdə yeniləmə",
+      "risk": "LOW",
+      "suggested_controls": [
+        "Bütün korporativ saytlarda standart \"Haqqımızda/Əlaqə\" bloku",
+        "Rüblük sayt inventarı və imprint yoxlaması"
+      ],
+      "related_policies": [
+        "POL-WEB"
+      ],
+      "source_url": "https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "INF-03",
+      "category": "STATE_STANDARDS",
+      "law_short": "İnformasiya Qanunu",
+      "law_full": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 460-IQ, 3 aprel 1998 (son qüvvədə olan dəyişiklik: № 454-VIIQD, 14 iyul 2026)",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Prezidentin 19.06.1998 № 729 Fərmanı, b. 2.3)",
+      "article": "Maddə 13-2.3, 13-2.4, 13-3.2",
+      "verbatim_az": "13-2.3: «İnternet informasiya ehtiyatının və onun domen adının sahibi və ya informasiya-telekommunikasiya şəbəkəsinin istifadəçisi həmin informasiya ehtiyatında (informasiya-telekommunikasiya şəbəkəsində) aşağıdakı yayılması qadağan edilən informasiyanın yerləşdirilməsinə yol verməməlidir:» | 13-2.4: «İnternet informasiya ehtiyatının və onun domen adının sahibi həmin informasiya ehtiyatında və ya onun müvafiq hissəsində yayılması qadağan edilən informasiyanın olduğunu aşkar etdikdə və ya bu barədə ona müraciət daxil olduqda, belə informasiyanın informasiya ehtiyatından götürülməsini və ya həmin informasiya ehtiyatına və ya onun müvafiq hissəsinə müraciətin məhdudlaşdırılmasını təmin edir.» | 13-3.2: «Xəbərdarlıq edildiyi vaxtdan 8 saat ərzində yayılması qanunla qadağan edilən informasiya internet informasiya ehtiyatından götürülmədikdə və ya internet informasiya ehtiyatına və ya onun müvafiq hissəsinə müraciət məhdudlaşdırılmadıqda»",
+      "obligation_az": "Yayılması qadağan edilən informasiyanın yerləşdirilməsinə yol verməyin; aşkar edildikdə və ya xəbərdarlıqda dərhal (8 saat ərzində) götürün.",
+      "obligation_en": "Prevent publication of prohibited information (Art. 13-2.3 list); remove it or restrict access upon discovery or complaint, and within 8 hours of an official warning.",
+      "applies_to": "Veb-sayt/domen sahibi, informasiya-telekommunikasiya şəbəkəsinin istifadəçisi (o cümlədən korporativ sosial şəbəkə hesabları)",
+      "type": "Legal",
+      "frequency": "Hadisə əsaslı (on discovery / on notice; ≤ 8 saat)",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Notice-and-takedown proseduru və 24/7 əlaqə nöqtəsi",
+        "İstifadəçi məzmununun moderasiyası (UGC)",
+        "Rəsmi xəbərdarlıqların qeydiyyatı və SLA izlənməsi"
+      ],
+      "related_policies": [
+        "POL-WEB",
+        "POL-CONTENT"
+      ],
+      "source_url": "https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "INF-04",
+      "category": "STATE_STANDARDS",
+      "law_short": "İnformasiya Qanunu",
+      "law_full": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 460-IQ, 3 aprel 1998 (son qüvvədə olan dəyişiklik: № 454-VIIQD, 14 iyul 2026)",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Prezidentin 19.06.1998 № 729 Fərmanı, b. 2.3) (yoxlanmalı — uşaq informasiya təhlükəsizliyi üzrə nəzarət)",
+      "article": "Maddə 13-2.6",
+      "verbatim_az": "internet informasiya ehtiyatlarında informasiya məhsulunun uşaqlar arasında yayılmasını məhdudlaşdıran xəbərdarlıq mətni əks olunmalıdır.",
+      "obligation_az": "İnternet informasiya ehtiyatında informasiya məhsulunun uşaqlar arasında yayılmasını məhdudlaşdıran xəbərdarlıq mətnini yerləşdirin.",
+      "obligation_en": "Display a warning text restricting the distribution of the information product among children on internet information resources.",
+      "applies_to": "Veb-sayt / internet informasiya ehtiyatı sahibi",
+      "type": "Legal",
+      "frequency": "Daimi",
+      "risk": "LOW",
+      "suggested_controls": [
+        "Sayt şablonuna yaş/xəbərdarlıq banneri",
+        "Yeni məzmun buraxılışında yoxlama siyahısı"
+      ],
+      "related_policies": [
+        "POL-WEB",
+        "POL-CONTENT"
+      ],
+      "source_url": "https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "INF-05",
+      "category": "STATE_STANDARDS",
+      "law_short": "İnformasiya Qanunu",
+      "law_full": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 460-IQ, 3 aprel 1998 (son qüvvədə olan dəyişiklik: № 454-VIIQD, 14 iyul 2026)",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Prezidentin 19.06.1998 № 729 Fərmanı, b. 2.3) (yoxlanmalı)",
+      "article": "Maddə 13-2.7 (387-VIIQD, 21.04.2026 ilə əlavə edilib)",
+      "verbatim_az": "Süni intellekt texnologiyaları vasitəsilə hazırlanmış foto, video və ya audio materiallar kütləvi nümayiş etdirildikdə belə texnologiyalardan istifadə edilməklə hazırlandığını aydın şəkildə göstərən və asanlıqla görünən nişanlanma ilə təmin edilməlidir.",
+      "obligation_az": "Kütləvi nümayiş olunan süni intellektlə hazırlanmış foto, video və audionu aydın görünən nişanla işarələyin.",
+      "obligation_en": "Clearly and visibly label AI-generated photo, video or audio material whenever it is publicly displayed.",
+      "applies_to": "Marketinq/kommunikasiya bölməsi; məzmun yerləşdirən istənilən təşkilat",
+      "type": "Legal",
+      "frequency": "Hər nəşrdə (per publication)",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Generativ AI istifadəsi qeydiyyatı",
+        "Avtomatik su nişanı / \"AI ilə hazırlanıb\" etiketi",
+        "Nəşrdən əvvəl kommunikasiya təsdiqi"
+      ],
+      "related_policies": [
+        "POL-AI",
+        "POL-CONTENT"
+      ],
+      "source_url": "https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "INF-06",
+      "category": "STATE_STANDARDS",
+      "law_short": "İnformasiya Qanunu",
+      "law_full": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 460-IQ, 3 aprel 1998 (son qüvvədə olan dəyişiklik: № 454-VIIQD, 14 iyul 2026)",
+      "authority": "Sahə tənzimləyicisi; fərdi məlumatlar üzrə — \"Fərdi məlumatlar haqqında\" Qanunla müəyyən edilmiş orqan (yoxlanmalı)",
+      "article": "Maddə 10 (üçüncü hissə)",
+      "verbatim_az": "Konfidensial informasiyanın toplanmasına, işlənməsinə, istifadəsinə və yayılmasına yalnız Azərbaycan Respublikasının qanunvericiliyində müəyyən edilmiş hallarda yol verilə bilər.",
+      "obligation_az": "Konfidensial informasiyanı yalnız qanunvericilikdə nəzərdə tutulmuş hallarda toplayın, işləyin, istifadə edin və yayın.",
+      "obligation_en": "Collect, process, use and disclose confidential information (commercial, professional secrets, personal data) only in cases provided for by law.",
+      "applies_to": "Konfidensial informasiya emal edən bütün təşkilatlar",
+      "type": "Legal",
+      "frequency": "Davamlı",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Məlumat təsnifatı (açıq / konfidensial / dövlət sirri)",
+        "Emal üçün hüquqi əsasların reyestri",
+        "Məlumat paylaşma razılaşmaları"
+      ],
+      "related_policies": [
+        "POL-CLASS",
+        "POL-PRIV"
+      ],
+      "source_url": "https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "INF-07",
+      "category": "STATE_STANDARDS",
+      "law_short": "İnformasiya Qanunu",
+      "law_full": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 460-IQ, 3 aprel 1998 (son qüvvədə olan dəyişiklik: № 454-VIIQD, 14 iyul 2026)",
+      "authority": "Sahə tənzimləyicisi (yoxlanmalı)",
+      "article": "Maddə 18 (birinci və ikinci hissələr)",
+      "verbatim_az": "Maddə 18, birinci hissə: «Barəsində qanunsuz əməliyyatlar və davranış nəticəsində mülkiyyətçiyə, sahibə, istifadəçiyə və ya başqa şəxslərə ziyan vurula bilən hər hansı sənədləşdirilmiş informasiya mühafizə olunmalıdır.» | Maddə 18, ikinci hissə: «İnformasiyanın mühafizə rejimi onun hüquqi rejimindən asılı olaraq “Dövlət sirri haqqında” Azərbaycan Respublikasının Qanunu ilə, bu Qanunla, “İnformasiya əldə etmək haqqında” Azərbaycan Respublikasının Qanunu ilə, digər normativ hüquqi aktlarla, habelə mülkiyyətçi tərəfindən müəyyən edilir.»",
+      "obligation_az": "Ziyan vurula bilən sənədləşdirilmiş informasiyanı qoruyun və onun mühafizə rejimini daxili qaydalarla müəyyən edin.",
+      "obligation_en": "Protect any documented information whose unlawful handling could harm the owner, holder, user or others, and define its protection regime internally.",
+      "applies_to": "İnformasiya ehtiyatlarının mülkiyyətçisi / sahibi",
+      "type": "Legal",
+      "frequency": "Davamlı; illik baxış",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "İnformasiya təhlükəsizliyi siyasəti və mühafizə rejimi",
+        "Giriş nəzarəti və şifrələmə",
+        "Məlumat itkisinin qarşısının alınması (DLP)"
+      ],
+      "related_policies": [
+        "POL-ISP",
+        "POL-CLASS"
+      ],
+      "source_url": "https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "INF-08",
+      "category": "STATE_STANDARDS",
+      "law_short": "İnformasiya Qanunu",
+      "law_full": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 460-IQ, 3 aprel 1998 (son qüvvədə olan dəyişiklik: № 454-VIIQD, 14 iyul 2026)",
+      "authority": "Sertifikasiyanı təşkil edən orqan (yoxlanmalı — Fərman № 729 b.1 Nazirlər Kabinetinə tapşırıb)",
+      "article": "Maddə 16 (birinci hissə), Maddə 19 (ikinci hissə)",
+      "verbatim_az": "Maddə 16: «Vətəndaşların və təşkilatların informasiya təminatı üçün nəzərdə tutulan informasiya sistemləri, verilənlər bazası və verilənlər bankı, konfidensial informasiyanın işlənməsini həyata keçirən dövlət orqanları, idarə, müəssisə və təşkilatların informasiya sistemləri, habelə bu sistemlərin mühafizə vasitələri müəyyənləşdirilmiş qaydada sertifikasiyalaşdırılmalıdır.» | Maddə 19: «Sertifikatlaşdırılmamış informasiya sistem və vasitələrdən istifadə olunması və xidmətlərin göstərilməsi ilə bağlı məsuliyyəti bu sistem və vasitələrin mülkiyyətçisi və ya sahibi, belə sistemlərdən əldə olunan informasiyadan istifadə üçün isə məsuliyyəti istifadəçi daşıyır.»",
+      "obligation_az": "Konfidensial informasiya emal edən informasiya sistemlərini və mühafizə vasitələrini müəyyən qaydada sertifikatlaşdırın.",
+      "obligation_en": "Have information systems (and their protection tools) that process confidential information certified in the prescribed manner; the owner bears liability for uncertified systems.",
+      "applies_to": "Konfidensial informasiya emal edən təşkilatların informasiya sistemləri",
+      "type": "Regulatory",
+      "frequency": "Sistem istismara verilərkən və dəyişdikdə",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Sistem inventarında sertifikat statusu sahəsi",
+        "Satınalmada sertifikat tələbi",
+        "Sertifikatsız sistemlər üçün risk qəbulu"
+      ],
+      "related_policies": [
+        "POL-ASSET",
+        "POL-PROC"
+      ],
+      "source_url": "https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "INF-09",
+      "category": "STATE_STANDARDS",
+      "law_short": "İnformasiya Qanunu",
+      "law_full": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 460-IQ, 3 aprel 1998 (son qüvvədə olan dəyişiklik: № 454-VIIQD, 14 iyul 2026)",
+      "authority": "Milli CERT — Milli Kibertəhlükəsizlik Agentliyi qismində Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Fərman № 729, b. 2.9, 10.08.2026 № 761 Fərmanı ilə); maliyyə bazarı subyektləri üçün AMB koordinasiyası",
+      "article": "Maddə 20-11.1 (454-VIIQD ilə əlavə edilib)",
+      "verbatim_az": "İnformasiya infrastrukturunun kibertəhlükəsizliyi informasiya infrastrukturu subyekti tərəfindən informasiya infrastrukturu obyektinin kibertəhlükəsizliyində zəifliklərin, boşluqların və digər uyğunsuzluqların aşkar olunması məqsədilə risklərin qiymətləndirilməsi, təhlükəsizlik auditlərinin keçirilməsi və onların nəticələrinin aradan qaldırılması üzrə tədbirlərin görülməsi yolu ilə təmin edilir.",
+      "obligation_az": "İnformasiya infrastrukturunda risk qiymətləndirməsi və təhlükəsizlik auditləri aparın, aşkar edilən zəiflikləri aradan qaldırın.",
+      "obligation_en": "Ensure cybersecurity of your information infrastructure through risk assessments, security audits and remediation of identified weaknesses and gaps.",
+      "applies_to": "İnformasiya infrastrukturu subyekti (informasiya sistemi/şəbəkəsi/sayt sahibi olan hər bir təşkilat)",
+      "type": "Legal",
+      "frequency": "Mütəmadi; ən azı illik tövsiyə olunur",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "İllik kiber risk qiymətləndirməsi",
+        "Zəiflik skanı və penetrasiya testi",
+        "Remediasiya planı və izlənməsi"
+      ],
+      "related_policies": [
+        "POL-RISK",
+        "POL-VULN",
+        "POL-AUDIT"
+      ],
+      "source_url": "https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "INF-10",
+      "category": "STATE_STANDARDS",
+      "law_short": "İnformasiya Qanunu",
+      "law_full": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 460-IQ, 3 aprel 1998 (son qüvvədə olan dəyişiklik: № 454-VIIQD, 14 iyul 2026)",
+      "authority": "Milli CERT — Milli Kibertəhlükəsizlik Agentliyi qismində Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Fərman № 729, b. 2.9, 10.08.2026 № 761 Fərmanı ilə); maliyyə bazarı subyektləri üçün AMB koordinasiyası",
+      "article": "Maddə 20-11.2 (454-VIIQD)",
+      "verbatim_az": "İnformasiya infrastrukturu subyekti bu Qanunun 20-7.8-ci, 20-7.12-ci, 20-9.3-cü, 20-9.4-cü, 20-10.2-ci və 20-10.6-cı maddələrinin tələbləri nəzərə alınmaqla, informasiya infrastrukturu obyektlərinə qarşı yönəlmiş kiberinsident və kiberhücumlar barədə məlumatın onların aşkarlandığı andan dərhal sonra Milli CERT-ə təqdim olunmasını təmin etməlidir.",
+      "obligation_az": "İnformasiya infrastrukturuna qarşı kiberinsident və kiberhücumları aşkarlandığı andan dərhal Milli CERT-ə bildirin.",
+      "obligation_en": "Report cyber-incidents and cyber-attacks against your information infrastructure to the National CERT immediately upon detection.",
+      "applies_to": "İnformasiya infrastrukturu subyekti (KİI subyektləri məlumatı səlahiyyətli orqan vasitəsilə, maliyyə bazarı subyektləri AMB vasitəsilə ötürür)",
+      "type": "Legal",
+      "frequency": "Hadisə əsaslı — dərhal",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "İnsident bildiriş proseduru və Milli CERT əlaqə kanalı",
+        "İnsident təsnifat matrisi",
+        "Bildiriş vaxtlarının jurnalı"
+      ],
+      "related_policies": [
+        "POL-IR"
+      ],
+      "source_url": "https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "INF-11",
+      "category": "STATE_STANDARDS",
+      "law_short": "İnformasiya Qanunu",
+      "law_full": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 460-IQ, 3 aprel 1998 (son qüvvədə olan dəyişiklik: № 454-VIIQD, 14 iyul 2026)",
+      "authority": "Milli CERT — Milli Kibertəhlükəsizlik Agentliyi qismində Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Fərman № 729, b. 2.9, 10.08.2026 № 761 Fərmanı ilə); maliyyə bazarı subyektləri üçün AMB koordinasiyası",
+      "article": "Maddə 20-10.9 (454-VIIQD)",
+      "verbatim_az": "CERT-lər, informasiya infrastrukturunun subyektləri, həmçinin ictimai əhəmiyyətli funksiyaları yerinə yetirən informasiya infrastrukturu subyektləri, o cümlədən internet provayderlər, host provayderlər və internet informasiya ehtiyatının sahibləri Milli CERT tərəfindən kibertəhlükəsizlik vəziyyətinin öyrənilməsi, proaktiv kibertəhlükəsizlik tədqiqatının aparılması məqsədilə göndərilən sorğuları 24 saat, rəqəmsal tədqiqatın aparılması ilə bağlı göndərilən sorğuları isə 5 iş günü ərzində cavablandırmalıdır.",
+      "obligation_az": "Milli CERT sorğularına 24 saat, rəqəmsal tədqiqat sorğularına 5 iş günü ərzində cavab verin.",
+      "obligation_en": "Answer National CERT requests on cybersecurity status/proactive research within 24 hours, and digital-forensics requests within 5 working days.",
+      "applies_to": "İnformasiya infrastrukturu subyektləri, internet/host provayderlər, internet informasiya ehtiyatı sahibləri, CERT-lər",
+      "type": "Regulatory",
+      "frequency": "Sorğu əsasında (24 saat / 5 iş günü)",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Tənzimləyici sorğular üçün növbətçi əlaqə şəxsi",
+        "Sorğu qeydiyyatı və SLA taymeri",
+        "Hazır texniki məlumat paketləri (aktiv siyahısı, şəbəkə sxemi)"
+      ],
+      "related_policies": [
+        "POL-IR",
+        "POL-REGCOM"
+      ],
+      "source_url": "https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "INF-12",
+      "category": "STATE_STANDARDS",
+      "law_short": "İnformasiya Qanunu",
+      "law_full": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 460-IQ, 3 aprel 1998 (son qüvvədə olan dəyişiklik: № 454-VIIQD, 14 iyul 2026)",
+      "authority": "Milli CERT — Milli Kibertəhlükəsizlik Agentliyi qismində Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Fərman № 729, b. 2.9, 10.08.2026 № 761 Fərmanı ilə); maliyyə bazarı subyektləri üçün AMB koordinasiyası",
+      "article": "Maddə 20-10.5, 20-10.7 (454-VIIQD)",
+      "verbatim_az": "20-10.5: «Həyata keçirilmiş monitorinqlər və auditlər nəticəsində aşkar edilmiş zəifliklərin, boşluqların və digər uyğunsuzluqların aradan qaldırılması ilə əlaqədar Milli CERT tərəfindən müəyyən edilmiş müddət ərzində CERT-lər, informasiya infrastrukturunun subyektləri, o cümlədən internet informasiya ehtiyatlarının sahibləri tərəfindən tədbirlər görülərək nəticəsi barədə Milli CERT-ə məlumat verilməlidir.» | 20-10.7: «CERT-lər və informasiya infrastrukturu subyektləri informasiya infrastrukturuna yönəlmiş kiberhücumlara qarşı cavab tədbirlərinin görülməsi, habelə kibertəhdidlərin və kiberinsidentlərin qarşısının alınması ilə bağlı Milli CERT-in həyata keçirdiyi fəaliyyətə zəruri şərait yaratmalı və dəstək verməlidirlər.»",
+      "obligation_az": "Milli CERT-in aşkar etdiyi zəiflikləri müəyyən müddətdə aradan qaldırıb nəticəni bildirin; onun fəaliyyətinə şərait yaradın.",
+      "obligation_en": "Remediate vulnerabilities found in National CERT monitoring/audits within the set deadline, report results, and support National CERT response activities.",
+      "applies_to": "İnformasiya infrastrukturu subyektləri, o cümlədən internet informasiya ehtiyatlarının sahibləri",
+      "type": "Regulatory",
+      "frequency": "Hadisə əsaslı (Milli CERT müddəti)",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Xarici audit tapıntıları üçün remediasiya reyestri",
+        "Yamaq (patch) idarəetməsi SLA-ları",
+        "Tənzimləyiciyə bağlanma hesabatı şablonu"
+      ],
+      "related_policies": [
+        "POL-VULN",
+        "POL-REGCOM"
+      ],
+      "source_url": "https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "INF-13",
+      "category": "STATE_STANDARDS",
+      "law_short": "İnformasiya Qanunu",
+      "law_full": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 460-IQ, 3 aprel 1998 (son qüvvədə olan dəyişiklik: № 454-VIIQD, 14 iyul 2026)",
+      "authority": "Milli CERT — Milli Kibertəhlükəsizlik Agentliyi qismində Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Fərman № 729, b. 2.9, 10.08.2026 № 761 Fərmanı ilə); maliyyə bazarı subyektləri üçün AMB koordinasiyası",
+      "article": "Maddə 20-10.4.5, 20-11.6 (454-VIIQD)",
+      "verbatim_az": "20-10.4.5: «kibertəhlükəsizliyin təmin edilməsi (kibertəhdidlər, kiberhücumlar və kiberinsidentlərin qarşısının alınması və nəticələrinin aradan qaldırılması) ilə əlaqədar informasiya infrastrukturu subyektlərinə, CERT-lərə, SOC-lara, internet provayderlərə və host provaydelərə göstərişlər vermək;» | 20-11.6: «Domen adı “az” (“gov.az” istisna olmaqla) ölkə kodlu yüksək səviyyəli domen zonasında yerləşən internet informasiya ehtiyatlarının sahibləri tərəfindən Milli CERT-in kibertəhlükəsizliyin təmin edilməsi (kibertəhdidlər, kiberhücumlar və kiberinsidentlərin qarşısının alınması və nəticələrinin aradan qaldırılması) ilə əlaqədar göstərişlərinin yerinə yetirilməməsi domen adının “az” ölkə kodlu yüksək səviyyəli domen zonasında olan qeydiyyatının xitamı, domen adına texniki xidmətin dayandırılması üçün əsasdır.»",
+      "obligation_az": "Milli CERT-in kibertəhlükəsizlik göstərişlərini icra edin; “.az” domeni üçün icra edilməməsi qeydiyyatın xitamına səbəb ola bilər.",
+      "obligation_en": "Comply with National CERT cybersecurity instructions; for \".az\" (non-gov.az) domains, non-compliance is a ground to terminate the domain registration/technical service.",
+      "applies_to": "\".az\" domenli sayt sahibləri; informasiya infrastrukturu subyektləri, internet və host provayderlər",
+      "type": "Regulatory",
+      "frequency": "Göstəriş əsasında",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Göstərişlərin qəbulu və icrası proseduru",
+        "Domen portfelinin idarə edilməsi",
+        "Hüquq departamentinin cəlb edilməsi"
+      ],
+      "related_policies": [
+        "POL-REGCOM",
+        "POL-WEB"
+      ],
+      "source_url": "https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "INF-14",
+      "category": "STATE_STANDARDS",
+      "law_short": "İnformasiya Qanunu",
+      "law_full": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 460-IQ, 3 aprel 1998 (son qüvvədə olan dəyişiklik: № 454-VIIQD, 14 iyul 2026)",
+      "authority": "Milli Kibertəhlükəsizlik Agentliyi qismində Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (CERT/SOC reyestri; Fərman № 729, b. 2.9)",
+      "article": "Maddə 20-7.6, 20-8.2, 20-8.12 (454-VIIQD)",
+      "verbatim_az": "20-7.6: «Hər bir informasiya infrastrukturu subyekti tərəfindən CERT və ya SOC struktur bölmə kimi yaradıla və ya müqavilə əsasında rezident hüquqi şəxslər müəyyən edilə bilər.» | 20-8.2: «Qurumlar müvafiq CERT-i və SOC-u yaratdıqdan və ya müəyyən etdikdən sonra 10 (on) iş günü ərzində onların reyestrə daxil edilməsi üçün müvafiq icra hakimiyyəti orqanının müəyyən etdiyi orqana (quruma) elektron qaydada müraciət etməlidir. CERT-lər və SOC-lar reyestrə daxil edilmədən fəaliyyət göstərə bilməzlər.» | 20-8.12: «Reyestrə daxil edilən məlumatlarda dəyişikliklər baş verdikdə və ya CERT və SOC ləğv edildikdə, müvafiq icra hakimiyyəti orqanının müəyyən etdiyi orqana (quruma) 5 iş günü müddətində elektron qaydada məlumat verilir.»",
+      "obligation_az": "CERT/SOC yaratdıqda və ya müqavilə ilə müəyyən etdikdə 10 iş günü ərzində reyestrə müraciət edin; reyestrsiz fəaliyyət göstərməyin.",
+      "obligation_en": "If you establish or contract a CERT/SOC, apply electronically for registry entry within 10 working days; it may not operate unregistered; notify changes within 5 working days.",
+      "applies_to": "Daxili CERT/SOC yaradan və ya MSSP ilə müqavilə bağlayan qurumlar; CERT/SOC xidməti göstərən şirkətlər",
+      "type": "Regulatory",
+      "frequency": "Yaradılarkən; dəyişiklikdə 5 iş günü",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "CERT/SOC xidmət müqavilələrində reyestr statusu şərti",
+        "Reyestr məlumatlarının dəyişiklik nəzarəti",
+        "20-8.4/20-8.5 minimal tələblərinə uyğunluq yoxlaması"
+      ],
+      "related_policies": [
+        "POL-IR",
+        "POL-TPRM"
+      ],
+      "source_url": "https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "ES-01",
+      "category": "E_SIGNATURE",
+      "law_short": "Elektron İmza Qanunu",
+      "law_full": "“Elektron imza və elektron sənəd haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 602-IIQ, 9 mart 2004 (son dəyişiklik: № 1048-VIQD, 5 dekabr 2023)",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Prezidentin 26.05.2004 № 65 Fərmanı, b. 2.3); texniki təhlükəsizlik monitorinqi — RİNN və DTX (b. 2.5)",
+      "article": "Maddə 5.5",
+      "verbatim_az": "İmza sahibi sertifikatı olmayan elektron imzadan istifadə edərkən qarşı tərəfi xəbərdar etməlidir.",
+      "obligation_az": "Sertifikatsız elektron imzadan istifadə edərkən qarşı tərəfi əvvəlcədən xəbərdar edin.",
+      "obligation_en": "Inform the counterparty when you use an electronic signature that has no certificate.",
+      "applies_to": "Elektron imza istifadə edən əməkdaşlar / şirkət",
+      "type": "Legal",
+      "frequency": "Hər istifadədə",
+      "risk": "LOW",
+      "suggested_controls": [
+        "E-imza növlərinin icazəli istifadə matrisi",
+        "Müqavilə şablonlarında e-imza bəndi"
+      ],
+      "related_policies": [
+        "POL-ESIG"
+      ],
+      "source_url": "https://e-qanun.az/framework/5916"
+    },
+    {
+      "id": "ES-02",
+      "category": "E_SIGNATURE",
+      "law_short": "Elektron İmza Qanunu",
+      "law_full": "“Elektron imza və elektron sənəd haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 602-IIQ, 9 mart 2004 (son dəyişiklik: № 1048-VIQD, 5 dekabr 2023)",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Prezidentin 26.05.2004 № 65 Fərmanı, b. 2.3); texniki təhlükəsizlik monitorinqi — RİNN və DTX (b. 2.5)",
+      "article": "Maddə 6.3",
+      "verbatim_az": "Dövlət hakimiyyəti və ya yerli özünüidarəetmə orqanlarına fiziki və ya hüquqi şəxsin göndərdiyi məlumat bildirişi onun gücləndirilmiş imzası ilə təsdiqlənməlidir.",
+      "obligation_az": "Dövlət və bələdiyyə orqanlarına elektron göndərilən məlumatları gücləndirilmiş elektron imza ilə təsdiqləyin.",
+      "obligation_en": "Sign electronic messages sent to state or municipal bodies with an enhanced (advanced/qualified) electronic signature.",
+      "applies_to": "Dövlət orqanları ilə elektron yazışma aparan şirkət (vergi, gömrük, e-gov müraciətləri)",
+      "type": "Legal",
+      "frequency": "Hər göndərişdə",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Səlahiyyətli imzaçılar reyestri və ASAN/SİMA/e-imza sertifikatları",
+        "Dövlət portallarına göndərişdə imza yoxlaması"
+      ],
+      "related_policies": [
+        "POL-ESIG",
+        "POL-RECORDS"
+      ],
+      "source_url": "https://e-qanun.az/framework/5916"
+    },
+    {
+      "id": "ES-03",
+      "category": "E_SIGNATURE",
+      "law_short": "Elektron İmza Qanunu",
+      "law_full": "“Elektron imza və elektron sənəd haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 602-IIQ, 9 mart 2004 (son dəyişiklik: № 1048-VIQD, 5 dekabr 2023)",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Prezidentin 26.05.2004 № 65 Fərmanı, b. 2.3); texniki təhlükəsizlik monitorinqi — RİNN və DTX (b. 2.5)",
+      "article": "Maddə 7.1, 7.2",
+      "verbatim_az": "7.1: «Korporativ informasiya sistemində elektron imzanın istifadə edilməsi sisteminin daxili normativ sənədləri və ya iştirakçılar arasındakı müqavilə ilə tənzimlənir.» | 7.2: «Korporativ informasiya sisteminin daxili normativ sənədlərində və ya iştirakçıları arasındakı müqavilədə imzanı istifadə edən şəxslərin hüquq və vəzifələri, habelə imzanın istifadə qaydalarına riayət edilməməsi nəticəsində iştirakçılara vurulmuş zərərin tənzimlənməsi barədə müddəalar nəzərdə tutulmalıdır.»",
+      "obligation_az": "Korporativ sistemdə e-imzanın istifadə qaydasını, hüquq-vəzifələri və zərərin tənzimlənməsini daxili sənədlə müəyyən edin.",
+      "obligation_en": "In internal (corporate) information systems, regulate e-signature use by internal rules or contract, covering users' rights/duties and allocation of damage for misuse.",
+      "applies_to": "Korporativ informasiya sistemi (EDMS, ERP, HR portal) mülkiyyətçisi",
+      "type": "Legal",
+      "frequency": "Sistem tətbiqində; illik baxış",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "E-imza və EDMS istifadə qaydası (daxili normativ sənəd)",
+        "İstifadəçi öhdəlik formu",
+        "Rol əsaslı imza səlahiyyətləri"
+      ],
+      "related_policies": [
+        "POL-ESIG",
+        "POL-RECORDS"
+      ],
+      "source_url": "https://e-qanun.az/framework/5916"
+    },
+    {
+      "id": "ES-04",
+      "category": "E_SIGNATURE",
+      "law_short": "Elektron İmza Qanunu",
+      "law_full": "“Elektron imza və elektron sənəd haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 602-IIQ, 9 mart 2004 (son dəyişiklik: № 1048-VIQD, 5 dekabr 2023)",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Prezidentin 26.05.2004 № 65 Fərmanı, b. 2.3); texniki təhlükəsizlik monitorinqi — RİNN və DTX (b. 2.5)",
+      "article": "Maddə 20.3",
+      "verbatim_az": "İmza sahibi elektron imza yaratma məlumatlarının və imza vasitələrinin qorunmasına cavabdehdir və onların digər şəxs tərəfindən istifadəsinə yol verməməlidir. Bunlar üzərində nəzarət itirildikdə və ya buna təhlükə yarandıqda imza sahibi müvafiq Mərkəzə dərhal xəbər verməli və sertifikatın qüvvəsinin dayandırılmasını tələb etməlidir.",
+      "obligation_az": "İmza yaratma məlumatlarını və vasitələrini qoruyun; nəzarət itdikdə Mərkəzə dərhal bildirin, sertifikatı dayandırın.",
+      "obligation_en": "Protect signature-creation data and devices, never let others use them; on loss of control, notify the certification centre immediately and request suspension.",
+      "applies_to": "İmza sahibləri (rəhbərlik, mühasiblər, səlahiyyətli əməkdaşlar)",
+      "type": "Legal",
+      "frequency": "Davamlı; itki halında dərhal",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Token/smart-kart uçotu və təhvil-təslim aktı",
+        "PIN paylaşma qadağası",
+        "İtki halında ləğv/dayandırma runbook-u",
+        "İşdən çıxmada sertifikatın ləğvi"
+      ],
+      "related_policies": [
+        "POL-ESIG",
+        "POL-KEY"
+      ],
+      "source_url": "https://e-qanun.az/framework/5916"
+    },
+    {
+      "id": "ES-05",
+      "category": "E_SIGNATURE",
+      "law_short": "Elektron İmza Qanunu",
+      "law_full": "“Elektron imza və elektron sənəd haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 602-IIQ, 9 mart 2004 (son dəyişiklik: № 1048-VIQD, 5 dekabr 2023)",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Prezidentin 26.05.2004 № 65 Fərmanı, b. 2.3); texniki təhlükəsizlik monitorinqi — RİNN və DTX (b. 2.5)",
+      "article": "Maddə 20.4, 20.5",
+      "verbatim_az": "20.4: «İmza sahibi gücləndirilmiş imzanın istifadəsi zamanı uyğun təkmil sertifikatda göstərilmiş istifadə münasibətlərinə riayət etməlidir.» | 20.5: «İmza sahibi müqavilə bağlamaq üçün Mərkəzlərə müraciət edərkən təqdim etdiyi məlumatların tamlığına və düzgünlüyünə görə məsuliyyət daşıyır.»",
+      "obligation_az": "Gücləndirilmiş imzanı yalnız təkmil sertifikatdakı münasibətlər üçün istifadə edin; Mərkəzə dəqiq məlumat verin.",
+      "obligation_en": "Use an enhanced signature only within the usage scope stated in its qualified certificate, and give the certification centre complete and accurate information.",
+      "applies_to": "İmza sahibləri və onlara sertifikat sifariş edən HR/IT",
+      "type": "Legal",
+      "frequency": "Hər istifadədə; sertifikat sifarişində",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Sertifikat istifadə sahələrinin xəritəsi",
+        "Sertifikat sifarişində məlumatların ikili yoxlanması"
+      ],
+      "related_policies": [
+        "POL-ESIG"
+      ],
+      "source_url": "https://e-qanun.az/framework/5916"
+    },
+    {
+      "id": "ES-06",
+      "category": "E_SIGNATURE",
+      "law_short": "Elektron İmza Qanunu",
+      "law_full": "“Elektron imza və elektron sənəd haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 602-IIQ, 9 mart 2004 (son dəyişiklik: № 1048-VIQD, 5 dekabr 2023)",
+      "authority": "Nazirlər Kabineti (qaydalar) / kargüzarlıq standartları üzrə orqan (yoxlanmalı)",
+      "article": "Maddə 26.3, 26.4",
+      "verbatim_az": "26.3: «Elektron sənəd dövriyyəsinin sənədləşdirilməsi Azərbaycan Respublikasının qanunvericiliyi ilə müəyyən edilmiş kargüzarlıq standartları və qaydaları əsasında həyata keçirilir.» | 26.4: «Korporativ informasiya sistemində elektron sənədin istifadəsi və dövriyyəsi sistemin daxili normativ sənədləri ilə tənzimlənir.»",
+      "obligation_az": "Elektron sənəd dövriyyəsini kargüzarlıq standartlarına uyğun sənədləşdirin və daxili qaydalarla tənzimləyin.",
+      "obligation_en": "Document the electronic document flow according to the statutory record-keeping (office-work) standards and regulate it by internal rules in corporate systems.",
+      "applies_to": "EDMS istifadə edən şirkət (kargüzarlıq, ümumi şöbə)",
+      "type": "Legal",
+      "frequency": "Davamlı",
+      "risk": "LOW",
+      "suggested_controls": [
+        "EDMS konfiqurasiyasında qeydiyyat rekvizitləri",
+        "Kargüzarlıq təlimatı"
+      ],
+      "related_policies": [
+        "POL-RECORDS"
+      ],
+      "source_url": "https://e-qanun.az/framework/5916"
+    },
+    {
+      "id": "ES-07",
+      "category": "E_SIGNATURE",
+      "law_short": "Elektron İmza Qanunu",
+      "law_full": "“Elektron imza və elektron sənəd haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 602-IIQ, 9 mart 2004 (son dəyişiklik: № 1048-VIQD, 5 dekabr 2023)",
+      "authority": "Arxiv/kargüzarlıq qanunvericiliyi üzrə orqan (yoxlanmalı)",
+      "article": "Maddə 29.1 (29.1.1–29.1.4)",
+      "verbatim_az": "29.1. Elektron sənədin saxlanılma qaydası aşağıdakı şərtlər nəzərə alınmaqla, Azərbaycan Respublikasının qanunvericiliyi ilə müəyyən edilir: 29.1.1. elektron sənəd yaradıldığı, ötürüldüyü və ya qəbul edildiyi quruluşu saxlasın; 29.1.2. elektron sənəd onu Göndərəni, Alanı, göndərilmə və alınma vaxtını müəyyən etməyə imkan versin; 29.1.3. elektron sənəddə olan informasiya növbəti istinad üçün istifadə edilə bilsin; 29.1.4. elektron sənədin saxlanılma müddəti kağız sənəd üçün nəzərdə tutulmuş müddətdən az olmasın;",
+      "obligation_az": "Elektron sənədləri quruluşu, göndərən/alan və vaxtla, kağız sənəddən az olmayan müddətə saxlayın.",
+      "obligation_en": "Retain electronic documents preserving their structure, sender/recipient and send/receive time, readable for later reference, for no less than the paper retention period.",
+      "applies_to": "Elektron sənəd saxlayan bütün şirkətlər",
+      "type": "Legal",
+      "frequency": "Davamlı (saxlama müddəti boyu)",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Saxlama cədvəli (retention schedule) — kağızla eyni müddətlər",
+        "Metadata (göndərən, alan, vaxt) qorunması",
+        "WORM/arxiv saxlanması və bütövlük yoxlaması"
+      ],
+      "related_policies": [
+        "POL-RECORDS",
+        "POL-BACKUP"
+      ],
+      "source_url": "https://e-qanun.az/framework/5916"
+    },
+    {
+      "id": "ES-08",
+      "category": "E_SIGNATURE",
+      "law_short": "Elektron İmza Qanunu",
+      "law_full": "“Elektron imza və elektron sənəd haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 602-IIQ, 9 mart 2004 (son dəyişiklik: № 1048-VIQD, 5 dekabr 2023)",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Prezidentin 26.05.2004 № 65 Fərmanı, b. 2.3); texniki təhlükəsizlik monitorinqi — RİNN və DTX (b. 2.5) (yoxlanmalı)",
+      "article": "Maddə 30.1–30.3",
+      "verbatim_az": "30.1: «Elektron sənəd dövriyyəsi zamanı elektron sənədin mühafizəsi məqsədilə Azərbaycan Respublikasının qanunvericiliyinə müvafiq olan proqram və texniki vasitələrdən istifadə edilməlidir.» | 30.2: «Elektron sənəd dövriyyəsində istifadə edilən informasiya sistem və şəbəkələrində mühafizə tədbirlərinin lazımi səviyyəsi bu sistem və şəbəkələrin mülkiyyətçisi tərəfindən təmin edilir.» | 30.3: «Korporativ informasiya sistemlərində elektron sənəd dövriyyəsinin mühafizə tədbirlərinin lazımi səviyyəsi Azərbaycan Respublikası qanunvericiliyinin tələblərinə müvafiq olaraq bu sistemin mülkiyyətçisi tərəfindən və ya iştirakçıların razılaşmasına uyğun təmin edilir.»",
+      "obligation_az": "Elektron sənəd dövriyyəsi sistemlərində qanunvericiliyə uyğun proqram-texniki mühafizə tədbirlərinin lazımi səviyyəsini təmin edin.",
+      "obligation_en": "Use legally compliant software/hardware to protect e-documents and, as system owner, ensure an adequate level of protection measures in e-document systems and networks.",
+      "applies_to": "EDMS və e-sənəd dövriyyəsi sistemlərinin mülkiyyətçisi",
+      "type": "Legal",
+      "frequency": "Davamlı; illik qiymətləndirmə",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "EDMS üçün giriş nəzarəti və audit jurnalı",
+        "Ötürmədə şifrələmə (TLS)",
+        "İllik təhlükəsizlik qiymətləndirməsi"
+      ],
+      "related_policies": [
+        "POL-ISP",
+        "POL-ESIG"
+      ],
+      "source_url": "https://e-qanun.az/framework/5916"
+    },
+    {
+      "id": "ES-09",
+      "category": "E_SIGNATURE",
+      "law_short": "Elektron İmza Qanunu",
+      "law_full": "“Elektron imza və elektron sənəd haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 602-IIQ, 9 mart 2004 (son dəyişiklik: № 1048-VIQD, 5 dekabr 2023)",
+      "authority": "Sahə qanunvericiliyi (kommersiya/bank sirri) üzrə orqan (yoxlanmalı)",
+      "article": "Maddə 32.4, 32.5",
+      "verbatim_az": "32.4: «Bu Qanunun 32.1-ci maddəsində nəzərdə tutulan elektron sənədlərlə işləməyə buraxılan şəxslər Azərbaycan Respublikasının qanunvericiliyinə müvafiq olaraq bu sənədlərin mühafizəsi üçün zəruri tədbirlərin görülməsini təmin etməlidirlər.» | 32.5: «Tərəflər arasında bağlanılmış müqaviləyə əsasən elektron sənəd dövriyyəsini həyata keçirən subyektlər konfidensial informasiya məzmunlu elektron sənədlərə müraciət və onların mühafizə üsullarını Azərbaycan Respublikasının qanunvericiliyinə uyğun olaraq özləri müəyyən edirlər.»",
+      "obligation_az": "Konfidensial məzmunlu elektron sənədlərə girişi və mühafizə üsullarını müəyyən edin; buraxılan şəxslər mühafizəni təmin etsin.",
+      "obligation_en": "Define access to and protection methods for e-documents containing commercial, bank or other confidential information; authorised staff must apply the required protection.",
+      "applies_to": "Kommersiya/bank sirri və digər konfidensial məlumat olan e-sənədlərlə işləyən şirkət və əməkdaşlar",
+      "type": "Legal",
+      "frequency": "Davamlı",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Konfidensial e-sənədlərin etiketlənməsi",
+        "Ehtiyac əsasında giriş (need-to-know)",
+        "Şifrələmə və DLP"
+      ],
+      "related_policies": [
+        "POL-CLASS",
+        "POL-ESIG"
+      ],
+      "source_url": "https://e-qanun.az/framework/5916"
+    },
+    {
+      "id": "ES-10",
+      "category": "E_SIGNATURE",
+      "law_short": "Elektron İmza Qanunu",
+      "law_full": "“Elektron imza və elektron sənəd haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 602-IIQ, 9 mart 2004 (son dəyişiklik: № 1048-VIQD, 5 dekabr 2023)",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Prezidentin 26.05.2004 № 65 Fərmanı, b. 2.3); texniki təhlükəsizlik monitorinqi — RİNN və DTX (b. 2.5)",
+      "article": "Maddə 34.3, 36.2, 36.3",
+      "verbatim_az": "34.3: «İstifadə edilən elektron imza və elektron sənəd dövriyyəsi vasitələri sertifikatlaşdırma haqqında Azərbaycan Respublikasının qanunvericiliyinə müvafiq qaydada sertifikatlaşdırılır.» | 36.2: «Sertifikatlaşdırılmamış elektron imza və elektron sənəd dövriyyəsi vasitələrindən istifadəyə görə istifadəçilər fərdi məsuliyyət daşıyırlar.» | 36.3: «İnformasiya sisteminin fəaliyyətinin təhlükəsizliyinin təmin edilməsinə, müəyyən edilmiş qaydada ekspertiza keçirilməsinə bu sistemin mülkiyyətçisi məsuliyyət daşıyır.»",
+      "obligation_az": "Sertifikatlaşdırılmış e-imza və e-sənəd dövriyyəsi vasitələrindən istifadə edin; sistemin təhlükəsizliyinə və ekspertizasına cavabdehsiniz.",
+      "obligation_en": "Use certified e-signature and e-document-flow tools; the IS owner is liable for system security and required expertise, users for uncertified tools.",
+      "applies_to": "İnformasiya sisteminin mülkiyyətçisi; e-imza vasitəsi istifadəçiləri",
+      "type": "Legal",
+      "frequency": "Satınalma və istismar zamanı",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "E-imza/EDMS vasitələrinin sertifikat statusunun yoxlanması",
+        "Təsdiqlənmiş proqram təminatı siyahısı"
+      ],
+      "related_policies": [
+        "POL-PROC",
+        "POL-ESIG"
+      ],
+      "source_url": "https://e-qanun.az/framework/5916"
+    },
+    {
+      "id": "ES-11",
+      "category": "E_SIGNATURE",
+      "law_short": "Elektron İmza Qanunu",
+      "law_full": "“Elektron imza və elektron sənəd haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 602-IIQ, 9 mart 2004 (son dəyişiklik: № 1048-VIQD, 5 dekabr 2023)",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Prezidentin 26.05.2004 № 65 Fərmanı, b. 2.3); texniki təhlükəsizlik monitorinqi — RİNN və DTX (b. 2.5)",
+      "article": "Maddə 9.1, 17.3.8, 18.3",
+      "verbatim_az": "9.1: «Mərkəz Azərbaycan Respublikasında fəaliyyətə başlamazdan 30 gün əvvəl müvafiq icra hakimiyyəti orqanına məlumat verməli və qeydiyyatdan keçməlidir.» | 17.3.8: «fəaliyyətə başladığı müddət nəzərə alınmaqla, hər il informasiya sisteminin təhlükəsizlik auditinin keçirilməsini təmin edir və nəticəsini 30 gün ərzində müvafiq icra hakimiyyəti orqanına təqdim edir;» | 18.3: «Mərkəzlər fəaliyyətə başlamazdan əvvəl və qeydiyyatdan keçdikdən sonra hər il informasiya sisteminin auditini keçirməlidir, sistemdən etibarlı istifadəni təmin edən texnika və texnologiyalar tətbiq etməlidir.»",
+      "obligation_az": "Sertifikat xidmətləri mərkəzi kimi fəaliyyətdən 30 gün əvvəl qeydiyyatdan keçin; hər il audit keçirib nəticəni 30 gündə təqdim edin.",
+      "obligation_en": "Certification service centres: register 30 days before starting; perform an annual IS security audit and submit results to the authority within 30 days.",
+      "applies_to": "Sertifikat xidmətləri mərkəzi (CA/TSP) — yalnız bu fəaliyyəti göstərən şirkətlər",
+      "type": "Regulatory",
+      "frequency": "Fəaliyyətə başlamazdan əvvəl; illik",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Akkreditasiya/qeydiyyat faylı",
+        "İllik müstəqil İS auditi",
+        "Audit nəticəsinin təqdimetmə təqvimi"
+      ],
+      "related_policies": [
+        "POL-AUDIT",
+        "POL-KEY"
+      ],
+      "source_url": "https://e-qanun.az/framework/5916"
+    },
+    {
+      "id": "ES-12",
+      "category": "E_SIGNATURE",
+      "law_short": "Elektron İmza Qanunu",
+      "law_full": "“Elektron imza və elektron sənəd haqqında” Azərbaycan Respublikasının Qanunu",
+      "law_ref": "№ 602-IIQ, 9 mart 2004 (son dəyişiklik: № 1048-VIQD, 5 dekabr 2023)",
+      "authority": "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi (Prezidentin 26.05.2004 № 65 Fərmanı, b. 2.3); texniki təhlükəsizlik monitorinqi — RİNN və DTX (b. 2.5)",
+      "article": "Maddə 31.3, 31.4, 35.3 (həmçinin bax: 31.2)",
+      "verbatim_az": "31.3: «Vasitəçi bu Qanunun 31.2.3-cü maddəsində qeyd olunan informasiyanın 6 ay müddətində saxlanılmasını təmin etməlidir.» | 31.4: «Vasitəçi fəaliyyət göstərmək üçün müvafiq icra hakimiyyəti orqanında qeydiyyatdan keçməlidir.» | 35.3: «Mərkəzlərin, Vasitəçilərin əməkdaşları və ya digər əlaqəli şəxslər fəaliyyətləri zamanı imza sahibi barəsində onlara bəlli olan məlumatları və imza yaratma məlumatlarını qorumağa borcludurlar.»",
+      "obligation_az": "E-sənəd vasitəçisi kimi qeydiyyatdan keçin, vaxt/mənbə məlumatını 6 ay saxlayın, imza sahibi məlumatlarını qoruyun.",
+      "obligation_en": "E-document intermediaries: register with the authority, retain time/source data of handled e-documents for 6 months, and protect signer data.",
+      "applies_to": "Elektron sənəd dövriyyəsi vasitəçisi (EDI/e-invoice operatorları və s.)",
+      "type": "Regulatory",
+      "frequency": "Fəaliyyətə başlamazdan əvvəl; davamlı",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Qeydiyyat şəhadətnaməsi",
+        "Mesaj jurnalının ≥6 ay saxlanması",
+        "Əməkdaş məxfilik öhdəliyi"
+      ],
+      "related_policies": [
+        "POL-RECORDS",
+        "POL-PRIV"
+      ],
+      "source_url": "https://e-qanun.az/framework/5916"
+    },
+    {
+      "id": "KII-01",
+      "category": "KII_SECURITY",
+      "law_short": "KİI Qaydaları (NK № 229) / İnformasiya Qanunu V-I fəsil",
+      "law_full": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları” (Nazirlər Kabinetinin Qərarı ilə təsdiq edilmişdir) + İnformasiya Qanununun V-I fəsli",
+      "law_ref": "NK Qərarı № 229, 17 iyul 2023 (NK № 431, 2 dekabr 2023 dəyişikliyi ilə); Qanun № 460-IQ (№ 539-VIQD, 27 may 2022 və № 861-VIQD, 11 aprel 2023 ilə əlavə edilmiş V-I fəsil)",
+      "authority": "Dövlət Təhlükəsizliyi Xidməti (səlahiyyətli orqan; Milli kibermərkəz) — dövlət qurumlarına münasibətdə XRİTDX ilə birgə (Fərman № 1315, b. 1; Qaydalar b. 1.2)",
+      "article": "Qanun Maddə 20-2.2 (ikinci cümlə); Qaydalar b. 3.4 (həmçinin bax: b. 8.9.1)",
+      "verbatim_az": "Qanun 20-2.2: «İnformasiya sistemlərinin, avtomatlaşdırılmış idarəetmə sistemlərinin və informasiya-kommunikasiya şəbəkələrinin sahibləri (istifadəçiləri) kritik informasiya infrastrukturu obyektlərinin müəyyən edilməsi məqsədilə səlahiyyətli orqan tərəfindən sorğu edilən məlumatları həmin orqana 30 gün müddətində təqdim etməlidirlər.» | Qaydalar 3.4: «İnformasiya sistemlərinin, avtomatlaşdırılmış idarəetmə sistemlərinin və informasiya-kommunikasiya şəbəkələrinin sahibləri (istifadəçiləri) kritik informasiya infrastrukturu obyektlərinin müəyyən edilməsi məqsədilə sorğu edilən məlumatları səlahiyyətli orqana 30 (otuz) gün müddətində təqdim etməlidirlər.»",
+      "obligation_az": "KİI obyektlərinin müəyyən edilməsi üçün səlahiyyətli orqanın sorğu etdiyi məlumatları 30 gün ərzində təqdim edin.",
+      "obligation_en": "Provide the information requested by the competent authority for identifying CII objects within 30 days.",
+      "applies_to": "İnformasiya sistemi, avtomatlaşdırılmış idarəetmə sistemi və ya İKŞ sahibi (istifadəçisi) — hələ KİI subyekti olmasa belə",
+      "type": "Legal",
+      "frequency": "Sorğu əsasında — 30 gün",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Tənzimləyici sorğular reyestri",
+        "Kritik sistemlər və biznes prosesləri inventarı (BIA)"
+      ],
+      "related_policies": [
+        "POL-REGCOM",
+        "POL-ASSET"
+      ],
+      "source_url": "https://e-qanun.az/framework/54651 ; https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "KII-02",
+      "category": "KII_SECURITY",
+      "law_short": "KİI Qaydaları (NK № 229) / İnformasiya Qanunu V-I fəsil",
+      "law_full": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları” (Nazirlər Kabinetinin Qərarı ilə təsdiq edilmişdir) + İnformasiya Qanununun V-I fəsli",
+      "law_ref": "NK Qərarı № 229, 17 iyul 2023 (NK № 431, 2 dekabr 2023 dəyişikliyi ilə); Qanun № 460-IQ (№ 539-VIQD, 27 may 2022 və № 861-VIQD, 11 aprel 2023 ilə əlavə edilmiş V-I fəsil)",
+      "authority": "Dövlət Təhlükəsizliyi Xidməti (səlahiyyətli orqan; Milli kibermərkəz) — dövlət qurumlarına münasibətdə XRİTDX ilə birgə (Fərman № 1315, b. 1; Qaydalar b. 1.2)",
+      "article": "Qaydalar b. 10.1",
+      "verbatim_az": "Bu Qaydalar qüvvəyə mindikdən sonra yaradılan və ya yenilənən (dəyişikliklər aparılan) informasiya sistemlərinin, avtomatlaşdırılmış idarəetmə sistemlərinin və ya informasiya-kommunikasiya şəbəkələrinin funksionallığının pozulmasının Qanunun 20-2.1-ci maddəsində göstərilən nəticələrə səbəb ola bilməsi həmin sistem və şəbəkələrin layihələndirilməsi mərhələsində onların sahibləri (istifadəçiləri) tərəfindən müəyyən edilir və bu barədə səlahiyyətli orqana məlumat verilir.",
+      "obligation_az": "Yeni və ya yenilənən sistemlərin layihələndirilməsində KİI meyarlarına düşüb-düşmədiyini müəyyən edib səlahiyyətli orqana bildirin.",
+      "obligation_en": "At the design stage of new or changed systems/networks, determine whether their failure could cause Art. 20-2.1 consequences and inform the competent authority.",
+      "applies_to": "Enerji, nəqliyyat, maliyyə, səhiyyə, İT, telekom, su, ekologiya, dövlət idarəçiliyi sahələrində sistem sahibləri",
+      "type": "Regulatory",
+      "frequency": "Hər yeni/yenilənən sistem layihəsində",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Layihə (SDLC) mərhələsində KİI kritiklik qiymətləndirməsi",
+        "Arxitektura komitəsində təhlükəsizlik nəzarət nöqtəsi"
+      ],
+      "related_policies": [
+        "POL-SDLC",
+        "POL-RISK"
+      ],
+      "source_url": "https://e-qanun.az/framework/54651"
+    },
+    {
+      "id": "KII-03",
+      "category": "KII_SECURITY",
+      "law_short": "KİI Qaydaları (NK № 229) / İnformasiya Qanunu V-I fəsil",
+      "law_full": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları” (Nazirlər Kabinetinin Qərarı ilə təsdiq edilmişdir) + İnformasiya Qanununun V-I fəsli",
+      "law_ref": "NK Qərarı № 229, 17 iyul 2023 (NK № 431, 2 dekabr 2023 dəyişikliyi ilə); Qanun № 460-IQ (№ 539-VIQD, 27 may 2022 və № 861-VIQD, 11 aprel 2023 ilə əlavə edilmiş V-I fəsil)",
+      "authority": "Dövlət Təhlükəsizliyi Xidməti (səlahiyyətli orqan; Milli kibermərkəz) — dövlət qurumlarına münasibətdə XRİTDX ilə birgə (Fərman № 1315, b. 1; Qaydalar b. 1.2)",
+      "article": "Qanun Maddə 20-3.1; Qaydalar b. 7.2 (həmçinin bax: Qanun 20-3.2, Qaydalar 7.1, 8.9.3)",
+      "verbatim_az": "Qanun 20-3.1: «Kritik informasiya infrastrukturu subyektləri onlara məxsus olan kritik informasiya infrastrukturuna kibertəhdidlərin, kiberhücumların, kiberinsidentlərin, habelə bu əməllərin törədilməsinə cəhdlərin aşkarlanması, qarşısının alınması və zərərli nəticələrinin aradan qaldırılması məqsədilə müvafiq infrastrukturun informasiya təhlükəsizliyini idarəetmə sistemini təşkil etməli və onun fəaliyyətini təmin etməlidirlər.» | Qaydalar 7.2: «Kritik informasiya infrastrukturunun informasiya təhlükəsizliyini idarəetmə sisteminin tərkibi və fəaliyyət qaydası kritik informasiya infrastrukturunun təhlükəsizliyinə dair ümumi tələblər əsasında, kritik informasiya infrastrukturu subyektinin fəaliyyət xüsusiyyətləri nəzərə alınmaqla, onun tərəfindən müəyyən edilir və Reyestrdə yerləşdirilməsi təmin olunur.»",
+      "obligation_az": "KİI üçün informasiya təhlükəsizliyini idarəetmə sistemi yaradın, fəaliyyətini təmin edin, tərkibini Reyestrdə yerləşdirin.",
+      "obligation_en": "Establish and operate an information security management system (ISMS) for your CII; define its composition and procedures and place them in the CII Registry.",
+      "applies_to": "KİI subyekti (siyahıya daxil edilmiş obyektlərin sahibi/istifadəçisi; mikro, kiçik və orta sahibkarlar istisna)",
+      "type": "Legal",
+      "frequency": "Davamlı; dəyişiklikdə Reyestr yenilənməsi",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "ISO/IEC 27001 uyğun ISMS",
+        "ISMS sənədlərinin Reyestrə yüklənməsi",
+        "Rəhbərlik baxışı (management review)"
+      ],
+      "related_policies": [
+        "POL-ISP",
+        "POL-KII"
+      ],
+      "source_url": "https://e-qanun.az/framework/54651 ; https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "KII-04",
+      "category": "KII_SECURITY",
+      "law_short": "KİI Qaydaları (NK № 229) / İnformasiya Qanunu V-I fəsil",
+      "law_full": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları” (Nazirlər Kabinetinin Qərarı ilə təsdiq edilmişdir) + İnformasiya Qanununun V-I fəsli",
+      "law_ref": "NK Qərarı № 229, 17 iyul 2023 (NK № 431, 2 dekabr 2023 dəyişikliyi ilə); Qanun № 460-IQ (№ 539-VIQD, 27 may 2022 və № 861-VIQD, 11 aprel 2023 ilə əlavə edilmiş V-I fəsil)",
+      "authority": "Dövlət Təhlükəsizliyi Xidməti (səlahiyyətli orqan; Milli kibermərkəz) — dövlət qurumlarına münasibətdə XRİTDX ilə birgə (Fərman № 1315, b. 1; Qaydalar b. 1.2)",
+      "article": "Qanun Maddə 20-3.3; Qaydalar b. 7.5 (həmçinin bax: b. 8.9.6)",
+      "verbatim_az": "Qanun 20-3.3: «Kritik informasiya infrastrukturu subyekti səlahiyyətli orqanla qarşılıqlı əlaqələrin operativliyini təmin etmək məqsədilə kritik informasiya infrastrukturunun təhlükəsizliyi üzrə məsul şəxs təyin edir və bu barədə məlumatın kritik informasiya infrastrukturu obyektlərinin reyestrində yerləşdirilməsini təmin edir.» | Qaydalar 7.5: «Kritik informasiya infrastrukturu subyekti səlahiyyətli orqanla qarşılıqlı əlaqələrin operativliyini təmin etmək məqsədilə kritik informasiya infrastrukturunun təhlükəsizliyi üzrə məsul şəxs təyin edir və həmin şəxs barədə məlumatların Reyestrdə yerləşdirilməsini təmin edir.»",
+      "obligation_az": "KİI təhlükəsizliyi üzrə məsul şəxs təyin edin və onun məlumatlarını KİI Reyestrində yerləşdirin.",
+      "obligation_en": "Appoint a person responsible for CII security for liaison with the competent authority and record their details in the CII Registry.",
+      "applies_to": "KİI subyekti",
+      "type": "Legal",
+      "frequency": "Təyinatda və dəyişiklikdə",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Rəsmi təyinat əmri (CISO / KİI məsul şəxsi)",
+        "Əvəzedici şəxs təyinatı",
+        "Reyestr əlaqə məlumatlarının rüblük yoxlanması"
+      ],
+      "related_policies": [
+        "POL-KII",
+        "POL-ISP"
+      ],
+      "source_url": "https://e-qanun.az/framework/54651 ; https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "KII-05",
+      "category": "KII_SECURITY",
+      "law_short": "KİI Qaydaları (NK № 229) / İnformasiya Qanunu V-I fəsil",
+      "law_full": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları” (Nazirlər Kabinetinin Qərarı ilə təsdiq edilmişdir) + İnformasiya Qanununun V-I fəsli",
+      "law_ref": "NK Qərarı № 229, 17 iyul 2023 (NK № 431, 2 dekabr 2023 dəyişikliyi ilə); Qanun № 460-IQ (№ 539-VIQD, 27 may 2022 və № 861-VIQD, 11 aprel 2023 ilə əlavə edilmiş V-I fəsil)",
+      "authority": "Dövlət Təhlükəsizliyi Xidməti (səlahiyyətli orqan; Milli kibermərkəz) — dövlət qurumlarına münasibətdə XRİTDX ilə birgə (Fərman № 1315, b. 1; Qaydalar b. 1.2)",
+      "article": "Qanun Maddə 20-4.2; Qaydalar b. 10.2 (həmçinin bax: b. 5.1–5.3)",
+      "verbatim_az": "Qanun 20-4.2: «Kritik informasiya infrastrukturunun təhlükəsizliyi üzrə xüsusi tələblər kritik informasiya infrastrukturunun subyekti tərəfindən kritik informasiya infrastrukturunun təyinatı və onun fəaliyyət xüsusiyyətlərinə müvafiq olaraq müəyyən edilir və kritik informasiya infrastrukturu obyektlərinin reyestrində yerləşdirilməsi təmin edilir.» | Qaydalar 10.2: «İnformasiya sistemləri, avtomatlaşdırılmış idarəetmə sistemləri və ya informasiya-kommunikasiya şəbəkələri Siyahıya daxil edildikdən sonra 2 (iki) ay müddətində kritik informasiya infrastrukturu subyektləri tərəfindən həmin obyektlərə dair təhlükəsizlik üzrə xüsusi tələblərin Reyestrin müvafiq bölməsində yerləşdirilməsi təmin edilir.»",
+      "obligation_az": "KİI üzrə xüsusi təhlükəsizlik tələblərini müəyyən edin; siyahıya daxil edildikdən 2 ay ərzində Reyestrdə yerləşdirin.",
+      "obligation_en": "Define CII-specific security requirements and place them in the Registry within 2 months after the object is added to the CII List.",
+      "applies_to": "KİI subyekti",
+      "type": "Regulatory",
+      "frequency": "Siyahıya daxil edildikdən 2 ay ərzində; dəyişiklikdə",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Xüsusi tələblər sənədi (Qaydalar 5.2–5.3 mənbələri əsasında)",
+        "Tələblərin kontrol xəritəsi"
+      ],
+      "related_policies": [
+        "POL-KII"
+      ],
+      "source_url": "https://e-qanun.az/framework/54651 ; https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "KII-06",
+      "category": "KII_SECURITY",
+      "law_short": "KİI Qaydaları (NK № 229) / İnformasiya Qanunu V-I fəsil",
+      "law_full": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları” (Nazirlər Kabinetinin Qərarı ilə təsdiq edilmişdir) + İnformasiya Qanununun V-I fəsli",
+      "law_ref": "NK Qərarı № 229, 17 iyul 2023 (NK № 431, 2 dekabr 2023 dəyişikliyi ilə); Qanun № 460-IQ (№ 539-VIQD, 27 may 2022 və № 861-VIQD, 11 aprel 2023 ilə əlavə edilmiş V-I fəsil)",
+      "authority": "Dövlət Təhlükəsizliyi Xidməti (səlahiyyətli orqan; Milli kibermərkəz) — dövlət qurumlarına münasibətdə XRİTDX ilə birgə (Fərman № 1315, b. 1; Qaydalar b. 1.2)",
+      "article": "Qaydalar b. 4.1.1 (2-ci və 4-cü abzaslar)",
+      "verbatim_az": "4.1.1.2: «təhlükəsizlik riskləri müəyyən olunmalı, qiymətləndirilməli və aidiyyəti şəxslər həmin risklər və onların idarə edilməsi barədə məlumatlandırılmalıdırlar;» | 4.1.1.4: «kritik informasiya infrastrukturu obyektlərinin təhlükəsizliyinə və fəaliyyətinin davamlılığına təsir edə biləcək üçüncü tərəflərlə (informasiya texnologiyaları məhsulları, informasiya texnologiyaları xidmətləri, digər hüquqi şəxsin xidmətlərindən istifadə etməklə həyata keçirilən fəaliyyət, texniki dəstək, çağrı mərkəzləri, qarşılıqlı əlaqə (inteqrasiya) və s. üzrə) bağlanılmış müqavilələrə təhlükəsizliklə bağlı şərtlər (tələblər) daxil edilməlidir;»",
+      "obligation_az": "Təhlükəsizlik risklərini müəyyən edib qiymətləndirin; üçüncü tərəflərlə müqavilələrə təhlükəsizlik şərtləri daxil edin.",
+      "obligation_en": "Identify and assess security risks and inform relevant staff; include security clauses in contracts with third parties affecting CII (IT vendors, support, call centres, integrations).",
+      "applies_to": "KİI subyekti",
+      "type": "Regulatory",
+      "frequency": "Davamlı; risk qiymətləndirməsi ən azı illik",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "KİI risk reyestri",
+        "Təchizatçı müqavilələri üçün təhlükəsizlik əlavəsi",
+        "Təchizatçı risk qiymətləndirməsi"
+      ],
+      "related_policies": [
+        "POL-RISK",
+        "POL-TPRM"
+      ],
+      "source_url": "https://e-qanun.az/framework/54651"
+    },
+    {
+      "id": "KII-07",
+      "category": "KII_SECURITY",
+      "law_short": "KİI Qaydaları (NK № 229) / İnformasiya Qanunu V-I fəsil",
+      "law_full": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları” (Nazirlər Kabinetinin Qərarı ilə təsdiq edilmişdir) + İnformasiya Qanununun V-I fəsli",
+      "law_ref": "NK Qərarı № 229, 17 iyul 2023 (NK № 431, 2 dekabr 2023 dəyişikliyi ilə); Qanun № 460-IQ (№ 539-VIQD, 27 may 2022 və № 861-VIQD, 11 aprel 2023 ilə əlavə edilmiş V-I fəsil)",
+      "authority": "Dövlət Təhlükəsizliyi Xidməti (səlahiyyətli orqan; Milli kibermərkəz) — dövlət qurumlarına münasibətdə XRİTDX ilə birgə (Fərman № 1315, b. 1; Qaydalar b. 1.2)",
+      "article": "Qaydalar b. 4.1.2 (1-ci və 2-ci abzaslar)",
+      "verbatim_az": "4.1.2.1: «aidiyyəti şəxslər təhlükəsizlik məsələləri üzrə zəruri məlumat, bilik və bacarıqlara sahib olmalı, müvafiq proqram üzrə mütəmadi olaraq təlimlərə və maarifləndirici tədbirlərə cəlb edilməli və bunlara dair təsdiqedici sənədlər Reyestrdə yerləşdirilməlidir;» | 4.1.2.2: «işə qəbul olunan əməkdaşlar təhlükəsizlik prosedurları ilə bağlı məlumatlandırılmalı, kritik informasiya infrastrukturu obyektinin təhlükəsizliyinə dair əldə edilmiş məlumatların açıqlanmaması ilə bağlı öhdəlik sənədini imzalamalı, əmək münasibətlərinə xitam verilməsi və ya dəyişdirilməsi halında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin olunması məqsədilə kritik informasiya infrastrukturu obyektinə aid aktivlərin kritik informasiya infrastrukturu subyektinə geri qaytarılması, o cümlədən fəaliyyəti ilə əlaqədar informasiya ehtiyatlarında və sistemlərində bütün sahib olduğu xidməti hesabların fəaliyyətsizləşdirilməsi (“deaktiv” edilməsi və ya hesaba daxil olmaq üçün tələb edilən məlumatlarının dəyişdirilməsi) dərhal təmin edilməlidir;»",
+      "obligation_az": "Aidiyyəti şəxsləri mütəmadi təlimləndirin; işə qəbulda məxfilik öhdəliyi alın, işdən çıxmada hesabları dərhal deaktiv edin.",
+      "obligation_en": "Train relevant staff regularly (evidence in Registry); have new hires sign NDAs; on exit/role change, recover assets and deactivate all accounts immediately.",
+      "applies_to": "KİI subyekti (HR, İT, təhlükəsizlik)",
+      "type": "Regulatory",
+      "frequency": "İşə qəbul/çıxışda; təlim — mütəmadi",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Joiner-Mover-Leaver prosesi",
+        "Məxfilik öhdəliyi forması",
+        "Təlim jurnalı və sertifikatlar",
+        "Hesab deaktivasiyası üçün SLA (eyni gün)"
+      ],
+      "related_policies": [
+        "POL-HR",
+        "POL-IAM",
+        "POL-AWARE"
+      ],
+      "source_url": "https://e-qanun.az/framework/54651"
+    },
+    {
+      "id": "KII-08",
+      "category": "KII_SECURITY",
+      "law_short": "KİI Qaydaları (NK № 229) / İnformasiya Qanunu V-I fəsil",
+      "law_full": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları” (Nazirlər Kabinetinin Qərarı ilə təsdiq edilmişdir) + İnformasiya Qanununun V-I fəsli",
+      "law_ref": "NK Qərarı № 229, 17 iyul 2023 (NK № 431, 2 dekabr 2023 dəyişikliyi ilə); Qanun № 460-IQ (№ 539-VIQD, 27 may 2022 və № 861-VIQD, 11 aprel 2023 ilə əlavə edilmiş V-I fəsil)",
+      "authority": "Dövlət Təhlükəsizliyi Xidməti (səlahiyyətli orqan; Milli kibermərkəz) — dövlət qurumlarına münasibətdə XRİTDX ilə birgə (Fərman № 1315, b. 1; Qaydalar b. 1.2)",
+      "article": "Qaydalar b. 4.1.3 (3-cü və 5-ci abzaslar)",
+      "verbatim_az": "4.1.3.3: «təhlükəsizlik üzrə sertifikatlaşdırılmış və lisenziyalı proqram təminatından və proqram-texniki vasitələrdən istifadə edilməli, məlumatlarla, o cümlədən dövlət sirri və ya qanunla qorunan digər sirr təşkil edən məlumatlarla, yaxud fərdi məlumatlarla bağlı informasiya mübadiləsi zamanı müvafiq normativ hüquqi aktların tələblərinə riayət edilməli, təşkilati, texniki və texnoloji tədbirlər həyata keçirilməklə informasiyanın mühafizəsi təmin edilməlidir;» | 4.1.3.5: «kritik informasiya infrastrukturu obyektlərinə icazəsiz girişlərin qarşısının alınması üçün tədbirlər görülməli, girişlərə nəzarət qaydaları və mexanizmləri formalaşdırılmalı, sənədləşdirilməli və aktuallığı təmin olunmalı, eləcə də bütün uğurlu girişlər və uğursuz cəhdlərin qeydiyyata alınması (loq-faylların aparılması) və uğursuz giriş cəhdləri barədə bildirişlərin avtomatik olaraq kritik informasiya infrastrukturu subyektinin (və ya xidmət alındığı təqdirdə kibertəhlükəsizlik xidməti provayderinin) təhlükəsizlik əməliyyatları mərkəzinə göndərilməsi təmin edilməlidir;»",
+      "obligation_az": "Sertifikatlaşdırılmış və lisenziyalı proqram təminatı istifadə edin; giriş nəzarəti qurun, bütün giriş cəhdlərini loglayın.",
+      "obligation_en": "Use certified, licensed software/hardware; implement documented access control, log all successful and failed access attempts and auto-alert failed attempts to the SOC.",
+      "applies_to": "KİI subyekti",
+      "type": "Regulatory",
+      "frequency": "Davamlı",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Lisenziya və proqram inventarı",
+        "IAM/PAM, MFA",
+        "Uğursuz giriş cəhdləri üçün SIEM alertləri"
+      ],
+      "related_policies": [
+        "POL-IAM",
+        "POL-ASSET",
+        "POL-LOG"
+      ],
+      "source_url": "https://e-qanun.az/framework/54651"
+    },
+    {
+      "id": "KII-09",
+      "category": "KII_SECURITY",
+      "law_short": "KİI Qaydaları (NK № 229) / İnformasiya Qanunu V-I fəsil",
+      "law_full": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları” (Nazirlər Kabinetinin Qərarı ilə təsdiq edilmişdir) + İnformasiya Qanununun V-I fəsli",
+      "law_ref": "NK Qərarı № 229, 17 iyul 2023 (NK № 431, 2 dekabr 2023 dəyişikliyi ilə); Qanun № 460-IQ (№ 539-VIQD, 27 may 2022 və № 861-VIQD, 11 aprel 2023 ilə əlavə edilmiş V-I fəsil)",
+      "authority": "Dövlət Təhlükəsizliyi Xidməti (səlahiyyətli orqan; Milli kibermərkəz) — dövlət qurumlarına münasibətdə XRİTDX ilə birgə (Fərman № 1315, b. 1; Qaydalar b. 1.2)",
+      "article": "Qaydalar b. 4.1.6 (2-ci və 3-cü abzaslar)",
+      "verbatim_az": "4.1.6.2: «fövqəladə hallarda kritik informasiya infrastrukturu obyektlərinin fəaliyyətinin davamlılıq planı, eləcə də bərpa planı hazırlanmalı, təsdiq olunmalı, ildə bir dəfə sınağı həyata keçirilməli və sınaq nəticələri Reyestrdə yerləşdirilməlidir;» | 4.1.6.3: «kritik informasiya infrastrukturu obyektinin fəaliyyətinin dayanmasının yol verilən həddi (müddəti) müəyyən olunmalıdır;»",
+      "obligation_az": "Davamlılıq və bərpa planları hazırlayıb təsdiqləyin, ildə bir dəfə sınaqdan keçirin, nəticələri Reyestrdə yerləşdirin.",
+      "obligation_en": "Prepare and approve business-continuity and recovery plans for CII, test them annually, record results in the Registry, and define maximum tolerable downtime.",
+      "applies_to": "KİI subyekti",
+      "type": "Regulatory",
+      "frequency": "İllik sınaq",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "BCP/DRP",
+        "İllik DR sınağı və hesabatı",
+        "RTO/MTD müəyyən edilməsi (BIA)"
+      ],
+      "related_policies": [
+        "POL-BCM",
+        "POL-BACKUP"
+      ],
+      "source_url": "https://e-qanun.az/framework/54651"
+    },
+    {
+      "id": "KII-10",
+      "category": "KII_SECURITY",
+      "law_short": "KİI Qaydaları (NK № 229) / İnformasiya Qanunu V-I fəsil",
+      "law_full": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları” (Nazirlər Kabinetinin Qərarı ilə təsdiq edilmişdir) + İnformasiya Qanununun V-I fəsli",
+      "law_ref": "NK Qərarı № 229, 17 iyul 2023 (NK № 431, 2 dekabr 2023 dəyişikliyi ilə); Qanun № 460-IQ (№ 539-VIQD, 27 may 2022 və № 861-VIQD, 11 aprel 2023 ilə əlavə edilmiş V-I fəsil)",
+      "authority": "Dövlət Təhlükəsizliyi Xidməti (səlahiyyətli orqan; Milli kibermərkəz) — dövlət qurumlarına münasibətdə XRİTDX ilə birgə (Fərman № 1315, b. 1; Qaydalar b. 1.2)",
+      "article": "Qaydalar b. 4.1.7 (2-ci abzas), b. 8.9.12 (həmçinin bax: 4.1.7 5-ci abzas, 9.4)",
+      "verbatim_az": "4.1.7.2: «kritik informasiya infrastrukturu obyektlərinin fəaliyyətinin fasiləsiz (24/7 rejimdə) monitorinqi və qeydiyyata alınması (loq-faylların aparılması) həyata keçirilməli və hadisə loqları ən azı bir il müddətinə saxlanılmalıdır;» | 8.9.12: «kritik informasiya infrastrukturu obyektlərinin təhlükəsizliyinin fasiləsiz (24/7 rejimdə) monitorinqinin struktur bölməsi (təhlükəsizlik əməliyyatları mərkəzi) vasitəsilə birbaşa yerində və (və ya) kibertəhlükəsizlik xidməti provayderi vasitəsilə məsafədən həyata keçirilməsini təmin edir, əldə olunan məlumatları real vaxt rejimində mərkəzləşmiş nəzarət üçün aidiyyəti kibermərkəzə təqdim edir;»",
+      "obligation_az": "KİI obyektlərini 24/7 monitorinq edin, loqları ən azı bir il saxlayın, məlumatları real vaxtda kibermərkəzə ötürün.",
+      "obligation_en": "Monitor CII 24/7 (own SOC or provider), retain event logs at least one year, and stream data in real time to the relevant national cyber centre.",
+      "applies_to": "KİI subyekti (və ya onun kibertəhlükəsizlik xidməti provayderi)",
+      "type": "Regulatory",
+      "frequency": "Fasiləsiz (24/7)",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "SIEM/SOC 24/7",
+        "Loq saxlanması ≥ 12 ay",
+        "Milli kibermərkəzə real vaxt inteqrasiyası"
+      ],
+      "related_policies": [
+        "POL-LOG",
+        "POL-IR"
+      ],
+      "source_url": "https://e-qanun.az/framework/54651"
+    },
+    {
+      "id": "KII-11",
+      "category": "KII_SECURITY",
+      "law_short": "KİI Qaydaları (NK № 229) / İnformasiya Qanunu V-I fəsil",
+      "law_full": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları” (Nazirlər Kabinetinin Qərarı ilə təsdiq edilmişdir) + İnformasiya Qanununun V-I fəsli",
+      "law_ref": "NK Qərarı № 229, 17 iyul 2023 (NK № 431, 2 dekabr 2023 dəyişikliyi ilə); Qanun № 460-IQ (№ 539-VIQD, 27 may 2022 və № 861-VIQD, 11 aprel 2023 ilə əlavə edilmiş V-I fəsil)",
+      "authority": "Dövlət Təhlükəsizliyi Xidməti (səlahiyyətli orqan; Milli kibermərkəz) — dövlət qurumlarına münasibətdə XRİTDX ilə birgə (Fərman № 1315, b. 1; Qaydalar b. 1.2)",
+      "article": "Qanun Maddə 20-3.4; Qaydalar b. 8.9.16",
+      "verbatim_az": "Qanun 20-3.4: «Kritik informasiya infrastrukturu subyektləri onlara məxsus olan kritik informasiya infrastrukturuna kibertəhdidlər, kiberhücumlar, kiberinsidentlər, habelə bu əməllərin törədilməsinə cəhdlər barədə məlumatları kritik informasiya infrastrukturunun təhlükəsizliyi üzrə tələblərlə müəyyən edilmiş qaydada səlahiyyətli orqana göndərməlidirlər.» | Qaydalar 8.9.16: «kritik informasiya infrastrukturu obyektinə olan kiberhücumlara qarşı cavab tədbirlərinin görülməsi, kibertəhdidlərin və kiberinsidentlərin qarşısının alınması və nəticələrinin aradan qaldırılmasını təmin edir, bu barədə aidiyyəti kibermərkəzi dərhal məlumatlandırır, həmçinin kiberinsidentlərin tədqiqatının tam və hərtərəfli aparılması ilə bağlı aidiyyəti kibermərkəzə zəruri şərait yaradır və dəstək verir;»",
+      "obligation_az": "KİI-yə kibertəhdid, kiberhücum və kiberinsidentlər barədə səlahiyyətli orqanı və aidiyyəti kibermərkəzi dərhal məlumatlandırın.",
+      "obligation_en": "Respond to attacks on CII and immediately notify the competent authority/relevant cyber centre of cyber threats, attacks, incidents and attempts; support the investigation.",
+      "applies_to": "KİI subyekti",
+      "type": "Legal",
+      "frequency": "Hadisə əsaslı — dərhal",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "KİI insident cavab planı",
+        "Bildiriş şablonları və əlaqə matrisi",
+        "Sübutların qorunması (forensic readiness)"
+      ],
+      "related_policies": [
+        "POL-IR"
+      ],
+      "source_url": "https://e-qanun.az/framework/54651 ; https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "KII-12",
+      "category": "KII_SECURITY",
+      "law_short": "KİI Qaydaları (NK № 229) / İnformasiya Qanunu V-I fəsil",
+      "law_full": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları” (Nazirlər Kabinetinin Qərarı ilə təsdiq edilmişdir) + İnformasiya Qanununun V-I fəsli",
+      "law_ref": "NK Qərarı № 229, 17 iyul 2023 (NK № 431, 2 dekabr 2023 dəyişikliyi ilə); Qanun № 460-IQ (№ 539-VIQD, 27 may 2022 və № 861-VIQD, 11 aprel 2023 ilə əlavə edilmiş V-I fəsil)",
+      "authority": "Dövlət Təhlükəsizliyi Xidməti (səlahiyyətli orqan; Milli kibermərkəz) — dövlət qurumlarına münasibətdə XRİTDX ilə birgə (Fərman № 1315, b. 1; Qaydalar b. 1.2)",
+      "article": "Qaydalar b. 4.1.7 (3-cü və 4-cü abzaslar) (həmçinin bax: b. 8.9.13, 9.5)",
+      "verbatim_az": "4.1.7.3: «kritik informasiya infrastrukturu obyektlərinin təhlükəsizliyinin auditinə dair daxili plan təsdiq edilməli, Reyestrdə yerləşdirilməli və icrası təşkil edilməlidir;» | 4.1.7.4: «kritik informasiya infrastrukturu obyektinin təhlükəsizliyində boşluqların, zəifliklərin və digər uyğunsuzluqların aşkar olunması məqsədilə müdaxilə sınaqlarının keçirilməsinə dair illik və (və ya) cari plana uyğun olaraq ildə 1 (bir) dəfədən az olmayaraq (bu tədbirlərin keçirilməsindən ən azı 7 (yeddi) gün əvvəl Dövlət Təhlükəsizliyi Xidmətinin Kibertəhlükəsizlik Əməliyyatları Mərkəzini (bundan sonra – Milli kibermərkəz), dövlət qurumlarına münasibətdə həmçinin XRİTDX-nin kibermərkəzini (bundan sonra – Dövlət qurumları üzrə kibermərkəz) məlumatlandırmaqla) müdaxilə sınaqları keçirilməli və nəticələr Reyestrdə yerləşdirilməlidir;»",
+      "obligation_az": "Daxili audit planını təsdiqləyin; ildə ən azı bir dəfə, 7 gün əvvəl bildirməklə müdaxilə sınağı keçirin.",
+      "obligation_en": "Approve and execute an internal CII security audit plan; run penetration tests at least annually, notifying the cyber centre at least 7 days before, and record results in the Registry.",
+      "applies_to": "KİI subyekti",
+      "type": "Regulatory",
+      "frequency": "İllik (pentest); plan üzrə (daxili audit)",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "İllik pentest planı",
+        "Milli kibermərkəzə 7 gün əvvəl bildiriş",
+        "Daxili audit proqramı"
+      ],
+      "related_policies": [
+        "POL-AUDIT",
+        "POL-VULN"
+      ],
+      "source_url": "https://e-qanun.az/framework/54651"
+    },
+    {
+      "id": "KII-13",
+      "category": "KII_SECURITY",
+      "law_short": "KİI Qaydaları (NK № 229) / İnformasiya Qanunu V-I fəsil",
+      "law_full": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları” (Nazirlər Kabinetinin Qərarı ilə təsdiq edilmişdir) + İnformasiya Qanununun V-I fəsli",
+      "law_ref": "NK Qərarı № 229, 17 iyul 2023 (NK № 431, 2 dekabr 2023 dəyişikliyi ilə); Qanun № 460-IQ (№ 539-VIQD, 27 may 2022 və № 861-VIQD, 11 aprel 2023 ilə əlavə edilmiş V-I fəsil)",
+      "authority": "Dövlət Təhlükəsizliyi Xidməti (səlahiyyətli orqan; Milli kibermərkəz) — dövlət qurumlarına münasibətdə XRİTDX ilə birgə (Fərman № 1315, b. 1; Qaydalar b. 1.2)",
+      "article": "Qanun Maddə 20-6.8 (həmçinin bax: Qaydalar b. 9.6)",
+      "verbatim_az": "Qanun 20-6.8: «Kritik informasiya infrastrukturunun təhlükəsizliyinə dair tələblərə uyğunluğun təmin edilməsi, o cümlədən informasiya təhlükəsizliyini idarəetmə sisteminin tələblərə müvafiq fəaliyyətini təşkil etmək üçün kritik informasiya infrastrukturu subyektləri ildə bir dəfədən az olmayaraq kibertəhlükəsizlik xidməti provayderi tərəfindən kənar audit yoxlamalarının keçirilməsini və onun nəticələrinin səlahiyyətli orqana göndərilməsini təmin etməlidirlər.»",
+      "obligation_az": "Ildə ən azı bir dəfə kibertəhlükəsizlik xidməti provayderi tərəfindən kənar audit keçirin, nəticəni səlahiyyətli orqana göndərin.",
+      "obligation_en": "Commission an external audit by a qualified cybersecurity service provider at least once a year and send the results to the competent authority.",
+      "applies_to": "KİI subyekti",
+      "type": "Legal",
+      "frequency": "İllik",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Akkreditə/uyğun provayderlə illik audit müqaviləsi",
+        "Audit hesabatının təqdimetmə izlənməsi"
+      ],
+      "related_policies": [
+        "POL-AUDIT",
+        "POL-TPRM"
+      ],
+      "source_url": "https://e-qanun.az/framework/54651 ; https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "KII-14",
+      "category": "KII_SECURITY",
+      "law_short": "KİI Qaydaları (NK № 229) / İnformasiya Qanunu V-I fəsil",
+      "law_full": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları” (Nazirlər Kabinetinin Qərarı ilə təsdiq edilmişdir) + İnformasiya Qanununun V-I fəsli",
+      "law_ref": "NK Qərarı № 229, 17 iyul 2023 (NK № 431, 2 dekabr 2023 dəyişikliyi ilə); Qanun № 460-IQ (№ 539-VIQD, 27 may 2022 və № 861-VIQD, 11 aprel 2023 ilə əlavə edilmiş V-I fəsil)",
+      "authority": "Dövlət Təhlükəsizliyi Xidməti (səlahiyyətli orqan; Milli kibermərkəz) — dövlət qurumlarına münasibətdə XRİTDX ilə birgə (Fərman № 1315, b. 1; Qaydalar b. 1.2)",
+      "article": "Qanun Maddə 20-4.4 (ikinci cümlə), 20-6.7 (həmçinin bax: Qaydalar b. 8.9.17, 9.15)",
+      "verbatim_az": "Qanun 20-4.4: «Kritik informasiya infrastrukturunun təhlükəsizliyi üzrə tələblərə riayət edilməsi vəziyyətinin öyrənilməsi məqsədilə səlahiyyətli orqanın kritik informasiya infrastrukturunun subyektinə göndərdiyi sorğular təxirə salınmadan cavablandırılmalıdır.» | Qanun 20-6.7: «Kritik informasiya infrastrukturu subyektləri səlahiyyətli orqan tərəfindən aşkar edilmiş kritik informasiya infrastrukturunun təhlükəsizliyi üzrə tələblərin pozulması hallarını onun tələbinə əsasən təxirə salınmadan aradan qaldırmalı və görülmüş tədbirlərin nəticəsi barədə məlumat verməlidirlər.»",
+      "obligation_az": "Səlahiyyətli orqanın sorğularına təxirə salınmadan cavab verin; aşkar edilmiş pozuntuları dərhal aradan qaldırıb nəticəni bildirin.",
+      "obligation_en": "Answer competent-authority requests without delay; remediate identified CII security violations promptly and report the outcome (placing it in the Registry).",
+      "applies_to": "KİI subyekti",
+      "type": "Legal",
+      "frequency": "Sorğu/aşkarlama əsasında — təxirəsalınmaz",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Tənzimləyici tapıntılar üzrə remediasiya reyestri",
+        "Rəhbərlik səviyyəsində eskalasiya"
+      ],
+      "related_policies": [
+        "POL-REGCOM",
+        "POL-VULN"
+      ],
+      "source_url": "https://e-qanun.az/framework/54651 ; https://e-qanun.az/framework/3525"
+    },
+    {
+      "id": "KII-15",
+      "category": "KII_SECURITY",
+      "law_short": "KİI Qaydaları (NK № 229) / İnformasiya Qanunu V-I fəsil",
+      "law_full": "“Azərbaycan Respublikasında kritik informasiya infrastrukturunun təhlükəsizliyinin təmin edilməsi qaydaları” (Nazirlər Kabinetinin Qərarı ilə təsdiq edilmişdir) + İnformasiya Qanununun V-I fəsli",
+      "law_ref": "NK Qərarı № 229, 17 iyul 2023 (NK № 431, 2 dekabr 2023 dəyişikliyi ilə); Qanun № 460-IQ (№ 539-VIQD, 27 may 2022 və № 861-VIQD, 11 aprel 2023 ilə əlavə edilmiş V-I fəsil)",
+      "authority": "Dövlət Təhlükəsizliyi Xidməti (səlahiyyətli orqan; Milli kibermərkəz) — dövlət qurumlarına münasibətdə XRİTDX ilə birgə (Fərman № 1315, b. 1; Qaydalar b. 1.2)",
+      "article": "Qanun Maddə 20-3.5; Qaydalar b. 6.3.2, 6.4.9 (həmçinin bax: b. 6.1–6.4)",
+      "verbatim_az": "Qanun 20-3.5: «Kritik informasiya infrastrukturu subyektlərinə xidmət göstərən kibertəhlükəsizlik xidməti provayderinin təsisçisi və onun səlahiyyətli nümayəndəsi, eləcə də provayderin kritik informasiya infrastrukturunun təhlükəsizliyi üzrə fəaliyyətinə rəhbərlik edən şəxs və bu fəaliyyətə cəlb edilmiş digər əməkdaşlar Azərbaycan Respublikasının vətəndaşı olmalıdırlar.» | Qaydalar 6.3.2: «kritik informasiya infrastrukturu obyektlərinə xidmətlərin göstərilməsində xarici təchizatçılar və şirkətlərdən alınan həllərlə yanaşı, milli texniki-texnoloji həllərdən istifadə olunmalıdır;» | Qaydalar 6.4.9: «təhlükəsizlik hadisələri, xətalar, habelə istifadəçilərin fəaliyyəti barədə məlumatlar bir ildən az olmayan müddətdə saxlanılmalıdır;»",
+      "obligation_az": "KİI üçün yalnız tələblərə (vətəndaşlıq, 24/7 SOC, loq saxlama) cavab verən kibertəhlükəsizlik provayderi seçin.",
+      "obligation_en": "Engage only cybersecurity service providers meeting the statutory requirements (Azerbaijani-citizen owners/staff, 24/7 SOC, segregation, ≥1-year logs, national solutions).",
+      "applies_to": "KİI subyekti (təchizatçı seçimi); KİI-yə xidmət göstərən kibertəhlükəsizlik provayderi",
+      "type": "Legal",
+      "frequency": "Müqavilədən əvvəl və illik",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "MSSP due-diligence yoxlama siyahısı (Qaydalar 6.1–6.4)",
+        "Müqavilədə uyğunluq zəmanətləri"
+      ],
+      "related_policies": [
+        "POL-TPRM",
+        "POL-KII"
+      ],
+      "source_url": "https://e-qanun.az/framework/54651 ; https://e-qanun.az/framework/3525"
+    }
+  ],
+  "policies": [
+    {
+      "id": "POL-ISP",
+      "name_az": "İnformasiya təhlükəsizliyi siyasəti",
+      "name_en": "Information Security Policy",
+      "purpose": "Top-level policy defining protection regime, roles and ISMS for all information assets.",
+      "driving_articles": [
+        "İnf. Q. Maddə 18",
+        "İnf. Q. Maddə 20-11.1",
+        "E-imza Q. Maddə 30.2",
+        "Qanun 20-3.1 / Qaydalar 7.1–7.2"
+      ]
+    },
+    {
+      "id": "POL-CLASS",
+      "name_az": "İnformasiyanın təsnifatı və idarə edilməsi siyasəti",
+      "name_en": "Information Classification & Handling Policy",
+      "purpose": "Classify information (open / confidential / state secret) and set handling rules per class.",
+      "driving_articles": [
+        "İnf. Q. Maddə 10",
+        "İnf. Q. Maddə 18",
+        "E-imza Q. Maddə 32"
+      ]
+    },
+    {
+      "id": "POL-PRIV",
+      "name_az": "Fərdi məlumatların və konfidensial informasiyanın emalı qaydası",
+      "name_en": "Personal Data & Confidential Information Processing Procedure",
+      "purpose": "Ensure confidential/personal data is processed only on legal grounds and protected.",
+      "driving_articles": [
+        "İnf. Q. Maddə 10",
+        "İnf. Q. Maddə 12",
+        "E-imza Q. Maddə 35"
+      ]
+    },
+    {
+      "id": "POL-WEB",
+      "name_az": "Korporativ veb-saytların və domenlərin idarə edilməsi qaydası",
+      "name_en": "Corporate Website & Domain Governance Procedure",
+      "purpose": "Assign owners, legal imprint, language compliance and Milli CERT instruction handling for websites/.az domains.",
+      "driving_articles": [
+        "İnf. Q. Maddə 13-2.1",
+        "13-2.2",
+        "13-2.6",
+        "20-11.6"
+      ]
+    },
+    {
+      "id": "POL-CONTENT",
+      "name_az": "Məzmun moderasiyası və “notice-and-takedown” proseduru",
+      "name_en": "Content Moderation & Notice-and-Takedown Procedure",
+      "purpose": "Prevent and remove prohibited information within statutory deadlines (8 hours after warning).",
+      "driving_articles": [
+        "İnf. Q. Maddə 13-2.3",
+        "13-2.4",
+        "13-3.1",
+        "13-3.2"
+      ]
+    },
+    {
+      "id": "POL-AI",
+      "name_az": "Süni intellektdən istifadə və AI məzmununun nişanlanması siyasəti",
+      "name_en": "AI Use & AI-Generated Content Labelling Policy",
+      "purpose": "Govern generative-AI use and mandatory labelling of AI-generated media.",
+      "driving_articles": [
+        "İnf. Q. Maddə 13-2.7",
+        "13-2.3.9-1"
+      ]
+    },
+    {
+      "id": "POL-IR",
+      "name_az": "Kiberinsidentlərin idarə edilməsi və bildirilməsi planı",
+      "name_en": "Cyber Incident Response & Notification Plan",
+      "purpose": "Detect, classify, respond to and immediately report incidents to Milli CERT / competent authority.",
+      "driving_articles": [
+        "İnf. Q. Maddə 20-11.2",
+        "20-10.9",
+        "20-3.4",
+        "Qaydalar 4.1.5",
+        "8.9.16"
+      ]
+    },
+    {
+      "id": "POL-REGCOM",
+      "name_az": "Tənzimləyici orqanlarla qarşılıqlı əlaqə proseduru",
+      "name_en": "Regulatory Requests & Instructions Handling Procedure",
+      "purpose": "Track and answer requests/instructions from Milli CERT, DTX/XRİTDX within 24h / 5 working days / 30 days.",
+      "driving_articles": [
+        "İnf. Q. Maddə 20-10.4.5",
+        "20-10.5",
+        "20-10.9",
+        "20-2.2",
+        "20-4.4",
+        "Qaydalar 3.4"
+      ]
+    },
+    {
+      "id": "POL-RISK",
+      "name_az": "İnformasiya təhlükəsizliyi risklərinin idarə edilməsi metodologiyası",
+      "name_en": "Information Security Risk Management Methodology",
+      "purpose": "Periodic risk identification, assessment and treatment incl. CII criticality assessment.",
+      "driving_articles": [
+        "İnf. Q. Maddə 20-11.1",
+        "Qaydalar 4.1.1(2)",
+        "10.1"
+      ]
+    },
+    {
+      "id": "POL-VULN",
+      "name_az": "Zəifliklərin idarə edilməsi və müdaxilə sınaqları siyasəti",
+      "name_en": "Vulnerability Management & Penetration Testing Policy",
+      "purpose": "Scan, pentest (annually for CII with 7-day notice) and remediate within deadlines.",
+      "driving_articles": [
+        "İnf. Q. Maddə 20-10.5",
+        "20-11.1",
+        "Qaydalar 4.1.7(4)",
+        "9.5"
+      ]
+    },
+    {
+      "id": "POL-AUDIT",
+      "name_az": "Daxili və kənar təhlükəsizlik auditi proqramı",
+      "name_en": "Internal & External Security Audit Programme",
+      "purpose": "Plan internal audits and annual external audits; submit results to authorities.",
+      "driving_articles": [
+        "İnf. Q. Maddə 20-6.8",
+        "Qaydalar 4.1.7(3)",
+        "9.6",
+        "E-imza Q. Maddə 17.3.8",
+        "18.3"
+      ]
+    },
+    {
+      "id": "POL-LOG",
+      "name_az": "Jurnallaşdırma və monitorinq standartı",
+      "name_en": "Logging & Security Monitoring Standard",
+      "purpose": "24/7 monitoring, access/event logging, ≥1-year retention and real-time feed to cyber centre.",
+      "driving_articles": [
+        "Qaydalar 4.1.3(5)",
+        "4.1.7(2)",
+        "4.1.7(5)",
+        "8.9.12",
+        "8.9.14"
+      ]
+    },
+    {
+      "id": "POL-IAM",
+      "name_az": "Giriş hüquqlarının idarə edilməsi siyasəti",
+      "name_en": "Identity & Access Management Policy",
+      "purpose": "Access control rules, joiner-mover-leaver deactivation and privileged access.",
+      "driving_articles": [
+        "Qaydalar 4.1.2(2)",
+        "4.1.3(5)"
+      ]
+    },
+    {
+      "id": "POL-HR",
+      "name_az": "İnsan resursları təhlükəsizliyi və məxfilik öhdəliyi qaydası",
+      "name_en": "HR Security & Confidentiality Undertaking Procedure",
+      "purpose": "Screening, NDAs, onboarding briefing and exit asset/account recovery.",
+      "driving_articles": [
+        "Qaydalar 4.1.2(1–2)"
+      ]
+    },
+    {
+      "id": "POL-AWARE",
+      "name_az": "Kibergigiyena və təhlükəsizlik maarifləndirmə proqramı",
+      "name_en": "Cyber Hygiene & Security Awareness Programme",
+      "purpose": "Regular training with evidence; cyber hygiene measures for all staff.",
+      "driving_articles": [
+        "İnf. Q. Maddə 2 (kibergigiyena)",
+        "Qaydalar 4.1.2(1)"
+      ]
+    },
+    {
+      "id": "POL-BCM",
+      "name_az": "Fəaliyyətin davamlılığı və bərpa planı",
+      "name_en": "Business Continuity & Disaster Recovery Plan",
+      "purpose": "BCP/DRP with annual tests and defined maximum tolerable downtime.",
+      "driving_articles": [
+        "Qaydalar 4.1.6",
+        "8.9.4"
+      ]
+    },
+    {
+      "id": "POL-BACKUP",
+      "name_az": "Ehtiyat nüsxə və arxivləşdirmə qaydası",
+      "name_en": "Backup & Archiving Procedure",
+      "purpose": "Preserve integrity/availability of e-documents and CII data for required retention periods.",
+      "driving_articles": [
+        "E-imza Q. Maddə 29.1",
+        "Qaydalar 4.1.6"
+      ]
+    },
+    {
+      "id": "POL-ASSET",
+      "name_az": "Aktivlərin və konfiqurasiyaların idarə edilməsi qaydası",
+      "name_en": "Asset & Configuration Management Procedure",
+      "purpose": "Inventory of systems, software licences and certification status; CII asset register.",
+      "driving_articles": [
+        "İnf. Q. Maddə 16",
+        "Qaydalar 4.1.3(3)",
+        "4.1.4(3)"
+      ]
+    },
+    {
+      "id": "POL-CHANGE",
+      "name_az": "Dəyişikliklərin idarə edilməsi proseduru",
+      "name_en": "Change Management Procedure",
+      "purpose": "Controlled changes to CII objects incl. design-documentation expertise and acceptance tests.",
+      "driving_articles": [
+        "Qaydalar 4.1.4(2)",
+        "4.1.4(4)",
+        "7.6",
+        "8.9.9",
+        "8.9.10"
+      ]
+    },
+    {
+      "id": "POL-SDLC",
+      "name_az": "Təhlükəsiz sistem layihələndirilməsi (SDLC) standartı",
+      "name_en": "Secure System Development / Design Standard",
+      "purpose": "Security-by-design and CII criticality check at project design stage.",
+      "driving_articles": [
+        "Qaydalar 10.1",
+        "7.3",
+        "8.9.7"
+      ]
+    },
+    {
+      "id": "POL-TPRM",
+      "name_az": "Üçüncü tərəf (təchizatçı) risklərinin idarə edilməsi siyasəti",
+      "name_en": "Third-Party / Supplier Security Risk Policy",
+      "purpose": "Security clauses in contracts; due diligence of MSSP/CERT/SOC providers.",
+      "driving_articles": [
+        "Qaydalar 4.1.1(4)",
+        "6.1–6.4",
+        "İnf. Q. Maddə 20-3.5",
+        "20-8.2"
+      ]
+    },
+    {
+      "id": "POL-PROC",
+      "name_az": "İT satınalmasında təhlükəsizlik tələbləri",
+      "name_en": "Secure IT Procurement Standard",
+      "purpose": "Require certified, licensed products and certified e-signature/EDMS tools.",
+      "driving_articles": [
+        "İnf. Q. Maddə 16",
+        "E-imza Q. Maddə 34.3",
+        "Qaydalar 4.1.3(3)",
+        "6.3.2"
+      ]
+    },
+    {
+      "id": "POL-KII",
+      "name_az": "KİI təhlükəsizliyinin təmin edilməsi üzrə daxili qaydalar",
+      "name_en": "Critical Information Infrastructure Security Procedure",
+      "purpose": "Registry duties, responsible person, specific requirements, cooperation with DTX/XRİTDX.",
+      "driving_articles": [
+        "Qanun 20-1 – 20-6",
+        "Qaydalar 5, 7, 8.9, 9, 10"
+      ]
+    },
+    {
+      "id": "POL-ESIG",
+      "name_az": "Elektron imzadan istifadə qaydası",
+      "name_en": "Electronic Signature Use Procedure",
+      "purpose": "Who may sign, which signature type, token custody, suspension/revocation and signing with state bodies.",
+      "driving_articles": [
+        "E-imza Q. Maddə 5.5",
+        "6.3",
+        "7.1–7.2",
+        "20.3–20.5"
+      ]
+    },
+    {
+      "id": "POL-KEY",
+      "name_az": "Kriptoqrafik açarların və imza vasitələrinin idarə edilməsi standartı",
+      "name_en": "Cryptographic Key & Signature Device Management Standard",
+      "purpose": "Lifecycle protection of signature-creation data, tokens and CA keys.",
+      "driving_articles": [
+        "E-imza Q. Maddə 20.3",
+        "17.3.1",
+        "18.2"
+      ]
+    },
+    {
+      "id": "POL-RECORDS",
+      "name_az": "Elektron sənəd dövriyyəsi və sənədlərin saxlanılması qaydası",
+      "name_en": "Electronic Records Management & Retention Procedure",
+      "purpose": "EDMS rules, record-keeping standards, retention not shorter than paper.",
+      "driving_articles": [
+        "E-imza Q. Maddə 26.3–26.4",
+        "29.1",
+        "31.3"
+      ]
+    }
+  ],
+  "notes": "SOURCES: All verbatim quotes were extracted programmatically from official consolidated texts on e-qanun.az (Ministry of Justice legal database) fetched 2026-10-15: info law framework 3525, e-signature law 5916, KII Rules (Cabinet Decision 229) 54651. Editorial footnote markers like “[58]” were removed from quotes; otherwise text is unchanged. Articles 1–21 of the info law have no sub-numbering, so references use “Maddə X (n-ci hissə)”. KII Rules were cross-checked against the original publication in the “Azərbaycan” newspaper (20.07.2023); the e-qanun text includes the 02.12.2023 (NK № 431) amendments. nk.gov.az, azertag.az and meclis.gov.az were unreachable from this environment (connection reset / Cloudflare block). \nKII STATUS: KII rules are in force (not drafts): Info law ch. V-I (Art. 20-1 – 20-6, added by 539-VIQD of 27.05.2022, amended by 861-VIQD of 11.04.2023), Cabinet Decision № 229 (17.07.2023), Register rules № 230 (17.07.2023, not fetched), KII object list № 501 (29.11.2024, not fetched — whether a given company is a KII subject depends on this list). Competent authority: State Security Service (DTX) / National Cyber Centre, jointly with XRİTDX for state bodies and state-owned legal entities (Decree № 1315). Micro, small and medium enterprises are excluded from the definition of KII subject (Art. 2). For private (non-state) entrepreneurs, compliance checks are conducted remotely, without site visits (Law 20-6.4; Rules 9.7). \n2026 CYBERSECURITY AMENDMENTS: Law 454-VIIQD of 14.07.2026 (published 10.08.2026) is already incorporated in the consolidated info-law text and in force (no deferred entry-into-force clause in the text; implemented by Decree № 761 of 10.08.2026). It adds ch. V-II (Art. 20-7 – 20-12): National CERT/SOC, sectoral CERTs, CERT/SOC registry, “information infrastructure performing socially significant functions”, digital forensics, a general duty on ALL information-infrastructure subjects to report incidents immediately to the National CERT, 24h/5-working-day request deadlines, and .az domain sanctions. PENDING / NOT YET ISSUED (not included as obligations): (1) general cybersecurity requirements for “information infrastructure performing socially significant functions” (Art. 20-7.5) — Cabinet must approve within 9 months of Decree 761 (≈ by May 2027); RİNN to submit draft within 8 months (Cabinet order 613s, 17.08.2026); sector-specific requirements to follow from sector regulators, and for financial-market entities from the Central Bank; (2) lists of socially-significant-infrastructure subjects (Art. 20-7.3) to be set by sector regulators; (3) rules on monitoring/audit/security opinions for state information resources (Art. 14, 8th part) and security rules for state bodies’ infrastructure (Art. 20-7.10); (4) KII-related CERTs/SOCs must be entered in the registry within ~1 year per Decree 761 §§4–5. The KII Rules (2023) have not (per e-qanun as of 2026-10-15) been updated to reflect 454-VIIQD; terminology (Milli kibermərkəz vs. Milli CERT) may change. (5) Law 431-VIIQD of 30.06.2026 (social-network platform age verification, new Art. 13-4/13-5, renumbering current 13-4 to 13-6) enters into force 05.08.2027 — relevant only to platform providers; not included. \nCAVEATS: Authorities marked “(yoxlanmalı)” could not be confirmed from the fetched implementing acts. The certification body under info-law Art. 16 was not identified. Liability amounts are set in the Code of Administrative Offences (not reviewed). Several obligations (ES-11, ES-12, INF-14, KII-15) apply only to specific roles (CA, intermediary, CERT/SOC operator, MSSP). The e-signature law Art. 34.2 has a textual defect on e-qanun (“İstifadə Tərkibində …”) and was not used. Frequencies such as “at least annual” in INF-09 are recommendations where the law sets none. This is a compliance-library sample, not legal advice."
+}

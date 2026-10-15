@@ -1,0 +1,752 @@
+{
+  "laws": [
+    {
+      "short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "full_title_az": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "title_en": "Requirements for ensuring information security in entities supervised in financial markets",
+      "act": "Azərbaycan Respublikası Mərkəzi Bankı İdarə Heyətinin Qərarı № 14/2",
+      "accept_date": "2024-03-28",
+      "registry_code": "23202403280142",
+      "registry_date": "2024-04-08",
+      "effective_date": "2025-04-09",
+      "status": "Qüvvədədir (in force) per e-qanun.az metadata, checked 2026-10-15",
+      "version": "Original text as published on e-qanun.az (no amendment footnotes present in the published HTML as of 2026-10-15)",
+      "legal_basis": "Mərkəzi Bank haqqında Qanun 22.1.17 və 48.3.4; İcbari sığortalar haqqında Qanun 34-1.4",
+      "scope": "Banks, non-bank credit organisations (excl. credit unions), insurers, licensed securities market participants, investment funds/managers, national postal operator, payment institutions, e-money institutions, payment system operators, credit bureaus, central depository; Compulsory Insurance Bureau (for its compulsory-insurance IS). Banks are Category I (2.1.34).",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html",
+      "metadata_url": "https://api.e-qanun.az/framework/56708 (header Referer: https://e-qanun.az/)",
+      "used_for_obligations": true
+    },
+    {
+      "short": "Banklarda informasiya təhlükəsizliyinin idarə edilməsi Qaydası (20/1) — LƏĞV EDİLİB",
+      "full_title_az": "Banklarda informasiya təhlükəsizliyinin idarə edilməsi Qaydası",
+      "act": "Azərbaycan Respublikası Mərkəzi Bankı İdarə Heyətinin Qərarı № 20/1",
+      "accept_date": "2021-07-14",
+      "effective_date": "2022-04-01",
+      "status": "REPEALED: the Rules (Part 1 of Decision 20/1) were repealed by Decision 14/2 of 28.03.2024 with effect from 09.04.2025 (14/2 Part 2; e-qanun footnote [1] on 20/1). e-qanun still shows the decision record as 'Qüvvədədir' because only Part 1 was repealed.",
+      "version": "Historical text only (cbar.az PDF of original 2021 decision; e-qanun f_48025.html with repeal footnote)",
+      "source_url": "https://uploads.cbar.az/assets/8de89476ebb3fc1e60c61555e.pdf",
+      "secondary_url": "https://e-qanun.az/frameworks/48/f_48025.html",
+      "used_for_obligations": false
+    }
+  ],
+  "obligations": [
+    {
+      "id": "CB-01",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 3.1, 3.2, 3.6",
+      "verbatim_az": "3.1. İTİS nəzarət subyektlərində bu Tələblərin və Azərbaycan Respublikası Mərkəzi Bankının (bundan sonra – Mərkəzi Bank) digər normativ xarakterli aktlarının tələbləri nəzərə alınmaqla nəzarət subyektinin yuxarı idarəetmə orqanının ümumi rəhbərliyi altında nəzarət subyektinin biznes prosesləri və ümumi idarəetmə sisteminin ayrılmaz hissəsi kimi formalaşdırılır, fəaliyyəti təmin edilir və davamlı olaraq təkmilləşdirilir.\n3.2. İTİS-in formalaşdırılması ilə bağlı nəzarət subyektinin ümumi strategiyasına uyğun olan informasiya təhlükəsizliyi siyasəti hazırlanır və yuxarı idarəetmə orqanı tərəfindən təsdiq edilir.\n3.6. İnformasiya təhlükəsizliyi siyasəti azı ildə 1 (bir) dəfə ayrıca, habelə nəzarət subyektinin risklərin idarə edilməsi sisteminə baxılarkən yenidən nəzərdən keçirilir və tələb edildikdə müvafiq dəyişikliklər edilir. İTİS-in davamlılığının, adekvatlığının və effektivliyinin təmin edilməsi üçün dəyişikliklər edildikdə informasiya təhlükəsizliyi siyasətinə növbədənkənar qaydada yenidən baxılır.",
+      "obligation_az": "İTİS qurun; informasiya təhlükəsizliyi siyasətini Müşahidə Şurası təsdiqləsin, ona ildə azı bir dəfə baxılsın.",
+      "obligation_en": "Establish an ISMS under the Supervisory Board's oversight, have the board approve the information security policy, and review the policy at least annually and on material change.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "ongoing; policy review annual (≥1/year) + ad hoc on ISMS changes",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Board-approved IS policy with version history",
+        "Annual policy review minutes",
+        "ISMS scope and continual-improvement plan"
+      ],
+      "related_policies": [
+        "Information Security Policy"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-02",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 3.3, 3.3.4, 3.3.5, 8.1",
+      "verbatim_az": "3.3. İTİS-ə bilavasitə nəzarətin həyata keçirilməsi üçün nəzarət subyekti tərəfindən informasiya təhlükəsizliyi üzrə məsul şəxs təyin edilir. İnformasiya təhlükəsizliyi üzrə məsul şəxsin əsas vəzifələri aşağıdakılardır:\n3.3.4. rüblük əsasda nəzarət subyektində informasiya təhlükəsizliyi vəziyyəti və informasiya təhlükəsizliyi riskləri ilə bağlı rəhbərliyə hesabat təqdim edir;\n3.3.5. informasiya təhlükəsizliyi tələblərindən kənarlaşmalar baş verdikdə səbəbləri göstərilməklə bu barədə rəhbərliyi dərhal məlumatlandırır;\n8.1. Nəzarət subyekti bu Tələblərin 3.3-cü bəndinə əsasən təyin edilmiş informasiya təhlükəsizliyi üzrə məsul şəxsin soyadı, adı, atasının adı, ünvanı, əlaqə vasitələri barədə məlumatı, habelə təyin edilməsi barədə qərarın surətini təyin edilmə tarixindən, habelə bu məlumatlarda dəyişiklik olduqda, dəyişikliyin baş verdiyi tarixdən 5 (beş) iş günü ərzində bu barədə məlumatı Mərkəzi Banka yazılı şəkildə təqdim edir.",
+      "obligation_az": "İnformasiya təhlükəsizliyi üzrə məsul şəxs təyin edin; 5 iş günü ərzində Mərkəzi Banka yazılı bildirin.",
+      "obligation_en": "Appoint an information security officer (CISO) with defined duties incl. quarterly IS risk reporting to management; notify CBAR in writing within 5 business days of appointment or change.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "on event (appointment/change: CBAR notice ≤5 business days); quarterly management report",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "CISO appointment decision and job description",
+        "Quarterly IS status/risk report to management",
+        "CBAR notification log for CISO changes"
+      ],
+      "related_policies": [
+        "Information Security Policy",
+        "IS Governance / Roles and Responsibilities"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-03",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 4.1, 4.2",
+      "verbatim_az": "4.1. Nəzarət subyektində informasiya təhlükəsizliyinə cavabdeh müstəqil struktur bölmə formalaşdırılır, bu struktur bölmənin, habelə digər personalın informasiya təhlükəsizliyi ilə bağlı vəzifələri və bu vəzifələr üzrə öhdəlik və səlahiyyətləri müəyyən edilir. Maraqlar münaqişəsinin qarşısını almaq məqsədilə informasiya təhlükəsizliyinə cavabdeh struktur bölmənin informasiya texnologiyalarına cavabdeh struktur bölmədən ayrı yaradılması və fərqli kuratorlara tabe olması təmin edilir.\n4.2. İnformasiya və digər əlaqəli aktivlərin icazəsiz, qeyri-ixtiyari dəyişdirilməsi və ya sui-istifadəsi hallarının məhdudlaşdırılması üçün nəzarət subyekti toqquşan vəzifələrin və öhdəlik sahələrinin bir-birindən ayrılmasını təmin edir.",
+      "obligation_az": "İT-dən ayrı, fərqli kuratora tabe müstəqil informasiya təhlükəsizliyi bölməsi yaradın; toqquşan vəzifələri ayırın.",
+      "obligation_en": "Set up an independent information security unit separate from IT and reporting to a different executive; segregate conflicting duties.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "ongoing",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Org chart showing IS unit reporting line distinct from IT",
+        "Segregation-of-duties matrix",
+        "Periodic SoD conflict review"
+      ],
+      "related_policies": [
+        "IS Governance / Roles and Responsibilities"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-04",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 3.7, 3.7.1, 8.2",
+      "verbatim_az": "3.7. Bu Tələblərə uyğunluğun qiymətləndirilməsi üçün nəzarət subyektində İTİS informasiya təhlükəsizliyinin yoxlanılması sahəsində beynəlxalq səviyyədə akkreditasiya edilmiş və maliyyə bazarlarında informasiya təhlükəsizliyinin yoxlanılması üzrə azı 3 (üç) il təcrübəyə malik kənar auditor tərəfindən aşağıdakı dövriliklə yoxlanılır:\n3.7.1. I kateqoriya nəzarət subyektlərində ildə 1 (bir) dəfədən az olmayaraq;\n8.2. Nəzarət subyekti bu Tələblərin 3.7-ci və 3.8-ci bəndlərinə əsasən əldə etdiyi kənar auditor rəylərini, habelə bu Tələblərin 3.8-ci bəndinə əsasən əldə etdiyi tələblərə uyğunluq üzrə sənədin surətini 5 (beş) iş günü ərzində Mərkəzi Banka təqdim edir.",
+      "obligation_az": "İTİS-i ildə azı bir dəfə akkreditə olunmuş kənar auditora yoxlatdırın; rəyi 5 iş günü ərzində Mərkəzi Banka təqdim edin.",
+      "obligation_en": "Have the ISMS audited at least annually by an internationally accredited external auditor with ≥3 years financial-sector IS audit experience; submit the opinion to CBAR within 5 business days.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "annual; CBAR submission ≤5 business days after receipt",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Auditor accreditation and experience check",
+        "Annual external ISMS audit plan",
+        "Submission evidence to CBAR"
+      ],
+      "related_policies": [
+        "Information Security Policy"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-05",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 3.8, 8.2",
+      "verbatim_az": "3.8. Ödəniş kartları vasitəsilə aparılmış əməliyyatlar haqqında məlumatların toplanması, emalı və ötürülməsinə, həmçinin kart emissiyasına və ekvayrinqinə texniki xidmət göstərilməsi üzrə fəaliyyəti həyata keçirən ödəniş sistemlərinin operatorları və banklar əlavə olaraq bu sahə üzrə informasiya təhlükəsizliyi standartlarına uyğunluğun yoxlanılması sahəsində beynəlxalq səviyyədə akkreditasiya edilmiş kənar auditor tərəfindən ildə 1 (bir) dəfədən az olmayaraq yoxlanılır.\n8.2. Nəzarət subyekti bu Tələblərin 3.7-ci və 3.8-ci bəndlərinə əsasən əldə etdiyi kənar auditor rəylərini, habelə bu Tələblərin 3.8-ci bəndinə əsasən əldə etdiyi tələblərə uyğunluq üzrə sənədin surətini 5 (beş) iş günü ərzində Mərkəzi Banka təqdim edir.",
+      "obligation_az": "Kart əməliyyatları emal edən bank ildə bir dəfə kart məlumatları təhlükəsizlik standartına uyğunluq auditi keçirsin.",
+      "obligation_en": "Banks processing card transaction data or providing card issuing/acquiring technical services must undergo an annual accredited external audit against card-data security standards and send CBAR the auditor report and compliance document within 5 business days.",
+      "applies_to": "Banks performing card data processing / card issuing or acquiring technical services (and payment system operators)",
+      "type": "Regulatory",
+      "frequency": "annual; CBAR submission ≤5 business days",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Annual card-data security standard assessment (e.g. PCI DSS QSA)",
+        "Copy of attestation sent to CBAR"
+      ],
+      "related_policies": [
+        "Information Security Policy",
+        "Payment Card Security Procedures"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-06",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 4.6.1, 4.6.2, 4.6.5",
+      "verbatim_az": "4.6.1. informasiya və digər əlaqəli aktivlər müəyyənləşdirilir və inventarizasiyası aparılmaqla aktuallığı təmin edilir;\n4.6.2. inventarizasiya edilmiş aktivlər üzrə onların bütün istifadə dövründə düzgün idarə edilməsinə məsul olan aktiv sahibləri müəyyən edilir;\n4.6.5. informasiyanın tamlıq, konfidensiallıq, əlçatanlıq xüsusiyyətləri, dəyəri, əhəmiyyətliliyi, icazəsiz açıqlanma və ya dəyişikliyə qarşı həssaslığı, maraqlı tərəflərin tələbləri, habelə qanunvericiliyin tələbləri nəzərə alınmaqla informasiyanın təsnifatı həyata keçirilir;",
+      "obligation_az": "Aktivləri inventarlaşdırın, aktiv sahiblərini təyin edin, informasiyanı təsnifləşdirin.",
+      "obligation_en": "Maintain an up-to-date inventory of information and related assets, assign asset owners, and classify information by CIA, value and sensitivity.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "ongoing",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Asset register (CMDB) with owners",
+        "Information classification scheme",
+        "Periodic inventory reconciliation"
+      ],
+      "related_policies": [
+        "Asset Management and Acceptable Use Rules",
+        "Information Classification and Labelling Rules"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-07",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 4.7, 4.7.3, 4.7.4, 4.7.5",
+      "verbatim_az": "4.7. Biznes və informasiya təhlükəsizliyi tələbləri əsasında informasiya və digər əlaqəli aktivlərə girişlər üzrə azı aşağıdakılar nəzərə alınmaqla qaydalar hazırlanır və təsdiq edilir:\n4.7.3. nəzarət subyekti tərəfindən müəyyən edilmiş müddət ərzində istifadə edilməyən, habelə aktuallığını itirmiş giriş hesablarının bloklanması;\n4.7.4. müvafiq informasiya və digər əlaqəli aktivlər üzrə giriş hüquqlarının yalnız həvalə edilmiş vəzifələrin icrası üçün zəruri olan hədlərdə verilməsi;\n4.7.5. personal və təchizatçılarla müqavilə münasibətlərinə xitam verildikdə və ya dəyişdirildikdə müvafiq olaraq onların informasiya və digər əlaqəli aktivlərə giriş hüquqlarının dərhal ləğv edilməsi və ya dəyişikliyə uyğunlaşdırılması;",
+      "obligation_az": "Giriş qaydalarını təsdiqləyin; ən az səlahiyyət verin, istifadə olunmayan hesabları bloklayın, ayrılanlarda dərhal ləğv edin.",
+      "obligation_en": "Approve access-control rules: least privilege, block dormant accounts, and immediately revoke/adjust access on termination or change of staff/supplier contracts.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "ongoing; periodic access recertification",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Joiner-mover-leaver workflow with HR feed",
+        "Dormant account auto-disable",
+        "Periodic user access review"
+      ],
+      "related_policies": [
+        "Access Control Rules",
+        "Authentication (Password) Management Rules"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-08",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 7.5, 7.5.1, 7.5.3, 7.5.4",
+      "verbatim_az": "7.5. İmtiyazlı giriş hüquqları azı aşağıdakı mühafizə tədbirləri və 7.4-cü bəndin tələbləri nəzərə alınmaqla yalnız icazə verilmiş personala, proqram təminatı komponentlərinə və servislərə verilməlidir:\n7.5.1. imtiyazlı giriş hüquqlarının yalnız ehtiyac yarandığı təqdirdə verilməsi və adi giriş hüquqlarından daha yüksək autentikasiya tələblərinin tətbiq edilməsi;\n7.5.3. imtiyazlı istifadəçilərin yalnız onlara aid imtiyazlı hesablardan istifadə etməsinin, habelə imtiyazlı hesabların gündəlik istifadəçi hesablarından ayrılmasının təmin edilməsi;\n7.5.4. imtiyazlı giriş hüququ olan personalın hərəkətlərinin monitorinqi və loqlanması.",
+      "obligation_az": "İmtiyazlı girişləri yalnız ehtiyac olduqda, gücləndirilmiş autentikasiya ilə verin; ayrıca hesablar və loqlama tətbiq edin.",
+      "obligation_en": "Grant privileged access only when needed with stronger authentication, use separate privileged accounts, and monitor and log privileged actions.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "ongoing",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "PAM solution with session recording",
+        "MFA for admin accounts",
+        "Separate admin accounts",
+        "Privileged activity log review"
+      ],
+      "related_policies": [
+        "Access Control Rules"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-09",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 4.9, 4.9.1, 4.9.2",
+      "verbatim_az": "4.9. Təchizatçılarla münasibətlərdə bu Tələblər ilə müəyyən edilmiş informasiya təhlükəsizliyi tələbləri gözlənilir, o cümlədən aşağıda qeyd edilən tədbirlərin icrası təmin edilir:\n4.9.1. nəzarət subyektinin aktivlərinə giriş hüququ olan təchizatçılarla münasibətdə risklərin minimallaşdırılması məqsədilə informasiya təhlükəsizliyi tələblərinin tərəflər arasında razılaşdırılması və sənədləşdirilməsi;\n4.9.2. təchizatçıların reyestrinin tərtib edilməsi və təchizatçıların göstərdikləri xidmətlərin nəzarət subyekti tərəfindən mütəmadi monitorinqinin aparılması;",
+      "obligation_az": "Təchizatçılarla İT tələblərini müqavilədə razılaşdırın; təchizatçı reyestri aparın və xidmətləri mütəmadi monitorinq edin.",
+      "obligation_en": "Agree and document IS requirements with suppliers that access bank assets, keep a supplier register and regularly monitor supplier services.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "ongoing",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Supplier register",
+        "IS clauses in contracts",
+        "Periodic supplier risk assessment and monitoring"
+      ],
+      "related_policies": [
+        "Supplier (Third-Party) Information Security Rules"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-10",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 4.10.1, 4.10.2, 4.10.2.5, 4.10.2.8",
+      "verbatim_az": "4.10.1. azı aşağıdakılar nəzərə alınmaqla qaydalar hazırlanır və təsdiq edilir:\n4.10.2. “bulud” xidməti müqavilələri nəzarət subyektinin informasiyanın təhlükəsizliyi siyasətinin tələblərinə cavab verməlidir. Nəzarət subyektinin sahib olduğu informasiyanın və xidmətlərinin əlçatanlığının qorunması üçün “bulud” xidməti müqavilələrində aşağıdakı şərtlər gözlənilməlidir:\n4.10.2.5. nəzarət subyektinin sahib olduğu həssas informasiyanın yalnız Azərbaycan Respublikasının ərazisində saxlanması;\n4.10.2.8. “bulud” xidmətlərinin “bulud” xidməti təchizatçısı tərəfindən submüqavilə əsasında üçüncü tərəf vasitəsilə təqdim edilməsinin qadağan edilməsi;",
+      "obligation_az": "Bulud xidmətləri üzrə qaydaları təsdiqləyin; həssas məlumatı yalnız Azərbaycanda saxlayın, subpodratı qadağan edin.",
+      "obligation_en": "Adopt cloud-service rules; cloud contracts must meet the IS policy, keep sensitive data only in Azerbaijan, and prohibit the provider from sub-contracting the cloud service.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "ongoing; before cloud onboarding and at contract renewal",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Cloud due-diligence checklist (ISO/IEC, PCI DSS, Uptime Tier)",
+        "Data-residency verification",
+        "Contract clause checklist per 4.10.2",
+        "Exit strategy"
+      ],
+      "related_policies": [
+        "Cloud Services Rules",
+        "Supplier (Third-Party) Information Security Rules"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-11",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 4.11, 4.11.4, 4.11.6.3, 4.11.6.3.3",
+      "verbatim_az": "4.11. İnformasiya təhlükəsizliyi hadisələrinin kommunikasiyası daxil olmaqla informasiya təhlükəsizliyi insidentlərinin çevik, davamlı və effektiv idarə edilməsi məqsədilə nəzarət subyekti tərəfindən azı aşağıdakılar nəzərə alınmaqla informasiya təhlükəsizliyi insidentlərinin idarə edilməsi qaydaları hazırlanır və təsdiq edilir:\n4.11.4. informasiya təhlükəsizliyi hadisələri və insidentlər barədə məlumatlandırmanın müvafiq kommunikasiya kanalları vasitəsilə dərhal həyata keçirilməsi;\n4.11.6.3. insidentin risk əsaslı qiymətləndirilməsi, azı aşağıdakı meyarlar üzrə prioritetləşdirilməsi və kateqoriyalaşdırılması:\n4.11.6.3.3. yüksək - insident nəticəsində nəzarət subyekti hər hansı kritik biznes proses üzrə fəaliyyətini həyata keçirə bilmir;",
+      "obligation_az": "İnsidentlərin idarə edilməsi qaydalarını təsdiqləyin; insidentləri aşağı/orta/yüksək kateqoriyalara bölün, dərhal məlumatlandırın.",
+      "obligation_en": "Approve incident management rules covering event triage, immediate notification and risk-based categorisation of incidents (low/medium/high).",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "ongoing",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Incident response playbooks",
+        "Incident register and classification matrix",
+        "Post-incident root-cause analysis and knowledge base"
+      ],
+      "related_policies": [
+        "Information Security Incident Management Rules"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-12",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 8.3, 8.4",
+      "verbatim_az": "8.3. Nəzarət subyekti yüksək kateqoriyalı insident barədə bu Qaydaya 1 nömrəli Əlavədə göstərilən ilkin hesabatı insident baş verdiyi və ya aşkar olunduğu andan etibarən 4 (dörd) saat ərzində xüsusi təyinatlı informasiya mübadilə sistemi vasitəsilə Mərkəzi Banka təqdim edir. Bu müddət qeyri-iş saatlarına təsadüf etdikdə, məlumat növbəti iş gününün ilk iş saatı ərzində Mərkəzi Banka təqdim edilir.\n8.4. Nəzarət subyekti insident tam aradan qaldırıldığı vaxtdan 5 (beş) iş günü ərzində bu Qaydaya 2 nömrəli Əlavədə göstərilən yekun hesabatı xüsusi təyinatlı informasiya mübadilə sistemi vasitəsilə Mərkəzi Banka təqdim edir.",
+      "obligation_az": "Yüksək kateqoriyalı insident barədə 4 saat ərzində ilkin, aradan qaldırıldıqdan 5 iş günü ərzində yekun hesabat verin.",
+      "obligation_en": "Report high-category incidents to CBAR via the dedicated exchange system: initial report within 4 hours of occurrence/detection (next business day's first hour if outside business hours) and final report within 5 business days of full resolution.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "on event: initial ≤4 hours; final ≤5 business days after resolution",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Regulatory reporting runbook with Annex 1/2 templates",
+        "24x7 on-call escalation to CISO",
+        "Reporting SLA tracking"
+      ],
+      "related_policies": [
+        "Information Security Incident Management Rules"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-13",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 4.12.1, 4.12.5, 8.5",
+      "verbatim_az": "4.12.1. biznesə təsir analizi aparılır, biznes prosesləri kritiklik səviyyəsi üzrə təsnifləşdirilir, kritik informasiya sistemi və əlaqəli aktivlər müəyyən edilir;\n4.12.5. azı aşağıdakıları nəzərdə tutan fövqəladə hallarda fəaliyyətin davamlılığı və bərpası plan(lar)ı hazırlanır və sənədləşdirilir:\n8.5. Bu Tələblərin 4.12.1-ci yarımbəndinə əsasən müəyyən edilmiş kritik informasiya sistemi və əlaqəli aktivləri barədə aktual məlumatlar bu Tələblərə 3 nömrəli Əlavəyə uyğun olaraq hər təqvim ili üzrə növbəti ilin yanvar ayının ilk 10 (on) iş günü ərzində Mərkəzi Banka təqdim edilir.",
+      "obligation_az": "Biznesə təsir analizi aparın, fəaliyyətin davamlılığı və bərpa planı hazırlayın; kritik sistemlər barədə illik məlumat verin.",
+      "obligation_en": "Perform a business impact analysis, identify critical information systems, document BC/DR plans (incl. RPO/RTO), and report critical systems and related assets to CBAR annually.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "ongoing; CBAR report annually within first 10 business days of January",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "BIA with criticality ratings",
+        "BC/DR plans with RPO/RTO",
+        "Annex 3 critical-systems report to CBAR"
+      ],
+      "related_policies": [
+        "Business Continuity and Disaster Recovery Plan"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-14",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 4.12.4, 4.13",
+      "verbatim_az": "4.12.4. fəaliyyətin davamlılığını təmin etmək məqsədilə nəzarət subyektinin Azərbaycan Respublikasının bir-biri ilə qonşu olmayan iqtisadi rayonlarında yerləşən 2 (iki) informasiyanın işlənməsi mərkəzinin (əsas və ehtiyat mərkəz) olması təmin edilir;\n4.13. Nəzarət subyekti fövqəlaqə hallarda fəaliyyətinin davamlılığını təmin etmək məqsədilə kritik informasiya sistemlərinin və əlaqəli aktivlərin etibarlı, təhlükəsiz və davamlı fəaliyyətini ehtiyat mərkəzdən təmin edir.",
+      "obligation_az": "Qonşu olmayan iqtisadi rayonlarda əsas və ehtiyat iki məlumat emalı mərkəzi saxlayın.",
+      "obligation_en": "Operate two data processing centres (primary and backup) in non-adjacent economic regions of Azerbaijan and be able to run critical systems from the backup centre.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "ongoing",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Primary/backup DC location evidence",
+        "Replication of critical systems to backup DC"
+      ],
+      "related_policies": [
+        "Business Continuity and Disaster Recovery Plan"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-15",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 4.14, 8.6",
+      "verbatim_az": "4.14. Fövqəladə hallarda fəaliyyətin davamlılığı və bərpası planı ehtiyat mərkəz üzərindən müxtəlif ssenarilər əsasında ildə azı 2 (iki) dəfə sınaqdan keçirilir, nəticələri sənədləşdirilir və sınağın nəticəsi uğursuz olduqda nəzarət subyekti növbəti 2 (iki) ay ərzində yenidən ehtiyat mərkəz vasitəsilə sınaq yoxlaması aparır və nəticəsi sənədləşdirilir.\n8.6. Nəzarət subyekti bu Tələblərin 4.14-cü bəndinə müvafiq olaraq sınağı həyata keçirməmişdən 5 (beş) iş günü əvvəl Mərkəzi Bankı bu barədə məlumatlandırır, sınaq başa çatdıqdan sonra isə 7 (yeddi) iş günü müddətində nəticəsi barədə bu Tələblərə 4 nömrəli Əlavədə göstərilən hesabatı təqdim edir.",
+      "obligation_az": "Bərpa planını ehtiyat mərkəzdə ildə iki dəfə sınayın; Mərkəzi Banka 5 iş günü əvvəl bildirin, 7 iş günündə hesabat verin.",
+      "obligation_en": "Test the BC/DR plan via the backup centre at least twice a year (retest within 2 months if failed); notify CBAR 5 business days before and report results within 7 business days.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "semi-annual; CBAR notice T-5 business days; report ≤7 business days after test",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "DR test calendar",
+        "Annex 4 switchover report",
+        "Retest tracking for failed tests"
+      ],
+      "related_policies": [
+        "Business Continuity and Disaster Recovery Plan"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-16",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 7.8, 7.8.3, 7.8.6",
+      "verbatim_az": "7.8. İnformasiya itkisinin qarşısının alınması məqsədilə kritik informasiya sistemlərinin ehtiyat nüsxələrinin yaradılması, həmçinin bərpa prosesinin testləşdirilməsi üzrə azı aşağıdakıları əhatə edən qaydalar qəbul edilir və tətbiqi təmin edilir:\n7.8.3. həssas informasiyanın ehtiyat nüsxələrinin şifrələnmiş şəkildə saxlanılmasının təmin edilməsi;\n7.8.6. ehtiyat nüsxələrin ildə 2 (iki) dəfədən az olmamaqla sınaq bərpasının həyata keçirilməsi və nəticələrinin sənədləşdirilməsi;",
+      "obligation_az": "Kritik sistemlərin ehtiyat nüsxələrini şifrələnmiş saxlayın, ildə azı iki dəfə bərpa sınağı edin.",
+      "obligation_en": "Adopt backup rules for critical systems: encrypt backups of sensitive data and test restores at least twice a year with documented results.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "ongoing; restore test semi-annual",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Centralised backup tool",
+        "Backup encryption",
+        "Semi-annual restore test reports"
+      ],
+      "related_policies": [
+        "Backup and Restore Rules"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-17",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 7.9, 7.9.1, 7.9.4, 7.23",
+      "verbatim_az": "7.9. Fəaliyyətlər, istisnalar, xətalar və digər hadisələr üzrə loqların yaradılması, saxlanılması, mühafizəsi və təhlilinin təmin edilməsi üçün qaydalar qəbul edilir. Kritik informasiya sistemləri və digər əlaqəli aktivlər üzrə hadisələrin loqlanması zamanı azı aşağıdakılar nəzərə alınır:\n7.9.1. hadisə loqlarının qeydiyyatı aparılır və azı 1 (bir) il müddətinə saxlanılmaqla mütəmadi olaraq monitorinq edilir. Qeydiyyatı aparılan loqlara azı aşağıdakılar daxildir:\n7.9.4. imtiyazlı giriş hüququna malik olanlar da daxil olmaqla istifadəçilərin öz fəaliyyətləri barədə loqları silməsi və ya deaktivasiya etməsi qadağan edilir.\n7.23. Potensial informasiya təhlükəsizliyi insidentlərinin qiymətləndirilməsi məqsədilə şəbəkə, sistem və proqram təminatlarında baş verə biləcək qeyri-adi davranışların azı aşağıdakılar nəzərə alınmaqla davamlı monitorinqi mexanizmi yaradılır:",
+      "obligation_az": "Kritik sistemlər üzrə loqları azı 1 il saxlayın, monitorinq edin; qeyri-adi davranışları davamlı izləyin.",
+      "obligation_en": "Adopt logging rules: keep event logs of critical systems at least 1 year, monitor them regularly, forbid users deleting their own logs, and run continuous anomaly monitoring.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "ongoing; log retention ≥1 year",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "SIEM with ≥1-year retention",
+        "Log integrity protection",
+        "24x7 SOC monitoring use-cases"
+      ],
+      "related_policies": [
+        "Logging and Monitoring Rules"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-18",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 7.18.2, 7.18.3, 8.7",
+      "verbatim_az": "7.18.2. texniki zəifliklərin analizi və aradan qaldırılması məqsədilə ildə azı 1 (bir) dəfə müdaxilə sınaqlarının keçirilməsi üzrə ixtisaslaşmış kənar mütəxəssislər cəlb edilməklə daxili və xarici müdaxilə sınaqlarının həyata keçirilməsi və nəticələrinin sənədləşdirilməsi;\n7.18.3. kritik informasiya sisteminin müdaxilə sınaqları keçirildikdən və aşkar edilmiş zəifliklər aradan qaldırıldıqdan sonra əməliyyat mühitinə keçirilməsi;\n8.7. Bu Tələblərin 7.18.2-ci yarımbəndinə əsasən həyata keçirilmiş müdaxilə sınaqlarının nəticələri 5 (beş) iş günündən gec olmayaraq Mərkəzi Banka təqdim edilir.",
+      "obligation_az": "İldə azı bir dəfə kənar mütəxəssislərlə daxili və xarici müdaxilə sınağı keçirin; nəticəni 5 iş günü ərzində Mərkəzi Banka verin.",
+      "obligation_en": "Conduct internal and external penetration tests at least annually with qualified external specialists, pen-test critical systems before go-live, and submit results to CBAR within 5 business days.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "annual; CBAR submission ≤5 business days",
+      "risk": "HIGH",
+      "suggested_controls": [
+        "Annual pen-test programme",
+        "Pre-production pen test gate for critical systems",
+        "Vulnerability remediation tracking"
+      ],
+      "related_policies": [
+        "Vulnerability and Patch Management Procedure",
+        "Secure Development Methodology"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-19",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 7.25, 7.25.2, 7.25.4",
+      "verbatim_az": "7.25. İnformasiyanın konfidensiallığının və tamlığının qorunması üçün kriptoqrafiyanın düzgün seçilməsi və effektiv istifadəsinin təmin olunması məqsədilə aşağıdakı tədbirlər həyata keçirilir:\n7.25.2. risklərin qiymətləndirilməsinə əsasən informasiyanın şifrlənməsi üçün istifadə edilən kriptoqrafik vasitələrin şifrləmə alqoritminin mürəkkəblik səviyyəsi müəyyən edilir;\n7.25.4. azı aşağıdakıları müəyyən edən kriptoqrafik açarların idarə edilməsi sistemi yaradılır:",
+      "obligation_az": "Kriptoqrafik vasitələrin istifadəsini risk əsasında müəyyənləşdirin, açarların idarə edilməsi sistemi yaradın.",
+      "obligation_en": "Define which information needs cryptographic protection, set algorithm strength based on risk, and establish a cryptographic key management system covering the full key lifecycle.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "ongoing",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "Cryptography standard",
+        "HSM/KMS with key lifecycle logs",
+        "Key inventory"
+      ],
+      "related_policies": [
+        "Cryptography and Key Management Rules"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "id": "CB-20",
+      "category": "CENTRAL_BANK",
+      "law_short": "CBAR İnformasiya təhlükəsizliyi Tələbləri (14/2)",
+      "law_full": "Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər",
+      "law_ref": "Mərkəzi Bankın İdarə Heyətinin Qərarı № 14/2, 28.03.2024 (qüvvəyə minmə: 09.04.2025)",
+      "authority": "Azərbaycan Respublikasının Mərkəzi Bankı",
+      "article": "Bənd 5.2.2, 5.2.3, 5.2.4, 5.2.5",
+      "verbatim_az": "5.2.2. personalı informasiya təhlükəsizliyi siyasəti və onların funksiyalarına uyğun olan qaydalarla bağlı azı ildə 2 (iki) dəfə və müvafiq sənədlərdə dəyişikliklər edildikdə növbədənkənar qaydada təlimlərə cəlb edir, habelə informasiya təhlükəsizliyi ilə əlaqədar azı ildə 4 (dörd) dəfə maarifləndirir;\n5.2.3. təchizatçıları informasiya təhlükəsizliyi tələbləri ilə əlaqədar azı ildə 2 (iki) dəfə, habelə dəyişiklik edildikdə növbədənkənar qaydada məlumatlandırır;\n5.2.4. müştəriləri informasiya təhlükəsizliyi ilə əlaqədar azı rübdə bir dəfə maarifləndirir;\n5.2.5. informasiya təhlükəsizliyinə dair personal üçün təlim proqramları nəzarət subyektinin icra orqanının rəhbəri tərəfindən təsdiq edilir və icrasına nəzarət edilir;",
+      "obligation_az": "Personala ildə 2 dəfə təlim, 4 dəfə maarifləndirmə; təchizatçılara ildə 2, müştərilərə rübdə 1 dəfə məlumat verin.",
+      "obligation_en": "Train staff on IS policy at least twice a year and run awareness at least four times a year; inform suppliers twice a year; educate customers at least quarterly; training programmes approved by the CEO.",
+      "applies_to": "Banks (I kateqoriya nəzarət subyekti / Category I supervised entity; same rule also binds the other supervised entities in 1.1)",
+      "type": "Regulatory",
+      "frequency": "staff training semi-annual; awareness quarterly; customers quarterly; suppliers semi-annual",
+      "risk": "MEDIUM",
+      "suggested_controls": [
+        "CEO-approved IS training programme",
+        "Training attendance records",
+        "Customer awareness campaign log"
+      ],
+      "related_policies": [
+        "IS Training and Awareness Programme"
+      ],
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    }
+  ],
+  "policies": [
+    {
+      "name_az": "İnformasiya təhlükəsizliyi siyasəti",
+      "name_en": "Information Security Policy",
+      "purpose": "Board-approved top-level IS policy covering parts 4–7 and ISMS continual improvement; reviewed at least annually.",
+      "driving_paragraphs": "Bənd 3.2, 3.4, 3.5, 3.6",
+      "requirement_quote_az": "3.2. İTİS-in formalaşdırılması ilə bağlı nəzarət subyektinin ümumi strategiyasına uyğun olan informasiya təhlükəsizliyi siyasəti hazırlanır və yuxarı idarəetmə orqanı tərəfindən təsdiq edilir.",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Aktivlərdən məqbul istifadə qaydaları",
+      "name_en": "Acceptable Use of Assets Rules",
+      "purpose": "Documented acceptable-use rules for information and related assets.",
+      "driving_paragraphs": "Bənd 4.6.3",
+      "requirement_quote_az": "4.6.3. informasiya və digər əlaqəli aktivlərdən məqbul istifadə qaydaları müəyyən edilir və təsdiq edilməklə sənədləşdirilir;",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "İnformasiyanın etiketlənməsi qaydaları",
+      "name_en": "Information Labelling Rules",
+      "purpose": "Labelling of information/assets according to the adopted classification.",
+      "driving_paragraphs": "Bənd 4.6.6, 4.6.5",
+      "requirement_quote_az": "4.6.6. qəbul edilmiş informasiya təsnifatına uyğun olaraq informasiyanın və əlaqəli aktivlərin etiketlənməsi qaydaları müəyyən edilir və təsdiq edilməklə sənədləşdirilir;",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Girişlər üzrə qaydalar",
+      "name_en": "Access Control Rules",
+      "purpose": "Lifecycle registration, account classification, dormant-account blocking, least privilege, revocation.",
+      "driving_paragraphs": "Bənd 4.7",
+      "requirement_quote_az": "4.7. Biznes və informasiya təhlükəsizliyi tələbləri əsasında informasiya və digər əlaqəli aktivlərə girişlər üzrə azı aşağıdakılar nəzərə alınmaqla qaydalar hazırlanır və təsdiq edilir:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Autentikasiya məlumatlarının idarə edilməsi qaydaları",
+      "name_en": "Authentication (Password) Management Rules",
+      "purpose": "Default credential change, password strength/expiry/history, user responsibility.",
+      "driving_paragraphs": "Bənd 4.8",
+      "requirement_quote_az": "4.8. Nəzarət subyektində autentikasiya məlumatlarının idarə edilməsi üzrə azı aşağıdakı tələbləri nəzərə alan qaydalar hazırlanır və təsdiq edilir:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Təchizatçılarla münasibətlərdə informasiya təhlükəsizliyi tələbləri",
+      "name_en": "Supplier (Third-Party) IS Requirements",
+      "purpose": "IS clauses with suppliers, supplier register and monitoring, outsourced-service risk assessment.",
+      "driving_paragraphs": "Bənd 4.9",
+      "requirement_quote_az": "4.9. Təchizatçılarla münasibətlərdə bu Tələblər ilə müəyyən edilmiş informasiya təhlükəsizliyi tələbləri gözlənilir, o cümlədən aşağıda qeyd edilən tədbirlərin icrası təmin edilir:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "“Bulud” xidmətləri üzrə qaydalar",
+      "name_en": "Cloud Services Rules",
+      "purpose": "Cloud selection criteria, roles, controls split, incidents, BCP, exit strategy; mandatory contract terms.",
+      "driving_paragraphs": "Bənd 4.10.1, 4.10.2",
+      "requirement_quote_az": "4.10.1. azı aşağıdakılar nəzərə alınmaqla qaydalar hazırlanır və təsdiq edilir:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "İnformasiya təhlükəsizliyi insidentlərinin idarə edilməsi qaydaları",
+      "name_en": "IS Incident Management Rules",
+      "purpose": "Event triage, incident response, categorisation, evidence, knowledge base.",
+      "driving_paragraphs": "Bənd 4.11",
+      "requirement_quote_az": "4.11. İnformasiya təhlükəsizliyi hadisələrinin kommunikasiyası daxil olmaqla informasiya təhlükəsizliyi insidentlərinin çevik, davamlı və effektiv idarə edilməsi məqsədilə nəzarət subyekti tərəfindən azı aşağıdakılar nəzərə alınmaqla informasiya təhlükəsizliyi insidentlərinin idarə edilməsi qaydaları hazırlanır və təsdiq edilir:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Fövqəladə hallarda fəaliyyətin davamlılığı və bərpası planı",
+      "name_en": "Business Continuity and Disaster Recovery Plan",
+      "purpose": "BIA-driven BC/DR plan with RPO/RTO, responsibilities, topology, communications; tested twice a year.",
+      "driving_paragraphs": "Bənd 4.12.5, 4.12, 4.14",
+      "requirement_quote_az": "4.12.5. azı aşağıdakıları nəzərdə tutan fövqəladə hallarda fəaliyyətin davamlılığı və bərpası plan(lar)ı hazırlanır və sənədləşdirilir:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Məlumatların saxlanılması, arxivləşdirilməsi və məhv edilməsi üzrə nəzarət tədbirləri",
+      "name_en": "Data Retention, Archiving and Destruction Controls",
+      "purpose": "Retention/archiving/destruction controls reflecting law and classification.",
+      "driving_paragraphs": "Bənd 4.18",
+      "requirement_quote_az": "4.18. Məlumatların saxlanılması, arxivləşdirilməsi, itirilməsinin qarşısının alınması, məhv edilməsi, həmçinin icazəsiz dəyişdirilməsi ilə əlaqədar qanunvericiliyin tələbləri və informasiyanın təsnifatı nəzərə alınaraq məlumatların saxlanılması, arxivləşdirilməsi və məhv edilməsini əhatə edən nəzarət tədbirləri müəyyən edilir.",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "İT əməliyyat prosedurları",
+      "name_en": "IT Operating Procedures",
+      "purpose": "Documented procedures for installation, integration, error handling, recovery, audit trail and monitoring.",
+      "driving_paragraphs": "Bənd 4.20",
+      "requirement_quote_az": "4.20. İnformasiya texnologiyalarının düzgün və təhlükəsiz fəaliyyətini təmin etmək məqsədilə əməliyyat prosedurları azı aşağıdakıları əhatə edərək sənədləşdirilir və müvafiq işçilər üçün əlçatanlığı təmin edilir:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Konfidensiallıq razılaşması formaları",
+      "name_en": "Confidentiality / Non-Disclosure Agreement Forms",
+      "purpose": "NDA forms signed with staff and suppliers when access is granted.",
+      "driving_paragraphs": "Bənd 5.4",
+      "requirement_quote_az": "5.4. Personal və təchizatçılara informasiya və digər əlaqəli aktivlərə giriş hüququ verilən zaman informasiyanın qorunması və icazəsiz kənar şəxslərə açıqlanmasının qarşısının alınması məqsədilə azı aşağıdakıları nəzərdə tutan razılaşma formaları hazırlanır və tərəflər arasında imzalanır:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Məsafədən iş qaydaları",
+      "name_en": "Remote Working Rules",
+      "purpose": "Security requirements for remote work (physical, networks, updates, malware).",
+      "driving_paragraphs": "Bənd 5.5",
+      "requirement_quote_az": "5.5. Personalın məsafədən işləməsi zamanı nəzarət subyektinin olduğu yerdən kənarda giriş edilən, emal edilən və saxlanılan informasiyanın təhlükəsizliyinin təmin edilməsi üçün azı aşağıdakıları nəzərdə tutan qaydalar hazırlanır, təsdiq edilir və personalla kommunikasiya edilir:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Ofis, otaq və avadanlıqların mühafizəsi qaydaları",
+      "name_en": "Physical Security Rules (Offices, Rooms, Equipment)",
+      "purpose": "Prevent unauthorised physical access, damage and interference.",
+      "driving_paragraphs": "Bənd 6.2, 6.1",
+      "requirement_quote_az": "6.2. Nəzarət subyektində informasiyaya və digər əlaqəli aktivlərə icazəsiz girişin, zədənin və müdaxilənin qarşısını almaq məqsədilə ofis, otaq və avadanlıqların mühafizəsi ilə bağlı qaydalar hazırlanır və təsdiq edilir.",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Təmiz masa və təmiz ekran qaydası",
+      "name_en": "Clear Desk and Clear Screen Rule",
+      "purpose": "Protection of paper and screen-displayed sensitive information.",
+      "driving_paragraphs": "Bənd 6.8",
+      "requirement_quote_az": "6.8. Kağız və digər informasiya daşıyıcıları üçün azı aşağıdakılar nəzərə alınmaqla təmiz masa və təmiz ekran qaydası qəbul edilir və personalla kommunikasiya edilir:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Avadanlıqların fiziki məhv edilməsi qaydası",
+      "name_en": "Equipment Disposal / Destruction Rule",
+      "purpose": "Irrecoverable wiping and documented physical destruction of media.",
+      "driving_paragraphs": "Bənd 6.14",
+      "requirement_quote_az": "6.14. İnformasiya daşıyıcıları olan avadanlıqlar məhv edilməzdən və ya yenidən istifadəyə verilməzdən öncə saxlanılan həssas informasiya və lisenziyalı proqram təminatları bərpası mümkün olmayacaq qaydada silinir. Avadanlıqların fiziki məhv edilməsi qaydası qəbul edilir, məhvetmə xüsusi texnologiyalardan istifadə etməklə həyata keçirilərək sənədləşdirilir.",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Son istifadəçi cihazlarının təhlükəsiz konfiqurasiyası və idarə edilməsi qaydaları",
+      "name_en": "Endpoint Security Rules",
+      "purpose": "Registration, hardening, encryption, anti-malware and network rules for endpoints.",
+      "driving_paragraphs": "Bənd 7.1",
+      "requirement_quote_az": "7.1. Son istifadəçi cihazları vasitəsilə saxlanılan, emal edilən və əlçatan olan informasiyanın təhlükəsizliyini təmin etmək məqsədilə son istifadəçi cihazlarının təhlükəsiz konfiqurasiyası və idarə edilməsi üçün azı aşağıdakılar nəzərə alınmaqla qaydalar qəbul edilir və personalla kommunikasiya edilir:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Ehtiyat nüsxələrin yaradılması və bərpası qaydaları",
+      "name_en": "Backup and Restore Rules",
+      "purpose": "Backup scope/frequency, encryption, retention, semi-annual restore tests.",
+      "driving_paragraphs": "Bənd 7.8",
+      "requirement_quote_az": "7.8. İnformasiya itkisinin qarşısının alınması məqsədilə kritik informasiya sistemlərinin ehtiyat nüsxələrinin yaradılması, həmçinin bərpa prosesinin testləşdirilməsi üzrə azı aşağıdakıları əhatə edən qaydalar qəbul edilir və tətbiqi təmin edilir:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Loqların yaradılması, saxlanılması, mühafizəsi və təhlili qaydaları",
+      "name_en": "Logging and Monitoring Rules",
+      "purpose": "Log content, ≥1-year retention, integrity, monitoring.",
+      "driving_paragraphs": "Bənd 7.9",
+      "requirement_quote_az": "7.9. Fəaliyyətlər, istisnalar, xətalar və digər hadisələr üzrə loqların yaradılması, saxlanılması, mühafizəsi və təhlilinin təmin edilməsi üçün qaydalar qəbul edilir. Kritik informasiya sistemləri və digər əlaqəli aktivlər üzrə hadisələrin loqlanması zamanı azı aşağıdakılar nəzərə alınır:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Şəbəkə xidmətləri üzrə qaydalar",
+      "name_en": "Network Services Security Rules",
+      "purpose": "Permitted networks/services, authentication, VPN/wireless, access attributes.",
+      "driving_paragraphs": "Bənd 7.12, 7.11",
+      "requirement_quote_az": "7.12. Şəbəkə xidmətlərinin təhlükəsizlik mexanizmləri, xidmət səviyyələri və idarəetmə tələbləri üzrə azı aşağıdakıları nəzərdə tutan qaydalar müəyyən edilir və tətbiqi təmin edilir:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "İnternet resurslarından təhlükəsiz istifadə qaydaları",
+      "name_en": "Internet and Social Media Use Rules",
+      "purpose": "Blocking of undesirable sites, social media account security.",
+      "driving_paragraphs": "Bənd 7.13",
+      "requirement_quote_az": "7.13. Arzuolunmaz internet resurslarına girişlərə məhdudiyyətlər tətbiq edilir, habelə azı aşağıdakılar nəzərə alınmaqla bu resurslardan təhlükəsiz və düzgün istifadə qaydaları formalaşdırılır:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Təhlükəsiz inkişaf metodologiyası və təhlükəsiz kodlaşdırma təlimatı",
+      "name_en": "Secure Development Methodology and Secure Coding Guideline",
+      "purpose": "SDLC security, environment separation, code review, outsourced development rules.",
+      "driving_paragraphs": "Bənd 7.26.2, 7.26, 7.26.7, 7.14",
+      "requirement_quote_az": "7.26.2. təhlükəsiz inkişaf metodologiyasının və təhlükəsiz kodlaşdırma təlimatının formalaşdırılması;",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Dəyişikliklərin idarə edilməsi qaydaları",
+      "name_en": "Change Management Rules",
+      "purpose": "Registration, testing, risk assessment, rollback and emergency change of IS-relevant changes.",
+      "driving_paragraphs": "Bənd 7.28",
+      "requirement_quote_az": "7.28. Biznes proseslərdə, informasiyanın işlənməsi vasitələrində və proqram təminatlarında informasiya təhlükəsizliyinə təsir edən dəyişikliklərin idarə edilməsi üzrə azı aşağıdakıları nəzərdə tutan qaydalar hazırlanır və təsdiq edilir:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Kriptoqrafik vasitələr və açarların idarə edilməsi",
+      "name_en": "Cryptography and Key Management Rules",
+      "purpose": "Crypto usage, algorithm strength, key lifecycle management.",
+      "driving_paragraphs": "Bənd 7.25",
+      "requirement_quote_az": "7.25. İnformasiyanın konfidensiallığının və tamlığının qorunması üçün kriptoqrafiyanın düzgün seçilməsi və effektiv istifadəsinin təmin olunması məqsədilə aşağıdakı tədbirlər həyata keçirilir:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "İnformasiya təhlükəsizliyi üzrə təlim proqramları",
+      "name_en": "IS Training and Awareness Programme",
+      "purpose": "CEO-approved staff training (2/yr), awareness (4/yr), supplier and customer awareness.",
+      "driving_paragraphs": "Bənd 5.2.5, 5.2.2",
+      "requirement_quote_az": "5.2.5. informasiya təhlükəsizliyinə dair personal üçün təlim proqramları nəzarət subyektinin icra orqanının rəhbəri tərəfindən təsdiq edilir və icrasına nəzarət edilir;",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    },
+    {
+      "name_az": "Texniki zəifliklərin idarə edilməsi (vəzifələr və prosedurlar)",
+      "name_en": "Vulnerability and Patch Management Procedure",
+      "purpose": "Roles for vulnerability monitoring, patching, annual pen tests, pre-production testing.",
+      "driving_paragraphs": "Bənd 7.18",
+      "requirement_quote_az": "7.18. Kritik informasiya sistemi və digər əlaqəli aktivlərdə texniki zəifliklərin müəyyən edilməsi və onlardan sui-istifadənin qarşısının alınması məqsədilə azı aşağıdakı tədbirlər həyata keçirilir:",
+      "source_url": "https://e-qanun.az/frameworks/56/f_56708.html"
+    }
+  ],
+  "notes": "1) Act (a) — CBAR Board decision 20/1 of 14 July 2021 (number/date verified on official PDF and e-qanun) approving 'Banklarda informasiya təhlükəsizliyinin idarə edilməsi Qaydası' — has NO current version: its Part 1 (the Rules) was repealed by Decision 14/2 from 09.04.2025. 2) Act (b) verified: Decision 14/2 of 28.03.2024 'Maliyyə bazarlarında fəaliyyətinə nəzarət edilən subyektlərdə informasiya təhlükəsizliyinin təmin edilməsinə dair Tələblər' — registered 08.04.2024 (code 23202403280142), in force from 09.04.2025 (one year after publication). It applies to banks (Category I) and other supervised entities, so ALL obligations here are drawn from 14/2. 3) No extra act included: no separate CBAR outsourcing/cloud or IT-risk rule for banks was located with official text in this pass; note 14/2 itself contains cloud (4.10), supplier (4.9) and outsourced development (7.26.7) requirements. Other possibly relevant CBAR acts not reviewed: 'Banklarda risklərin idarə olunması haqqında Qaydalar', 'Gücləndirilmiş müştəri autentifikasiyasının tətbiqi Qaydası' (12/2, 13.03.2024), electronic banking methodological guidance. 4) verbatim_az fields are exact paragraph texts extracted programmatically from the e-qanun HTML (cp1251-decoded, whitespace normalised); multiple paragraphs are joined by newlines. Paragraph 8.3/8.4 say 'bu Qaydaya ... Əlavədə' (sic) in the official text. 5) Category-specific carve-outs (1.4, 1.5) do not affect banks. 6) obligation_az/en and risk ratings are editorial summaries, not legal text; not legal advice. 7) cbar.az also hosts a Board-approved 2026 regulation on CBAR's own IS/cyber/digital-fraud department (internal, not a bank obligation) — excluded."
+}
