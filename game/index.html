@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Strategiya Oyunu</title>
+<style>
+  body { margin: 0; background: #14171c; color: #e8eaed; font-family: system-ui, sans-serif;
+         display: flex; flex-direction: column; align-items: center; padding: 16px; }
+  h1 { font-size: 20px; margin: 0 0 8px; }
+  #hud { display: flex; gap: 16px; align-items: center; margin-bottom: 8px; flex-wrap: wrap; justify-content: center; }
+  button { background: #2b6cb0; color: #fff; border: 0; padding: 8px 14px; border-radius: 6px; font-size: 14px; cursor: pointer; }
+  button:disabled { background: #444; cursor: not-allowed; }
+  canvas { background: #1e2530; border-radius: 8px; max-width: 100%; touch-action: manipulation; }
+  #msg { margin-top: 8px; min-height: 22px; color: #9fb3c8; text-align: center; }
+  #help { max-width: 640px; font-size: 13px; color: #8a97a6; margin-top: 8px; line-height: 1.5; }
+</style>
+</head>
+<body>
+<h1>Strategiya Oyunu</h1>
+<div id="hud">
+  <span>Qızıl: <b id="gold">0</b></span>
+  <span>Gəlir: <b id="income">0</b>/növbə</span>
+  <span>Növbə: <b id="turn">1</b></span>
+  <button id="buy">Əsgər al (10 qızıl)</button>
+  <button id="end">Növbəni bitir</button>
+</div>
+<canvas id="c" width="640" height="512"></canvas>
+<div id="msg"></div>
+<div id="help">
+  Məqsəd: düşmənin qırmızı bazasını məhv et. Mavi əsgərini seç, yaşıl xanalara get, qırmızı xanalara hücum et.
+  Qızıl mədənlərin üstünə əsgər qoysan ələ keçirirsən və hər növbə daha çox qızıl qazanırsan.
+</div>
+
+<script>
+const COLS = 10, ROWS = 8, T = 64;
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+const $ = id => document.getElementById(id);
+
+const COLORS = ['#3b82f6', '#ef4444'];   // 0 = oyunçu, 1 = kompüter
+const UNIT = { hp: 10, atk: 4, counter: 2, move: 2, cost: 10 };
+const BASE_HP = 20;
+
+let state;
+
+function newGame() {
+  state = {
+    turn: 1,
+    current: 0,
+    gold: [10, 10],
+    units: [],
+    bases: [{ x: 0, y: 3, hp: BASE_HP }, { x: COLS - 1, y: 4, hp: BASE_HP }],
+    mines: [
+      { x: 3, y: 1, owner: null }, { x: 6, y: 6, owner: null },
+      { x: 4, y: 3, owner: null }, { x: 5, y: 4, owner: null },
+    ],
+    selected: null,
+    over: false,
+    busy: false,
+  };
+  updateHud();
+  say('Sənin növbən. "Əsgər al" düyməsinə bas.');
+  draw();
+}
+
+const key = (x, y) => x + ',' + y;
+const dist = (a, b) => Math.abs(a.x - b.x) + Math.abs(a.y - b.y);
+const unitAt = (x, y) => state.units.find(u => u.x === x && u.y === y);
+const baseAt = (x, y) => state.bases.findIndex(b => b.x === x && b.y === y);
+const inBounds = (x, y) => x >= 0 && y >= 0 && x < COLS && y < ROWS;
+const free = (x, y) => inBounds(x, y) && !unitAt(x, y) && baseAt(x, y) < 0;
+const incomeOf = o => 3 + 2 * state.mines.filter(m => m.owner === o).length;
+
+function say(t) { $('msg').textContent = t; }
+
+function updateHud() {
+  $('gold').textContent = state.gold[0];
+  $('income').textContent = incomeOf(0);
+  $('turn').textContent = state.turn;
+  const mine = state.current === 0 && !state.over && !state.busy;
+  $('buy').disabled = !mine || state.gold[0] < UNIT.cost || !spawnTile(0);
+  $('end').disabled = !mine;
+}
+
+function spawnTile(owner) {
+  const b = state.bases[owner];
+  const around = [[1, 0], [-1, 0], [0, 1], [0, -1], [1, 1], [1, -1], [-1, 1], [-1, -1]];
+  for (const [dx, dy] of around) {
+    if (free(b.x + dx, b.y + dy)) return { x: b.x + dx, y: b.y + dy };
+  }
+  return null;
+}
+
+function spawn(owner) {
+  const t = spawnTile(owner);
+  if (!t || state.gold[owner] < UNIT.cost) return false;
+  state.gold[owner] -= UNIT.cost;
+  state.units.push({ owner, x: t.x, y: t.y, hp: UNIT.hp, moved: true, attacked: true });
+  return true;
+}
+
+// BFS: hansı xanalara gedə bilər
+function reachable(u) {
+  const seen = new Map([[key(u.x, u.y), 0]]);
+  const q = [{ x: u.x, y: u.y }];
+  while (q.length) {
+    const p = q.shift();
+    const d = seen.get(key(p.x, p.y));
+    if (d >= UNIT.move) continue;
+    for (const [dx, dy] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {
+      const nx = p.x + dx, ny = p.y + dy;
+      if (!free(nx, ny) || seen.has(key(nx, ny))) continue;
+      seen.set(key(nx, ny), d + 1);
+      q.push({ x: nx, y: ny });
+    }
+  }
+  return [...seen.keys()].map(k => { const [x, y] = k.split(',').map(Number); return { x, y }; });
+}
+
+// hücum edə biləcəyi düşmənlər (bitişik)
+function targets(u) {
+  const out = [];
+  for (const e of state.units) if (e.owner !== u.owner && dist(u, e) === 1) out.push({ x: e.x, y: e.y });
+  const eb = state.bases[1 - u.owner];
+  if (dist(u, eb) === 1) out.push({ x: eb.x, y: eb.y });
+  return out;
+}
+
+function moveUnit(u, x, y) {
+  u.x = x; u.y = y; u.moved = true;
+  const m = state.mines.find(m => m.x === x && m.y === y);
+  if (m && m.owner !== u.owner) m.owner = u.owner;
+}
+
+function attack(u, tx, ty) {
+  u.attacked = true; u.moved = true;
+  const bi = baseAt(tx, ty);
+  if (bi >= 0) {
+    state.bases[bi].hp -= UNIT.atk;
+    if (state.bases[bi].hp <= 0) { state.bases[bi].hp = 0; state.over = true; }
+    return;
+  }
+  const e = unitAt(tx, ty);
+  e.hp -= UNIT.atk;
+  if (e.hp <= 0) state.units = state.units.filter(x => x !== e);
+  else { u.hp -= UNIT.counter; if (u.hp <= 0) state.units = state.units.filter(x => x !== u); }
+}
+
+function checkEnd() {
+  if (!state.over) return false;
+  const won = state.bases[1].hp <= 0;
+  say(won ? 'Qazandın! 🎉 Yenidən başlamaq üçün səhifəni yenilə.' : 'Məğlub oldun. Yenidən başlamaq üçün səhifəni yenilə.');
+  state.selected = null;
+  updateHud(); draw();
+  return true;
+}
+
+// ---------- Oyunçu ----------
+canvas.addEventListener('click', e => {
+  if (state.current !== 0 || state.over || state.busy) return;
+  const r = canvas.getBoundingClientRect();
+  const x = Math.floor((e.clientX - r.left) * (canvas.width / r.width) / T);
+  const y = Math.floor((e.clientY - r.top) * (canvas.height / r.height) / T);
+  const sel = state.selected;
+
+  if (sel) {
+    if (targets(sel).some(t => t.x === x && t.y === y) && !sel.attacked) {
+      attack(sel, x, y); state.selected = null;
+      if (!checkEnd()) say('Hücum!');
+    } else if (!sel.moved && reachable(sel).some(p => p.x === x && p.y === y)) {
+      moveUnit(sel, x, y);
+      if (!targets(sel).length) state.selected = null;
+      say(state.selected ? 'İndi hücum edə bilərsən (qırmızı xana).' : 'Hərəkət etdi.');
+    } else {
+      const u = unitAt(x, y);
+      state.selected = u && u.owner === 0 && !(u.moved && u.attacked) ? u : null;
+    }
+  } else {
+    const u = unitAt(x, y);
+    if (u && u.owner === 0 && !(u.moved && u.attacked)) state.selected = u;
+  }
+  updateHud(); draw();
+});
+
+$('buy').onclick = () => { if (spawn(0)) { say('Əsgər alındı. Növbəti növbədə hərəkət edəcək.'); updateHud(); draw(); } };
+$('end').onclick = () => endTurn();
+
+async function endTurn() {
+  state.selected = null;
+  state.current = 1; state.busy = true;
+  updateHud(); say('Kompüter oynayır...'); draw();
+  await aiTurn();
+  if (checkEnd()) return;
+  state.turn++;
+  state.current = 0; state.busy = false;
+  state.gold[0] += incomeOf(0);
+  state.units.filter(u => u.owner === 0).forEach(u => { u.moved = false; u.attacked = false; });
+  say('Sənin növbən.');
+  updateHud(); draw();
+}
+
+// ---------- Kompüter ----------
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+async function aiTurn() {
+  state.gold[1] += incomeOf(1);
+  state.units.filter(u => u.owner === 1).forEach(u => { u.moved = false; u.attacked = false; });
+  while (spawn(1)) { draw(); await sleep(250); }
+
+  for (const u of state.units.filter(u => u.owner === 1 && !u.attacked)) {
+    if (!state.units.includes(u)) continue;
+    let t = targets(u);
+    if (!t.length) {
+      const wanted = state.mines.filter(m => m.owner !== 1);
+      const goal = wanted.length
+        ? wanted.reduce((a, b) => dist(u, a) <= dist(u, b) ? a : b)
+        : state.bases[0];
+      const best = reachable(u).reduce((a, b) => dist(a, goal) <= dist(b, goal) ? a : b);
+      moveUnit(u, best.x, best.y);
+      draw(); await sleep(300);
+      t = targets(u);
+    }
+    if (t.length) {
+      // əvvəl ən az canlı əsgəri, yoxsa baza
+      const weakest = t.map(p => ({ p, u: unitAt(p.x, p.y) })).filter(o => o.u)
+        .sort((a, b) => a.u.hp - b.u.hp)[0];
+      const pick = weakest ? weakest.p : t[0];
+      attack(u, pick.x, pick.y);
+      draw(); await sleep(300);
+      if (state.over) return;
+    }
+  }
+}
+
+// ---------- Çəkmə ----------
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let y = 0; y < ROWS; y++) for (let x = 0; x < COLS; x++) {
+    ctx.fillStyle = (x + y) % 2 ? '#222b38' : '#1e2530';
+    ctx.fillRect(x * T, y * T, T, T);
+  }
+  const sel = state.selected;
+  if (sel) {
+    if (!sel.moved) for (const p of reachable(sel)) tint(p.x, p.y, 'rgba(74,222,128,.35)');
+    if (!sel.attacked) for (const p of targets(sel)) tint(p.x, p.y, 'rgba(248,113,113,.5)');
+  }
+  for (const m of state.mines) {
+    const cx = m.x * T + T / 2, cy = m.y * T + T / 2;
+    ctx.fillStyle = '#facc15';
+    ctx.beginPath(); ctx.moveTo(cx, cy - 16); ctx.lineTo(cx + 16, cy); ctx.lineTo(cx, cy + 16); ctx.lineTo(cx - 16, cy); ctx.closePath(); ctx.fill();
+    if (m.owner !== null) { ctx.strokeStyle = COLORS[m.owner]; ctx.lineWidth = 3; ctx.stroke(); }
+  }
+  state.bases.forEach((b, i) => {
+    ctx.fillStyle = COLORS[i];
+    ctx.fillRect(b.x * T + 8, b.y * T + 8, T - 16, T - 16);
+    label(b.hp + '', b.x * T + T / 2, b.y * T + T / 2 + 5, '#fff');
+  });
+  for (const u of state.units) {
+    const cx = u.x * T + T / 2, cy = u.y * T + T / 2;
+    ctx.fillStyle = COLORS[u.owner];
+    ctx.globalAlpha = u.owner === 0 && u.moved && u.attacked ? 0.5 : 1;
+    ctx.beginPath(); ctx.arc(cx, cy, 20, 0, Math.PI * 2); ctx.fill();
+    ctx.globalAlpha = 1;
+    if (u === sel) { ctx.strokeStyle = '#fff'; ctx.lineWidth = 3; ctx.stroke(); }
+    label(u.hp + '', cx, cy + 5, '#fff');
+  }
+}
+function tint(x, y, c) { ctx.fillStyle = c; ctx.fillRect(x * T, y * T, T, T); }
+function label(t, x, y, c) { ctx.fillStyle = c; ctx.font = 'bold 16px system-ui'; ctx.textAlign = 'center'; ctx.fillText(t, x, y); }
+
+newGame();
+</script>
+</body>
+</html>
